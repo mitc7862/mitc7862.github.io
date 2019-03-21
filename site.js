@@ -11,3 +11,11 @@ function setRandomClass() {
     items.removeClass("special");
     items.eq(random).addClass("special");
 }
+
+$('a').mouseover( function(){
+    $('body').addClass('invert');
+});
+
+$('a').mouseout( function(){
+    $('body').removeClass('invert');
+});
