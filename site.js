@@ -1,7 +1,7 @@
 setRandomClass();
 setInterval(function () {
     setRandomClass();
-}, 5000);
+}, 3500);
 
 function setRandomClass() {
     var ul = $("ul");

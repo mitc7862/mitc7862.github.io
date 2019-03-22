@@ -19,13 +19,13 @@
 body {
     background: #f8f8f8;
     color: #fc5b50;
-    margin: 40px;
+    margin: 34px;
     font-size: 34px;
     display: flex;
     font-family: 'hk_groteskregular', sans-serif;
     display: flex;
     letter-spacing: -1px;
-    line-height: 3.5rem;
+    line-height: 3rem;
     transition: background .4s ease;
 }
 
@@ -62,13 +62,11 @@ li {
 li.special {
     display: inline;
     font-family: 'hk_groteskitalic', sans-serif;
-
 }
 
 .email {
     display: block;
 }
-
 
 a {
     cursor: pointer;
@@ -87,7 +85,7 @@ a::before {
     width: 100%;
     position: absolute;
     left: 0px;
-    bottom: 3px;
+    bottom: 5px;
 }
 
 a::after {
@@ -100,9 +98,8 @@ a::after {
     transform: scaleX(0);
     position: absolute;
     left: 0px;
-    bottom: 3px;
-    transition: transform .4s ease;
-    
+    bottom: 5px;
+    transition: transform .4s ease;   
 }
 
 a:hover::after {
@@ -115,8 +112,12 @@ a:hover::after {
     transform: scaleX(1);
     position: absolute;
     left: 0px;
-    bottom: 3px;
+    bottom: 5px;
     transition: transform .4s ease;
+}
+
+.period {
+    margin-left: -8px;
 }
 
 @media (max-width: 700px)  {
