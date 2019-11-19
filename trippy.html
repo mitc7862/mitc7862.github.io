@@ -1,0 +1,88 @@
+!DOCTYPE HTML>
+<html lang = "en">
+<head>
+  <title>trippy</title>
+</head>
+<style>
+    body {
+        margin: 0;
+        overflow: hidden;
+        background: #80b1d3;
+        overflow: hidden;
+        display: flex;
+        filter: blur(100px);
+    }
+
+    .container {
+        height: 100vh;
+        position: relative;
+        width: 50%;
+        overflow: hidden;
+    }
+
+    .reflect {
+        transform: rotate(180deg);  
+    }
+
+    #red {
+        background: #fb8072;
+        animation: scale 30s 1s infinite ease-in-out;
+    }
+
+    #blue {
+        background: #80b1d3;
+        animation: scale 20s 1.2s infinite ease-in-out;
+    }
+
+    #purple {
+        background: #bebada;
+        animation: scale 10s 2s infinite ease-in-out;
+    }
+
+    #yellow {
+        background: #ffffb3;
+        animation: scale 25s 1.8s infinite ease-in-out;
+    }
+
+    #green {
+        background: #8dd3c7;
+        animation: scale 20s 1.3s infinite ease-in-out;
+    }
+
+    .object {
+        width: 800px;
+        height: 800px;
+        border-radius: 100%;
+        position: absolute;
+        top: calc(50vh - 400px);
+        left: calc(50% - 400px);
+        transform: scale(0);
+    }
+
+    @-webkit-keyframes scale {
+        0%      { transform: scale(0) translateX(0%); }
+        25%     { transform: scale(3) translateX(100%); }
+        50%     { transform: scale(.5) translateX(0%); }
+        75%     { transform: scale(3) translateX(-100%); }
+        100%    { transform: scale(0) translateX(0%); }
+    }
+
+</style>
+<body>
+    <div class="container">
+        <div id="red" class="object"></div>
+        <div id="blue" class="object"></div>
+        <div id="purple" class="object"></div>
+        <div id="yellow" class="object"></div>
+        <div id="green" class="object"></div>
+    </div>
+
+    <div class="container reflect">
+        <div id="red" class="object"></div>
+        <div id="blue" class="object"></div>
+        <div id="purple" class="object"></div>
+        <div id="yellow" class="object"></div>
+        <div id="green" class="object"></div>
+    </div>
+</body>
+</html>
