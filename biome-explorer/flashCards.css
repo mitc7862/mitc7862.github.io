@@ -1,0 +1,397 @@
+
+@import url('https://fonts.googleapis.com/css?family=Didact+Gothic|Space+Mono&display=swap');
+
+body {
+    font-family: 'Didact Gothic', sans-serif;
+    background: #f8f9fa;
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+
+header {
+    background: #fff;
+    height: 100px;
+    /* border-bottom: solid 2px #f3f3f3; */
+    margin-top: 0;
+    position: fixed;
+    z-index: 2000;
+    width: 100vw;
+}
+
+header h1 {
+    font-size: 2rem;
+    line-height: 100px;
+    font-weight: 400;
+    margin: 0 0 0 2rem;
+}
+
+.cardSection {
+    display: grid;
+    display: grid;
+    padding: 2rem;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    grid-gap: 2rem;
+}
+
+.card {
+    height: 400px;
+    font-size: 18px;
+    border-radius: 1rem;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+    box-shadow: 0px 0px 0px 0px rgba(90,90,92,0);
+    transition: box-shadow .2s ease;
+}
+
+.card:hover {
+    box-shadow: 0px 0px 0px 2px rgba(90,90,92,1);
+    transition: box-shadow .2s ease;
+}
+
+.front.hide {
+    transform: rotateY(180deg);
+    opacity: 0;
+    pointer-events: none;
+    z-index: 0;
+    transition: all .2s ease;
+}
+
+.back.hide {
+    transform: rotateY(180deg);
+    opacity: 0;
+    pointer-events: none;
+    z-index: 0;
+    transition: all .2s ease;
+}
+
+.front {
+    position: absolute;
+    width: 100%;
+    height: 400px;
+    transform: rotateY(0deg);
+    opacity: 1;
+    pointer-events: all;
+    z-index: 100;
+    transition: all .2s ease;
+}
+
+
+
+.back {
+    position: absolute;
+    width: calc(100% - 4rem);
+    height: 400px;
+    padding: 2rem;
+    position: relative;
+    transform: rotateY(0deg);
+    opacity: 1;
+    pointer-events: all;
+    z-index: 100;
+    transition: all .2s ease;
+}
+
+.back h3 {
+    font-size: 2rem;
+    /* letter-spacing: 1px; */
+    font-weight: 400;
+    line-height: 2.25rem;
+    margin: 0 0 1rem 0;
+}
+
+p {
+    font-family: 'Space Mono', monospace;
+    margin: 0;
+}
+
+.card.other {
+    background: #ecebea;
+    color:#5a5a5c;
+}
+
+.card.producer {
+    background: #f1f7eb;
+    color: #5c605c;
+}
+
+.card.primaryConsumer {
+    background: #e4f4f4;
+    color:#555f61;
+}
+
+.card.secondaryConsumer {
+    background: #fdded4;
+    color:#625350;
+}
+
+.card.omnivore {
+    background: #f1e7e8;
+    color:#5d585b;
+}
+
+.card.scavenger {
+    background: #eae5f2;
+    color:#5a5760;
+}
+
+.card.insectivore {
+    background: #e5f3ed;
+    color:#565e5d;
+}
+
+.card.decomposer {
+    background: #e5e8e0;
+    color:#565957;
+}
+
+
+
+.close {
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    font-size: 20px;
+    line-height: 40px;
+    background: rgba(93, 88, 91, 0);
+    border: none;
+    position: absolute;
+    top: 1rem;
+    left: calc(100% - 56px);
+    cursor: pointer;
+    transition: background .2s ease;
+}
+
+.close:hover {
+    background: rgba(93, 88, 91, .1);
+    transition: background .2s ease;
+    
+}
+
+.img-container {
+    overflow: hidden;
+    width 100%;
+    height: 400px;
+    position: relative;
+} 
+
+.img-container img {
+    height: 400px;
+    position: absolute;
+    left: calc(50% - 300px);
+}
+
+
+nav {
+    display: flex;
+    margin: 20px 15% 0 15%;
+    border-radius: 100px;
+    overflow: hidden;
+
+}
+h1, h2, h3, h4, h5, h6 {
+    font-weight: 400;
+}
+
+nav h2 {
+    font-weight: 400;
+    margin: 0;
+    line-height: 60px;
+    text-align: center;
+    cursor: pointer;
+}
+
+
+nav input[type="radio"] {
+    display: none;
+
+}
+
+nav input[type="radio"] + label {
+    display: inline-block;
+    height: 60px;
+    background: #f4f5f6;
+    flex: auto;
+    transition: all .2s ease;
+}
+
+nav input[type="radio"]:checked + label {
+    color: #fff;
+    background: #555f61;
+    transition: all .2s ease;
+}
+
+#content {
+    width: 100vw;
+    position: relative;
+}
+
+.introSectionWrapper {
+    position: absolute;
+    width: 100vw;
+    min-height: 100vh;
+    opacity: 1;
+    /* background-image: url('2x/AfricanGrasslands.png');
+    background-size: cover; */
+    transition: opacity .4s ease;
+}
+
+.cardSectionWrapper {
+    position: absolute;
+    z-index: 1000;
+    display: block;
+    opacity: 1;
+    margin-top: 100px;
+    transition: opacity .4s ease;
+}
+
+.diagramSectionWrapper {
+    position: absolute;
+    z-index: 1000;
+    display: block;
+    opacity: 1;
+    transition: opacity .4s ease;
+}
+
+.displayNone {
+    opacity: 0;
+    display: none;
+    transition: opacity .4s ease;
+    transition: display .2s .4s ease;
+}
+
+#anychart-iframe-embed-27VeNmgL {
+    width: 70vw;
+    height: calc(100vh - 100px);
+    margin-top: 100px;
+    position: absolute;
+    left: 30vw;
+    z-index: 0;
+}
+
+.cover {
+    height: calc(100vh - 101px);
+    margin-top: 101px;
+    float: right;
+}
+
+
+.leftBlock, rightBlock {
+    position: absolute;
+    background: #ECEBEA;
+    margin: calc(3rem + 100px);
+    padding: 2rem;
+    color: #5A5A5C;
+    border-radius: 1rem;
+    width: 380px;
+    z-index: 100;
+}
+
+.leftBlock p {
+    margin-top: 1rem;
+    /* margin-right: 1rem; */
+}
+
+.callout {
+    font-size: 2.25rem;
+}
+
+
+
+.leftBlock ul {
+    list-style: none;
+    margin: none;
+    padding: 0;
+    font-family: 'Space Mono', monospace;
+    float: left;
+    margin-right: 24px;
+}
+
+/* .leftBlock li::before {
+    content: "";
+    display: inline-block;
+    width: 26px;
+    height: 26px;
+    background: #000;
+    border-radius: 50%;
+    transform: translateY(7px);
+    margin-right: 8px;
+} */
+
+
+.legendProducers::before {
+    content: "";
+    display: inline-block;
+    width: 26px;
+    height: 26px;
+    background: #C5E0A9;
+    border-radius: 50%;
+    transform: translateY(7px);
+    margin-right: 8px;
+}
+
+.legendHerbivores::before {
+    content: "";
+    display: inline-block;
+    width: 26px;
+    height: 26px;
+    background: #80D0D8;
+    border-radius: 50%;
+    transform: translateY(7px);
+    margin-right: 8px;
+}
+
+.legendPredators::before {
+    content: "";
+    display: inline-block;
+    width: 26px;
+    height: 26px;
+    background: #F26960;
+    border-radius: 50%;
+    transform: translateY(7px);
+    margin-right: 8px;
+}
+
+.legendInsectivores::before {
+    content: "";
+    display: inline-block;
+    width: 26px;
+    height: 26px;
+    background: #88CDB5;
+    border-radius: 50%;
+    transform: translateY(7px);
+    margin-right: 8px;
+}
+
+.legendOmnivores::before {
+    content: "";
+    display: inline-block;
+    width: 26px;
+    height: 26px;
+    background: #CDA0AA;
+    border-radius: 50%;
+    transform: translateY(7px);
+    margin-right: 8px;
+}
+
+.legendScavengers::before {
+    content: "";
+    display: inline-block;
+    width: 26px;
+    height: 26px;
+    background: #AE96C7;
+    border-radius: 50%;
+    transform: translateY(7px);
+    margin-right: 8px;
+}
+
+.legendDecomposers::before {
+    content: "";
+    display: inline-block;
+    width: 26px;
+    height: 26px;
+    background: #94A98B;
+    border-radius: 50%;
+    transform: translateY(7px);
+    margin-right: 8px;
+}

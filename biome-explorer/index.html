@@ -1,0 +1,535 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Biome Explorer: The African Savanna</title>
+    <link rel="stylesheet" href="flashCards.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+</head>
+<body>
+
+    <header>
+        <nav>
+            <input type="radio" name="flashcards" id="introTab" checked>
+            <label for="introTab" id="introTrigger"><h2>What is a savanna?</h2></label>
+            <input type="radio" name="flashcards" id="cardTab">
+            <label for="cardTab" id="cardTrigger"><h2>What organisms live there?</h2></label>
+            <input type="radio" name="flashcards" id="diagramTab">
+            <label for="diagramTab" id="diagramTrigger"> <h2>How are they connected?</h2></label>
+        </nav>
+    </header>
+    
+   
+    <section id="content">
+
+        <section class="introSectionWrapper">
+            <img class="cover" src="2x/AfricanGrasslands.png" alt="Almost 65 percent of Africa is covered by grasslands, inclusing savannas.">
+            <section  class="leftBlock" id="intro">
+                <span class="callout">Almost 65% of Africa is covered by grasslands, including savannas.</span>
+                <p>The savanna biome is a tropical grassland with warm temperatures year-round and seasonal rainfall in the summer. 
+                    It is characterized by grasses and dispersed trees that do not form a closed canopy, allowing sunlight to reach the ground. 
+                    The African savanna contains a diverse community of organisms that interact to form a complex food web.</p>
+            </section>
+        </section>
+    
+        <div class="cardSectionWrapper displayNone">
+            <section class="cardSection">
+            
+                <!-- PRODUCERS -->
+
+                <article class="card omnivore" id="ostrich">
+                    <div class="front">
+                        <div class="img-container">
+                            <img src="2x/ostrich.png" alt="ostrich">
+                        </div>
+                    </div>
+                    <div class="back hide">
+                        <h3>Ostrich</h3>
+                        <button class="close">╳</button>
+                        <p>These flightless birds are the largest birds in the world. They feed on grasses, shrubbery, berries, seeds, and succulents. They also eat insects and small reptiles — which they chase in an awkward zigzag pattern. </p>
+                    </div>
+                </article>
+                
+                <article class="card producer" id="sickleBush">
+                    <div class="front">
+                        <div class="img-container">
+                            <img src="2x/sickleBush.png" alt="Grass">
+                        </div>
+                    </div>
+                    <div class="back hide">
+                        <h3>Sickle bush</h3>
+                        <button class="close">╳</button>
+                        <p>Sickle bush is a flowering shrub know for producing fruit an seeds. Many herbivores eat the plaint's juicy pods which fall on the ground. Such animals also feed on the shrub's immature twigs, and leaves.</p>
+                    </div>
+                </article>
+
+                <article class="card secondaryConsumer" id="lannerFalcon">
+                    <div class="front">
+                        <div class="img-container">
+                            <img src="2x/lannerFalcon.png" alt="Lanner falcon">
+                        </div>
+                    </div>
+                    <div class="back hide">
+                        <h3>Lanner falcon</h3>
+                        <button class="close">╳</button>
+                        <p>Lanner falcons are medium-sized birds of prey. They mostly feed on smaller birds, but also feed on lizards, rodents, and bats. Lanner falcons require large open or lightly wooded hunting areas, as well as rocky formations such as cliffs for nesting.</p>
+                    </div>
+                </article>
+
+                <article class="card decomposer" id="bacteria">
+                    <div class="front">
+                        <div class="img-container">
+                            <img src="2x/bacteria.png" alt="bacteria">
+                        </div>
+                    </div>
+                    <div class="back hide">
+                        <h3>Bacteria</h3>
+                        <button class="close">╳</button>
+                        <p>Bacteria are key decomposers of any biome, their large numbers allow them to widely colonize a habitat's soil. Bacteria often flourish in savannas where temperatures tend to remain above 25 degrees Celsius.</p>
+                    </div>
+                </article>
+    
+                
+    
+                <!-- PRIMARY CONSUMERS -->
+    
+                <article class="card primaryConsumer" id="antelope">
+                    <div class="front">
+                        <div class="img-container">
+                            <img src="2x/antelope.png" alt="Antelope">
+                        </div>
+                    </div>
+                    <div class="back hide">
+                        <h3>Roan antelope</h3>
+                        <button class="close">╳</button>
+                        <p>Roan antelope associate in herds of up to 35 and eat mostly grass. They must drink regularly and inhabit areas where water is easily accessible. They can be identified by their a black-and-white clown-like facemask, which is darker in males than females.</p>
+                    </div>
+                </article>
+
+                <article class="card omnivore" id="jackal">
+                    <div class="front">
+                        <div class="img-container">
+                            <img src="2x/jackal.png" alt="jackal">
+                        </div>
+                    </div>
+                    <div class="back hide">
+                        <h3>Jackal</h3>
+                        <button class="close">╳</button>
+                        <p>Jackals are best described as opportunistic omnivores. They hunt small antelopes in packs and also eat reptiles, insects, ground-dwelling birds, fruits, berries, and grass. They'll even pick over kills made by large carnivores.</p>
+                    </div>
+                </article>
+    
+                <article class="card primaryConsumer" id="hare">
+                    <div class="front">
+                        <div class="img-container">
+                            <img src="2x/hare.png" alt="Hare">
+                        </div>
+                    </div>
+                    <div class="back hide">
+                        <h3>African hare</h3>
+                        <button class="close">╳</button>
+                        <p>Hares spend most of the day lying in a “form”—a depression in the ground or under bushes.  They do not dig burrows like rabbits do. Instead, they use dens or burrows already made by warthogs or aardvark. Hares eat leaves, buds, roots, fungi, bark, and twigs. </p>
+                    </div>
+                </article>
+
+                
+
+                <article class="card insectivore" id="aardvark">
+                    <div class="front">
+                        <div class="img-container">
+                            <img src="2x/aardvark.png" alt="aardvark">
+                        </div>
+                    </div>
+                    <div class="back hide">
+                        <h3>Aardvark</h3>
+                        <button class="close">╳</button>
+                        <p>Aardvarks are solitary mammals,  leaving their burrows at night to forage for termites or mate. They belong to the same group of mammals as elephants and have no relation to anteaters despite their similar appearance. </p>
+                    </div>
+                </article>
+    
+                <article class="card primaryConsumer" id="springhare">
+                    <div class="front">
+                        <div class="img-container">
+                            <img src="2x/springhare.png" alt="Hare">
+                        </div>
+                    </div>
+                    <div class="back hide">
+                        <h3>Springhare</h3>
+                        <button class="close">╳</button>
+                        <p>These unusual hares looks like a cross between a kangaroo and a rabbit. They have large back legs that help them to make gigantic leaps, using their long tail for balance. Their much smaller forelimbs have very sharp claws, which they use to dig burrows. </p>
+                    </div>
+                </article>
+
+                <article class="card decomposer" id="termite">
+                    <div class="front">
+                        <div class="img-container">
+                            <img src="2x/termite.png" alt="termite">
+                        </div>
+                    </div>
+                    <div class="back hide">
+                        <h3>Termite</h3>
+                        <button class="close">╳</button>
+                        <p>Like ants, termites live in large hierarchical colonies consisting of workers, soldiers and reproductives, including the king and queen. They build large mounds and help aerate the soil allowing plants to flourish. The feed on decaying plant matter. </p>
+                    </div>
+                </article>
+    
+                <article class="card primaryConsumer" id="lovebird">
+                    <div class="front">
+                        <div class="img-container">
+                            <img src="2x/lovebird.png" alt="Hare">
+                        </div>
+                    </div>
+                    <div class="back hide">
+                        <h3>Lovebird</h3>
+                        <button class="close">╳</button>
+                        <p>These brightly-colored small parrots eat seeds and grains. They have to drink often, so they tend to live near water. The lovebird is named for the strong bonds formed between mating pairs. These birds mate for life and are monogamous.</p>
+                    </div>
+                </article>
+    
+                <article class="card primaryConsumer" id="africanBuffalo">
+                    <div class="front">
+                        <div class="img-container">
+                            <img src="2x/africanBuffalo.png" alt="African buffalo">
+                        </div>
+                    </div>
+                    <div class="back hide">
+                        <h3>African Buffalo</h3>
+                        <button class="close">╳</button>
+                        <p>Savanna buffaloes are heavy cow-like animals with large curved horns. They live in herds of a few hundred to protect from predators, but have been known to congregate in the thousands during the rainy season.</p>
+                    </div>
+                </article>
+
+                <article class="card producer" id="grass">
+                    <div class="front">
+                        <div class="img-container">
+                            <img src="2x/grass.png" alt="Grass">
+                        </div>
+                    </div>
+                    <div class="back hide">
+                        <h3>Grass</h3>
+                        <button class="close">╳</button>
+                        <p>There are many types of grasses in the savanna, such as Rhodes grass, red oats grass and lemon grass. The Bermuda grass used in landscaping is native to the African savanna as is elephant grass, which can grow 3 meters tall.</p>
+                    </div>
+                </article>                
+    
+                <article class="card primaryConsumer" id="giraffe">
+                    <div class="front">
+                        <div class="img-container">
+                            <img src="2x/giraffe.png" alt="Hare">
+                        </div>
+                    </div>
+                    <div class="back hide">
+                        <h3>Giraffe</h3>
+                        <button class="close">╳</button>
+                        <p>Giraffes are the world’s tallest mammals. They are uniquely adapted to reach vegetation inaccessible to other herbivores. They feed sixteen to twenty hours a day. Acacia trees have been found to be their favorite food source.</p>
+                    </div>
+                </article>
+
+                <article class="card omnivore" id="hyena">
+                    <div class="front">
+                        <div class="img-container">
+                            <img src="2x/hyena.png" alt="hyena">
+                        </div>
+                    </div>
+                    <div class="back hide">
+                        <h3>Hyena</h3>
+                        <button class="close">╳</button>
+                        <p>These carnivores are one of Africa’s top predators. However, they aren't primarily scavengers. About 70 percent of their diet is composed of direct kills. They consume animals of various types and sizes, carrion, bones, and other animal droppings.</p>
+                    </div>
+                </article>
+
+                <article class="card producer" id="acaciaTree">
+                    <div class="front">
+                        <div class="img-container">
+                            <img src="2x/AcaciaTree.png" alt="Grass">
+                        </div>
+                    </div>
+                    <div class="back hide">
+                        <h3>Acacia tree</h3>
+                        <button class="close">╳</button>
+                        <p>The acacia tree uses its long tap roots draw water from deep below the surface during the dry season. Its long thorns are home to small stinging ants, both of which ward off many herbivores. Only the giraffe can tolerate the acacia foliage.</p>
+                    </div>
+                </article>
+    
+                <article class="card primaryConsumer" id="elephant">
+                    <div class="front">
+                        <div class="img-container">
+                            <img src="2x/elephant.png" alt="Elephant">
+                        </div>
+                    </div>
+                    <div class="back hide">
+                        <h3>Elephant</h3>
+                        <button class="close">╳</button>
+                        <p>Elephants are the world’s largest land mammals. Their long trunks are used for breathing, smelling, drinking, trumpeting, and grabbing objects. They spend the majority of their day roaming across large distances to forage for grasses, roots, and bark.</p>
+                    </div>
+                </article>
+
+                <article class="card decomposer" id="beetle">
+                    <div class="front">
+                        <div class="img-container">
+                            <img src="2x/beetle.png" alt="beetle">
+                        </div>
+                    </div>
+                    <div class="back hide">
+                        <h3>Dung beetle</h3>
+                        <button class="close">╳</button>
+                        <p>Once dung beetles find a supply of dung, they roll it into balls and move it away to avoid competition with other dung beetles. They bury their balls of dung and lay eggs in them, providing a stable food supply for their growing larva.</p>
+                    </div>
+                </article>
+    
+                <article class="card primaryConsumer" id="impala">
+                    <div class="front">
+                        <div class="img-container">
+                            <img src="2x/impala.png" alt="Impala">
+                        </div>
+                    </div>
+                    <div class="back hide">
+                        <h3>Impala</h3>
+                        <button class="close">╳</button>
+                        <p>Able to both graze and browse, the impala has a greater and more reliable food supply than animals that do either one or the other. It eats young grass shoots in the rainy season and herbs and shrubs at other times.</p>
+                    </div>
+                </article>
+    
+                <article class="card primaryConsumer" id="zebra">
+                    <div class="front">
+                        <div class="img-container">
+                            <img src="2x/zebra.png" alt="Zebra">
+                        </div>
+                    </div>
+                    <div class="back hide">
+                        <h3>Zebra</h3>
+                        <button class="close">╳</button>
+                        <p>Zebras look like horses but with a mane of short straight hair and iconic black and white stripes. Every year, hundreds of thousands of zebras migrate 2,900 kilometers from Tanzania’s Serengeti plains, north to Kenya to find food and water.</p>
+                    </div>
+                </article>
+
+                <article class="card secondaryConsumer" id="mongoose">
+                    <div class="front">
+                        <div class="img-container">
+                            <img src="2x/mongoose.png" alt="mongoose">
+                        </div>
+                    </div>
+                    <div class="back hide">
+                        <h3>Mongoose</h3>
+                        <button class="close">╳</button>
+                        <p>Mongooses eat small rodents, reptiles, young birds, eggs, termites, grasshoppers, beetles, and spiders. They live in female-dominated groups of 12 to 15 and spend most of the day looking for food among the brush, leaves, and rocks.</p>
+                    </div>
+                </article>
+    
+                <article class="card primaryConsumer" id="wildebeest">
+                    <div class="front">
+                        <div class="img-container">
+                            <img src="2x/wildebeest.png" alt="Wildebeest">
+                        </div>
+                    </div>
+                    <div class="back hide">
+                        <h3>Wildebeest</h3>
+                        <button class="close">╳</button>
+                        <p>Wildebeest are large antelopes with box-like heads and curving horns. They migrate long distances seeking grass and water. By the end of the dry season, the Serengeti wildebeest have exhausted the grazing lands, returning home as the rains begin.</p>
+                    </div>
+                </article>
+    
+                <article class="card primaryConsumer" id="warthog">
+                    <div class="front">
+                        <div class="img-container">
+                            <img src="2x/warthog.png" alt="Warthog">
+                        </div>
+                    </div>
+                    <div class="back hide">
+                        <h3>Warthog</h3>
+                        <button class="close">╳</button>
+                        <p>Warthogs are tough, sturdy animals with large heads and “warts”—thick protective pads on both sides of their heads. They kneel on their calloused, padded knees to eat short grass and use their snouts and tusks to dig for bulbs, tubers, and roots.</p>
+                    </div>
+                </article>
+    
+                <article class="card primaryConsumer" id="grasshopper">
+                    <div class="front">
+                        <div class="img-container">
+                            <img src="2x/grasshopper.png" alt="Grasshopper">
+                        </div>
+                    </div>
+                    <div class="back hide">
+                        <h3>Grasshopper</h3>
+                        <button class="close">╳</button>
+                        <p>Grasshoppers are plant-eating insects. They eat some plants, allowing others to flourish, helping diversity stay in balance. Grasshoppers are a good food source for small predators.</p>
+                    </div>
+                </article>
+    
+                <!-- SECONDARY CONSUMERS -->
+    
+                <article class="card secondaryConsumer" id="leopard">
+                    <div class="front">
+                        <div class="img-container">
+                            <img src="2x/leopard.png" alt="leopard">
+                        </div>
+                    </div>
+                    <div class="back hide">
+                        <h3>Leopard</h3>
+                        <button class="close">╳</button>
+                        <p>These powerful carnivores are covered in dark, irregular spots called rosettes. These spots are circular in east African leopards, but square in southern African leopards. They spend much of their time in trees even when stalking prey or eating.</p>
+                    </div>
+                </article>
+    
+                
+    
+                <article class="card secondaryConsumer" id="lion">
+                    <div class="front">
+                        <div class="img-container">
+                            <img src="2x/lion.png" alt="lion">
+                        </div>
+                    </div>
+                    <div class="back hide">
+                        <h3>Lion</h3>
+                        <button class="close">╳</button>
+                        <p>Lions commonly eat antelope, zebra, and wildebeests but scavenged food provides more than 50 percent of their diets. Cooperative hunting enables them to take down prey as large as buffaloes, rhinos, hippos, and giraffes.</p>
+                    </div>
+                </article>
+    
+                
+    
+                <!-- OMNIVORES -->
+    
+                <article class="card omnivore" id="ant">
+                    <div class="front">
+                        <div class="img-container">
+                            <img src="2x/ant.png" alt="ant">
+                        </div>
+                    </div>
+                    <div class="back hide">
+                        <h3>Ant</h3>
+                        <button class="close">╳</button>
+                        <p>Africa contains many ant species. Ants live large colonies containing a queen, workers (female offspring of the queen), and soldiers (male offspring). Most ants are herbivores, but some—like the Driver ant—feed on other insects and small animals. </p>
+                    </div>
+                </article>
+    
+
+    
+                
+    
+                <article class="card omnivore" id="guineaFowl">
+                    <div class="front">
+                        <div class="img-container">
+                            <img src="2x/guineaFowl.png" alt="guineaFowl">
+                        </div>
+                    </div>
+                    <div class="back hide">
+                        <h3>Guinea fowl</h3>
+                        <button class="close">╳</button>
+                        <p>Guineafowl form flocks of up to 25 birds. Their diet consists of a variety of animal and plant food; seeds, fruits, greens, snails, spiders, worms and insects, lizards, snakes and small mammals.</p>
+                    </div>
+                </article>
+
+                <article class="card scavenger" id="white-backedVulture">
+                    <div class="front">
+                        <div class="img-container">
+                            <img src="2x/white-backedVulture.png" alt="white-backed vulture">
+                        </div>
+                    </div>
+                    <div class="back hide">
+                        <h3>White-backed <br>vulture</h3>
+                        <button class="close">╳</button>
+                        <p>Unique adaptations make these birds one of the most successful scavengers in Africa. Strong eyesight enables them to detect potential meals from high above and Low acidity in their stomachs help digest rotting meat.</p>
+                    </div>
+                </article>
+    
+                <article class="card omnivore" id="baboon">
+                    <div class="front">
+                        <div class="img-container">
+                            <img src="2x/baboon.png" alt="baboon">
+                        </div>
+                    </div>
+                    <div class="back hide">
+                        <h3>Baboon</h3>
+                        <button class="close">╳</button>
+                        <p>Baboons are some of the world’s largest monkeys. They are omnivorous and will eat just about anything. Grass makes up a large part of their diet, along with food from a variety of plants. They also eat insects and small quantities of meat.</p>
+                    </div>
+                </article>
+    
+                <!-- SCAVENGERS -->
+    
+                
+    
+                
+    
+                <!-- INSECTIVORES -->
+    
+                
+    
+                <article class="card insectivore" id="skink">
+                    <div class="front">
+                        <div class="img-container">
+                            <img src="2x/skink.png" alt="aardvark">
+                        </div>
+                    </div>
+                    <div class="back hide">
+                        <h3>Striped skink</h3>
+                        <button class="close">╳</button>
+                        <p>The striped skink is a medium sized lizard, characterized by a pale stripe running down each of its sides. They also have a transparent window in each lower eyelid and lobed ears. Their diet consists of small insects such as moths, beetles and termites.</p>
+                    </div>
+                </article>
+    
+                <!-- DECOMPOSERS -->
+    
+              
+
+                
+    
+                <article class="card decomposer" id="fungi">
+                    <div class="front">
+                        <div class="img-container">
+                            <img src="2x/fungi.png" alt="Fungi">
+                        </div>
+                    </div>
+                    <div class="back hide">
+                        <h3>Fungi</h3>
+                        <button class="close">╳</button>
+                        <p>Because the African savanna has a very arid climate, there is less fungal growth than in damper areas. But, there are still some fungi that grow in the savanna such as turkey tail mushrooms, crimson cup fungi, and sulfur shelf fungi.</p>
+                    </div>
+                </article>
+    
+                
+    
+            </section>
+        </div>
+        
+        <div class="diagramSectionWrapper displayNone">
+            <section  class="leftBlock" id="intro">
+                <span class="callout">Maintaining balance in the savanna.</span>
+                <p>A community is a group of organisms interacting in the same environment. A food web shows how these organisms are linked in order of the food they eat, from producers to consumers, prey to predators, and scavengers to decomposers. The arrows in a food web represent the flow of energy and matter between organisms. In most ecosystems, organisms can get food and energy from many sources, and may have many predators.</p>
+                <ul>
+                    <li class=legendProducers>Producers</li>
+                    <li class=legendHerbivores>Herbivores</li>
+                    <li class=legendPredators>Predators</li>
+                    <li class=legendInsectivores>Insectivores</li>
+                </ul>
+                <ul>
+                    <li class=legendOmnivores>Omnivores</li>
+                    <li class=legendScavengers>Scavengers</li>
+                    <li class=legendDecomposers>Decomposers</li>
+                </ul>
+            </section>
+            <iframe id="anychart-iframe-embed-27VeNmgL" src="about:blank" frameBorder="0" class="anychart-embed anychart-embed-27VeNmgL"></iframe>
+            <script type="text/javascript">(function(){
+            function ac_add_to_head(el){
+                var head = document.getElementsByTagName('head')[0];
+                head.insertBefore(el,head.firstChild);
+            }
+            function ac_add_style(css){
+                var ac_style = document.createElement('style');
+                if (ac_style.styleSheet) ac_style.styleSheet.cssText = css;
+                else ac_style.appendChild(document.createTextNode(css));
+                ac_add_to_head(ac_style);
+            }
+            ac_add_style(".anychart-embed-27VeNmgL{width:600px;height:450px;}");
+            var doc = document.getElementById('anychart-iframe-embed-27VeNmgL').contentWindow.document;
+            doc.open();
+            doc.write("<!DOCTYPE html><html lang=\"en\"><head><meta charset=\"UTF-8\" \/><meta content=\"IE=edge\" http-equiv=\"X-UA-Compatible\" \/><meta content=\"width=device-width, initial-scale=1\" name=\"viewport\" \/><title>BCT Network Graph 12<\/title><link href=\"https:\/\/playground.anychart.com\/27VeNmgL\/iframe\" rel=\"canonical\" \/><meta content=\"Tooltip\" name=\"keywords\" \/><meta content=\"AnyChart - JavaScript Charts designed to be embedded and integrated\" name=\"description\" \/><!--[if lt IE 9]>\n<script src=\"https:\/\/oss.maxcdn.com\/html5shiv\/3.7.3\/html5shiv.min.js\"><\/script>\n<script src=\"https:\/\/oss.maxcdn.com\/respond\/1.4.2\/respond.min.js\"><\/script>\n<![endif]--><link href=\"https:\/\/cdn.anychart.com\/releases\/8.7.1\/css\/anychart-ui.min.css?hcode=a0c21fc77e1449cc86299c5faa067dc4\" rel=\"stylesheet\" type=\"text\/css\" \/><style>@import url('https:\/\/fonts.googleapis.com\/css?family=Didact+Gothic|Space+Mono&display=swap');\n\nhtml, body, #container {\n    width: 100%;\n    height: 100%;\n    margin: 0;\n    padding: 0;\n}\n\n\n\n.anychart-tooltip {\n  border-radius: 0;\n  padding: 10px 15px;\n  background: #ecebea;\n  border: none;\n  display: inline-block;\n  box-sizing: border-box;\n  letter-spacing: normal;\n  color: #5a5a5c;\n  font-family: 'Space Mono', monospace;\n  font-size: 14px;\n  position: absolute;\n  pointer-events: none;\n  white-space: nowrap;\n  margin: 10px;\n  border-radius: 6px;\n}\n\n.anychart-tooltip span {\n  font-family: 'Didact Gothic', sans-serif;\n}\n\n.anychart-tooltip-separator {\n  color: rgba(206, 206, 206, 0.3);\n  border: none;\n  height: 1px;\n  margin: 5px 0;\n}\n\n.anychart-tooltip-title{\n  font-size: 14px;\n}\n\n<\/style><\/head><body><div id=\"container\"><\/div><script src=\"https:\/\/cdn.anychart.com\/releases\/8.7.1\/js\/anychart-core.min.js?hcode=a0c21fc77e1449cc86299c5faa067dc4\"><\/script><script src=\"https:\/\/cdn.anychart.com\/releases\/8.7.1\/js\/anychart-graph.min.js?hcode=a0c21fc77e1449cc86299c5faa067dc4\"><\/script><script src=\"https:\/\/cdn.anychart.com\/releases\/8.7.1\/js\/anychart-exports.min.js?hcode=a0c21fc77e1449cc86299c5faa067dc4\"><\/script><script src=\"https:\/\/cdn.anychart.com\/releases\/8.7.1\/js\/anychart-ui.min.js?hcode=a0c21fc77e1449cc86299c5faa067dc4\"><\/script><script type=\"text\/javascript\">anychart.onDocumentReady(function () {\n\n    \/\/ create data\n    var data = {\n      nodes: [\n        {id: \"Detritus\", group: \"Other\",},\n        {id: \"Seeds\", group: \"Other\",},\n        {id: \"Water\", group: \"Other\"},\n        {id: \"Soil\", group: \"Other\"},\n        {id: \"Feces\", group: \"Other\"},\n        {id: \"Carrion\", group: \"Other\"},\n        \n        {id: \"Grasshopper\", group: \"Primary consumer\"},\n        {id: \"Warthog\", group: \"Primary consumer\"},\n        {id: \"Wildebeest\", group: \"Primary consumer\"},\n        {id: \"Zebra\", group: \"Primary consumer\"},\n        {id: \"Impala\", group: \"Primary consumer\"},\n        {id: \"Elephant\", group: \"Primary consumer\"},\n        {id: \"Giraffe\", group: \"Primary consumer\"},\n        {id: \"African buffalo\", group: \"Primary consumer\"},\n        {id: \"Lovebird\", group: \"Primary consumer\"},\n        {id: \"Springhare\", group: \"Primary consumer\"},\n         {id: \"Hare\", group: \"Primary consumer\"},\n        {id: \"Antelope\", group: \"Primary consumer\"},\n        {id: \"Grass rat\", group: \"Primary consumer\"},\n        \n        {id: \"Ant\", group: \"Omnivore\"},\n        {id: \"Ostrich\", group: \"Omnivore\"},\n        {id: \"Jackal\", group: \"Omnivore\"},\n        {id: \"Guinea fowl\", group: \"Omnivore\"},\n        {id: \"Baboon\", group: \"Omnivore\"},\n        \n        {id: \"Termite\", group: \"Decomposer\"},\n        {id: \"Bacteria\", group: \"Decomposer\"},\n        {id: \"Fungi\", group: \"Decomposer\"},\n        {id: \"Beetle\", group: \"Decomposer\"},\n        \n        {id: \"White-backed vulture\", group: \"Scavenger\"},\n        \n        {id: \"Grass\", group: \"Producer\",},\n        {id: \"Sickle bush\", group: \"Producer\",},\n        {id: \"Acacia tree\", group: \"Producer\"},\n        \n        {id: \"Leopard\", group: \"Secondary consumer\"},\n        {id: \"Mongoose\", group: \"Secondary consumer\"},\n        {id: \"Lion\", group: \"Secondary consumer\"},\n        {id: \"Hyena\", group: \"Secondary consumer\"},\n        {id: \"Lanner falcon\", group: \"Secondary consumer\"},\n        \n        {id: \"Aardvark\", group: \"Insectivore\"},\n        {id: \"Skink\", group: \"Insectivore\"},\n        \n        \n      ],\n      edges: [\n        {from: \"Seeds\", to: \"Water\"},\n        {from: \"Seeds\", to: \"Soil\"},\n        {from: \"Grass\", to: \"Sunlight\"},\n        {from: \"Grass\", to: \"Water\"},\n        {from: \"Grass\", to: \"Soil\"},\n        {from: \"Sickle bush\", to: \"sunlight\"},\n        {from: \"Sickle bush\", to: \"water\"},\n        {from: \"Sickle bush\", to: \"Soil\"},\n        {from: \"Acacia tree\", to: \"Sunlight\"},\n        {from: \"Acacia tree\", to: \"Water\"},\n        {from: \"Acacia tree\", to: \"Spoil\"},\n        {from: \"Grasshopper\", to: \"Grass\"},\n        {from: \"Grasshopper\", to: \"Sickle bush\"},\n        {from: \"Grasshopper\", to: \"Acacia tree\"},\n        {from: \"Ant\", to: \"Seeds\"},\n        {from: \"Ant\", to: \"Grass\"},\n        {from: \"Ant\", to: \"Sickle bush\"},\n        {from: \"Ant\", to: \"Acacia tree\"},\n        {from: \"Ant\", to: \"Carrion\"},\n        {from: \"Ant\", to: \"Detritus\"},\n        {from: \"Beetle\", to: \"Fungi\"},\n        {from: \"Beetle\", to: \"Detritus\"},\n        {from: \"Beetle\", to: \"Feces\"},\n        {from: \"Termite\", to: \"Detritus\"},\n        {from: \"Warthog\", to: \"Grass\"},\n        {from: \"Wildebeest\", to: \"Grass\"},\n        {from: \"Zebra\", to: \"Grass\"},\n        {from: \"Impala\", to: \"Grass\"},\n        {from: \"Elephant\", to: \"Grass\"},\n        {from: \"Elephant\", to: \"Sickle bush\"},\n        {from: \"Giraffe\", to: \"Acacia tree\"},\n        {from: \"Hyena\", to: \"Carrion\"},\n        {from: \"Hyena\", to: \"Feces\"},\n        {from: \"Hyena\", to: \"Antelope\"},\n        {from: \"Hyena\", to: \"Guineafowl\"},\n        {from: \"Hyena\", to: \"Impala\"},\n        {from: \"Hyena\", to: \"Warthog\"},\n        {from: \"Hyena\", to: \"Grass rat\"},\n        {from: \"Leopard\", to: \"Carrion\"},\n        {from: \"Leopard\", to: \"Skink\"},\n        {from: \"Leopard\", to: \"Guinea fowl\"},\n        {from: \"Leopard\", to: \"Grass rat\"},\n        {from: \"Leopard\", to: \"Hare\"},\n        {from: \"Leopard\", to: \"Warthog\"},\n        {from: \"Leopard\", to: \"Antelope\"},\n        {from: \"Leopard\", to: \"Baboon\"},\n        {from: \"Leopard\", to: \"African buffalo\"},\n        {from: \"Lion\", to: \"Carrion\"},\n        {from: \"Lion\", to: \"Antelope\"},\n        {from: \"Lion\", to: \"Wildebeest\"},\n        {from: \"Lion\", to: \"African buffalo\"},\n        {from: \"Lion\", to: \"Zebra\"},\n        {from: \"Aardvark\", to: \"Termite\"},\n        {from: \"Aardvark\", to: \"Termite\"},\n        {from: \"Bacteria\", to: \"Detritus\"},\n        {from: \"Bacteria\", to: \"Carrion\"},\n        {from: \"Fungi\", to: \"Detritus\"},\n        {from: \"White-backed vulture\", to: \"Carrion\"},\n        {from: \"Ostrich\", to: \"Grass\"},\n        {from: \"Ostrich\", to: \"Sickle bush\"},\n        {from: \"Ostrich\", to: \"Grasshopper\"},\n        {from: \"Ostrich\", to: \"Beetle\"},\n        {from: \"Ostrich\", to: \"Skink\"},\n        {from: \"Ostrich\", to: \"Seeds\"},\n        {from: \"African buffalo\", to: \"Grass\"},\n        {from: \"Jackal\", to: \"Carrion\"},\n        {from: \"Jackal\", to: \"Antelope\"},\n        {from: \"Jackal\", to: \"Springhare\"},\n        {from: \"Jackal\", to: \"Beetle\"},\n        {from: \"Jackal\", to: \"Grass\"},\n        {from: \"Lovebird\", to: \"Seeds\"},\n        {from: \"Mongoose\", to: \"Grass rat\"},\n        {from: \"Mongoose\", to: \"Skink\"},\n        {from: \"Mongoose\", to: \"Termite\"},\n        {from: \"Mongoose\", to: \"Grasshopper\"},\n        {from: \"Mongoose\", to: \"Beetle\"},\n        {from: \"Mongoose\", to: \"Springhare\"},\n        {from: \"Guinea fowl\", to: \"Seeds\"},\n        {from: \"Guinea fowl\", to: \"Grass\"},\n        {from: \"Guinea fowl\", to: \"Grasshopper\"},\n        {from: \"Guinea fowl\", to: \"Ant\"},\n        {from: \"Guinea fowl\", to: \"Termite\"},\n        {from: \"Guinea fowl\", to: \"Beetle\"},\n        {from: \"Guinea fowl\", to: \"Skink\"},\n        {from: \"Springhare\", to: \"Grass\"},\n        {from: \"Springhare\", to: \"Sickle bush\"},\n        {from: \"Hare\", to: \"Fungi\"},\n        {from: \"Hare\", to: \"Grass\"},\n        {from: \"Hare\", to: \"Sickle bush\"},\n        {from: \"Antelope\", to: \"Grass\"},\n        {from: \"Baboon\", to: \"Grass\"},\n        {from: \"Baboon\", to: \"Seeds\"},\n        {from: \"Baboon\", to: \"Sickle bush\"},\n        {from: \"Baboon\", to: \"Grasshopper\"},\n        {from: \"Baboon\", to: \"Beetle\"},\n        {from: \"Baboon\", to: \"Ant\"},\n        {from: \"Baboon\", to: \"Termite\"},\n        {from: \"Baboon\", to: \"Hare\"},\n        {from: \"Skink\", to: \"Grasshopper\"},\n        {from: \"Skink\", to: \"Beetle\"},\n        {from: \"Skink\", to: \"Ant\"},\n        {from: \"Skink\", to: \"Termite\"},\n        {from: \"Grass rat\", to: \"Seeds\"},\n        {from: \"Grass rat\", to: \"Grass\"},\n        {from: \"Grass rat\", to: \"Sickle bush\"},\n        {from: \"Lanner falcon\", to: \"Lovebird\"},\n        {from: \"Soil\", to: \"Bacteria\"},\n        {from: \"Soil\", to: \"Fungi\"},\n        {from: \"Soil\", to: \"Detritus\"},\n      ]\n    };\n  	\n  	\n\n    \/\/ create a chart and set the data\n    var chart = anychart.graph(data);\n\n    \/\/ prevent zooming the chart with the mouse wheel\n    chart.interactivity().zoomOnMouseWheel(false);\n  \n  	chart.layout().iterationCount(500);\n  \n  	chart.interactivity().enabled(false);\n  \n  	chart.background().fill(\"#f8f9fa\");\n  \n  	chart.rotation(125)\n    \n    \/\/ enable labels of nodes\n    chart.nodes().labels().enabled(false);\n  \n  	chart.nodes().stroke('2 #f8f9fa');\n  	chart.nodes().height('30');\n  	chart.nodes().hovered().stroke('1.5 #5d585b');\n  \n  	chart.edges().normal().stroke(\"rgba(93, 88, 91, .05)\", 1.5);\n	chart.edges().hovered().stroke(\"#5d585b\", 1.5);\n	chart.edges().selected().stroke(\"#5d585b\", 1.5);\n  \n\n    \/\/ configure labels of nodes in groups\n  	chart.group(\"Other\").fill(\"#d9d9d9\"); \n  	chart.group(\"Producer\").fill(\"#c5e0a9\");\n  	chart.group(\"Primary consumer\").fill(\"#80d0d8\");\n  	chart.group(\"Secondary consumer\").fill(\"#f26960\");\n  	chart.group(\"Omnivore\").fill(\"#cda0aa\");\n  	chart.group(\"Scavenger\").fill(\"#ae96c7\");\n  	chart.group(\"Insectivore\").fill(\"#88cdb5\");\n  	chart.group(\"Decomposer\").fill(\"#94a98b\");\n  	\n  	\n    \n\n    \/\/ configure tooltips of nodes\n    chart.nodes().tooltip().useHtml(true);\n    chart.nodes().tooltip().format(\n      \"<span style='font-size:1.25rem;'>{%id}<\/span>\"\n    );\n  \n  	\n\n    \/\/ configure tooltips of edges\n  	chart.edges().tooltip().useHtml(true);\n    chart.edges().tooltip().format(\"{%to} → {%from}\");\n\n    \/\/ set the chart title\n    chart.title(\"\");\n\n    \/\/ set the container id\n    chart.container(\"container\");\n  \n  	\n\n    \/\/ initiate drawing the chart\n    chart.draw();\n});<\/script><\/body><\/html>");
+            doc.close();
+            })();</script>
+        </div>
+    </section>
+    <script src="flashCards.js"></script>
+</body>
+</html>
