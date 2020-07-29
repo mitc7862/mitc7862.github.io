@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>The HUM</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="css/style.css" rel="stylesheet">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    </head>
+    <style>
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            padding: 0px;
+            margin: 0px;
+            height: 5260px;
+            background-color: #011222;
+        } 
+
+        .container {
+            background-image: url(./HumBody.png);
+            background-position: top center;
+            width: 100%;
+        }
+
+        .container div {
+            height: 5260px;
+            margin-top: 30px;
+        }
+
+        header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            height: 61px;
+            width: 100%;
+            background-image: url(./HumHeader.png);
+            background-position: top left;
+            z-index: 1;
+        }
+
+        nav {
+            width: 50%;
+            height: 100%;
+            background-image: url(./HumHeader.png);
+            background-position: top right;
+            float:right;
+        }
+
+        .header.hide {
+            opacity: 0;
+            transform: translateY(-61px);
+            transition: all .5s ease;
+        }
+
+        .header.show {
+            opacity: 1;
+            transform: translateX(0px);
+            transition: all .5s ease;
+        }
+
+        svg {
+            position: absolute;
+            top: 225px;
+            left: 0;
+            width: 100%;
+        }
+
+        .freq3 {
+            animation: freq 320s linear infinite;
+        }
+
+        .freq2 {
+            animation: freqRev 160s linear infinite;
+        }
+
+        .freq1 {
+            animation: freq 80s linear infinite;
+        }
+
+        @keyframes freq {
+            0% {
+                transform: translateX(0px);
+            }
+            50% {
+                transform: translateX(-7418px) translateX(100vw);
+            }
+            
+        }
+
+        @keyframes freqRev {
+            0% {
+                transform: translateX(-7418px) translateX(100vw);
+            }
+            50% {
+                transform: translateX(0px);
+            }
+            
+        }
+
+    
+    </style>
+    <body>
+        <header class="header hide">
+            <nav></nav>
+        </header>
+        <article class="scroll-space">
+            <div class="container"><div></div></div>
+        </article>
+
+        <!-- width="7418" -->
+
+        <svg height="674" xmlns="http://www.w3.org/2000/svg">
+            <defs>
+                <linearGradient x1="0%" y1="50%" x2="100%" y2="50%" id="a">
+                    <stop stop-color="#01495E" offset="0%"/>
+                    <stop stop-color="#535185" offset="12.483%"/>
+                    <stop stop-color="#A558AC" offset="25.208%"/>
+                    <stop stop-color="#D25F87" offset="37.535%"/>
+                    <stop stop-color="#FF6661" offset="49.868%"/>
+                    <stop stop-color="#D25F87" offset="62.356%"/>
+                    <stop stop-color="#A558AC" offset="75.382%"/>
+                    <stop stop-color="#A558AC" offset="87.558%"/>
+                    <stop stop-color="#535185" offset="100%"/>
+                </linearGradient>
+            </defs>
+            <g transform="translate(0 1)" stroke="url(#a)" fill="none" fill-rule="evenodd">
+                <path class="freq1" d="M0 0c309.082 0 309.082 672 618.168 672 309.078 0 309.078-672 618.16-672 309.083 0 309.083 672 618.161 672 309.082 0 309.082-672 618.16-672 309.086 0 309.086 672 618.169 672 309.085 0 309.085-672 618.167-672 309.083 0 309.083 672 618.165 672 309.078 0 309.078-672 618.157-672 309.078 0 309.078 672 618.16 672 309.086 0 309.086-672 618.172-672 309.082 0 309.082 672 618.164 672 309.1 0 309.1-672 618.197-672"/>
+                <path class="freq2" d="M0 0c463.622 0 463.622 672 927.248 672C1390.87 672 1390.87 0 1854.49 0c463.626 0 463.626 672 927.248 672 463.622 0 463.622-672 927.252-672 463.614 0 463.614 672 927.232 672 463.622 0 463.622-672 927.244-672 463.637 0 463.637 672 927.266 672C6954.367 672 6954.367 0 7418 0"/>
+                <path class="freq3" d="M0 0c927.25 0 927.25 672 1854.497 672 927.25 0 927.25-672 1854.496-672 927.254 0 927.254 672 1854.504 672C6490.75 672 6490.75 0 7418 0"/>
+            </g>
+        </svg>
+        
+    
+    </body>
+    <script>
+        $(function() {
+            //caches a jQuery object containing the header element
+            var header = $(".header");
+            $(window).scroll(function() {
+                var scroll = $(window).scrollTop();
+
+                if (scroll >= 800) {
+                    header.removeClass('hide').addClass("show");
+                } else {
+                    header.removeClass("show").addClass('hide');
+                }
+            });
+        });
+    </script>
+</html>
