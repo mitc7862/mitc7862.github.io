@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="876px" height="52px" viewBox="0 0 876 52" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 63.1 (92452) - https://sketch.com -->
+    <title>Group 25</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="9.61490439%" y1="49.9840418%" x2="86.856539%" y2="50.010899%" id="linearGradient-1">
+            <stop stop-color="#FF6661" offset="0%"></stop>
+            <stop stop-color="#D25F87" offset="25.5463471%"></stop>
+            <stop stop-color="#A558AC" offset="57.635663%"></stop>
+            <stop stop-color="#535185" offset="82.4165963%"></stop>
+            <stop stop-color="#01495E" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Group-25">
+            <rect id="Rectangle" fill="#01182A" x="0" y="0" width="876" height="52"></rect>
+            <line x1="0.5" y1="0.5" x2="875.5" y2="0.5" id="Line-2-Copy-3" stroke="url(#linearGradient-1)" stroke-linecap="square"></line>
+        </g>
+    </g>
+</svg>

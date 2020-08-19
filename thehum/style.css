@@ -1,0 +1,685 @@
+
+
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&family=Work+Sans:ital,wght@0,300;0,400;0,600;0,700;0,900;1,300;1,400;1,600;1,700;1,900&display=swap');
+
+body {
+    background: #011222;
+    color: #829199;
+    font-family: 'Work Sans', sans-serif;
+    font-size: 1.25rem;
+    line-height: 1.875rem;
+    font-weight: 300;
+    margin: 0;
+}
+
+p a {
+    text-decoration: none;
+    color: #429CBC;
+    display: inline-block;
+    position: relative;
+}
+
+p a::before {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 1px;
+    background: #132D3D;
+    bottom: 1px;
+    left: 0;
+}
+
+p a::after {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 1px;
+    background: #429CBC;
+    bottom: 1px;
+    left: 0;
+    transform: scaleX(0);
+    transition: transform .2s ease;
+}
+
+p a:hover::after {
+    transform: scaleX(1);
+    transition: transform .2s ease;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: #D8E6EA;
+}
+
+#intro h2 {
+    font-size: 1.75rem;
+    color: #7977B6;
+    font-family: 'Libre Baskerville', serif;
+    font-weight: 400;
+    font-style: italic;
+    letter-spacing: 1px;
+    text-align: center;
+    margin-bottom: 8rem;
+    position: relative;
+}
+
+#intro p {
+    color: #829199;
+    font-family: 'Work Sans', sans-serif;
+    font-size: 1.25rem;
+    line-height: 1.875rem;
+    font-weight: 300;
+}
+
+#map {
+    padding: 4rem 0;
+}
+
+
+#viewDiv {
+    padding: 0;
+    margin-left: auto;
+    margin-right: auto;
+    height: 768px;
+    width: 1322px;
+}
+.esri-view .esri-view-surface--inset-outline:focus::after {
+    outline: solid 1px red !important;
+}
+
+.esri-widget--button {
+    background: greenyellow;
+}
+
+.esri-attribution {
+    background-color: black;
+    color: white;
+}
+
+#map .subhead {
+    display: block;
+    text-align: center;
+    font-family: 'Space Mono', monospace;
+    font-size: 1rem;
+    margin-bottom: 2rem;
+
+}
+
+h2 {
+    text-align: center;
+    font-size: 2.25rem;
+    color: #FF6661;
+    font-weight: 500;
+}
+
+#intro h2::after {
+    content:"";
+    display: block;
+    width: 1px;
+    height: 1380px;
+    position: absolute;
+    background: #132D3D;
+    pointer-events: none;
+    left: 49.7%;
+    top: 4rem;
+
+}
+
+#hero {
+    font-weight: 900;
+    text-transform: uppercase;
+    font-size: 20rem;
+    line-height: 16rem;
+    color: #FF6661;
+    position: relative;
+    z-index: 1;
+    
+}
+#hero span {
+    display: block;
+    text-align: center;
+}
+#hero span:last-child {
+    font-style: italic;
+    text-indent: 20rem;
+}
+
+#hero span:first-child {
+    text-indent: -30rem;
+}
+
+#editorial {
+    display: flex;
+    max-width: 980px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 9rem;
+}
+
+#editorial div {
+    margin: 1.2rem;
+}
+
+p .leader {
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: #FF6661;
+}
+
+#intro {
+    border-bottom: solid 1px #132D3D;
+    padding: 3rem 0;
+}
+
+#stats svg {
+}
+
+#stats {
+    max-width: 876px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 4rem 0;
+    overflow: visible;
+}
+
+#bigrams {
+    padding: 4rem 0;
+}
+
+.introContainer {
+    max-width: 1322px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    margin-bottom: -3rem;
+}
+
+.introContainer section {
+    width: calc(100% - 200px);
+}
+
+.introContainer section p {
+    width: 70%;
+}
+
+.introContainer ol {
+    list-style: none;
+    flex-grow: 4;
+    /* background: #01182A; */
+    font-size: 14px;
+    padding: 1rem;
+    margin: 0;
+}
+
+.introContainer ol li {
+    display: block;
+    line-height: 1.2rem;
+    width: 180px;
+}
+
+#group-A, #group-B, #group-C, #group-D, #group-E {
+    color: #D8E6EA;
+    padding: .5rem 0 .2rem 0;
+    border-bottom: solid 1px #fff;
+}
+
+#group-A {
+    border-bottom: solid 1px #01495E;
+}
+
+#group-B {
+    border-bottom: solid 1px #535185;
+}
+
+#group-C {
+    border-bottom: solid 1px #A558AC;
+}
+
+#group-D {
+    border-bottom: solid 1px #D25F87;
+
+}
+
+#group-E {
+    border-bottom: solid 1px #FF6661;
+
+}
+
+h3 {
+    color: #D8E6EA;
+    font-weight: 500;
+}
+
+p {
+    font-family: 'Space Mono', monospace;
+    font-size: 1rem;
+    margin-bottom: 2rem;
+    margin-top: 0;
+}
+
+#quote {
+    padding: 4rem 0;
+    background: #01182A;
+    min-height: calc(430px - 8rem);
+    position: relative;
+}
+
+blockquote {
+    display: block;
+    font-size: 1.75rem;
+    line-height: 3.25rem;
+    color: #D8E6EA;
+    font-family: 'Libre Baskerville', serif;
+    font-weight: 300;
+    letter-spacing: 1px;
+    text-align: center;
+    margin-bottom: 8rem;
+    position: relative;
+    max-width: 876px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 1rem;
+    background-image: url('bqUnderline.png');
+    position: relative;
+}
+
+blockquote::after {
+    content: "";
+    display: block;
+    height: 1px;
+}
+
+.timer {
+    width: 64px;
+    height: 3px;
+    background: #233949;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 3rem;
+    position: absolute;
+    left: calc(50% - 32px);
+    bottom: 4rem;
+}
+
+.timer::after {
+    content: "";
+    display: block;
+    background: #FF6661;
+    position: absolute;
+    left: 0;
+    top: 0;
+    transform-origin: top left;
+    width: 100%;
+    height: 3px;
+    transform: scaleX(0);
+    animation: timer 20000ms linear infinite;
+}
+
+@keyframes timer {
+    0%   { transform: scaleX(0); }
+    100% { transform: scaleX(1); }
+}
+
+/* It's a bit like a faint whirring sound as if a washing machine is constantly struggling with a heavy load in a small room not too far away. */
+
+.esri-component.esri-legend.esri-widget.esri-widget--panel {
+    width: 200px;
+}
+
+.esri-widget {
+    background: #01182A;
+    color: #829199;
+}
+
+.esri-widget__heading {
+    color: #D8E6EA;
+}
+
+.esri-legend__layer {
+    margin-left: 0;
+}
+
+.esri-popup__footer, .esri-popup__header {
+    display: none;
+}
+
+.esri-popup__pointer-direction {
+    background: #FF6661;
+}
+
+#viz {
+    font-size: 14px;
+    text-shadow: -1px -1px #011222, -1px 1px #011222, 1px 1px #011222, 1px -1px #011222, -1px 0 #011222, 0 1px #011222, 1px 0 #011222, 0 -1px #011222;
+}
+
+.esri-popup__main-container .esri-widget {
+    background: transparent;
+}
+
+.esri-popup__main-container {
+    /* background: #FF6661; */
+    border: solid 1px #FF6661; 
+    text-align: center;
+    padding: .5rem;
+}
+
+.esri-view-width-xlarge .esri-popup__main-container {
+    width: 230px;
+}
+
+.esri-popup__feature-menu {
+    display: none;
+}
+
+.esri-popup__content {
+    margin: 0;
+}
+
+.esri-feature-content p {
+    margin: 0;
+}
+
+.esri-popup--shadow {
+    box-shadow: none;;
+}
+
+.esri-popup__main-container .esri-widget {
+    font-family: 'Space Mono', monospace;
+    font-size: 14px;
+    font-weight: 400; 
+
+}
+
+.esri-widget--button:hover {
+    background: #D8E6EA;
+}
+
+.esri-icon-plus::before  {
+    color: #D8E6EA;
+}
+
+.esri-icon-minus::before  {
+    color: #D8E6EA;
+}
+
+.esri-widget--button:hover .esri-icon-plus::before  {
+    color: #011222;
+}
+
+.esri-widget--button:hover .esri-icon-minus::before  {
+    color: #011222;
+}
+
+#frequency {
+    background: #01182A;
+    padding: 4rem 0;
+}
+
+#frequency .vizPosition {
+    width: 1322px;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+}
+
+#frequency .vizPosition svg {
+    margin-left: -58px;
+
+}
+
+#frequency .introContainer {
+    margin-bottom: 0;
+
+}
+
+#frequency .introContainer ol {
+    display: flex;
+    align-items: flex-end;
+    flex-direction: column;
+    align-items: flex-end;
+    padding: 0;
+}
+
+#frequency .introContainer ol li {
+    background: #011222;
+    font-size: 1rem;
+    width: 100%;
+    padding: .8rem;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1px;
+}
+
+#frequency .introContainer ol li:first-child {
+    margin-top: 80px;
+    
+}
+
+
+#frequency .introContainer ol li .label {
+    display: block;
+    flex-grow: 1;
+    margin-left: 1rem;
+}
+
+#frequency .introContainer section {
+    max-width: 70%;
+
+}
+
+#frequency .introContainer section p {
+    width: 85%;
+
+}
+
+.mode {
+    color: #6BD78E;
+}
+
+.median {
+    color: #429CBC;
+    
+}
+
+#networkLegend {
+    transform: translateY(70px);
+}
+
+.x-axis {
+    text-align: center;
+}
+
+.x-axis p {
+    max-width: 300px;
+    line-height: 1.5rem;
+    margin-left: auto;
+    margin-right: auto;
+    opacity: .6;
+}
+
+.x-axis label {
+    color: #D8E6EA;
+    font-size: 1rem;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+
+.y-axis {
+    display: block;
+    transform: rotate(-90deg);
+    color: #D8E6EA;
+    font-size: 1rem;
+    font-weight: 600;
+    position: absolute;
+    left: -160px;
+    top: 358px;
+    letter-spacing: 1px;
+}
+
+.trigger {
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    border: solid 1px #D8E6EA;
+    position: absolute;
+}
+
+.trigger:hover {
+    background: rgba(216, 230, 234, .2);
+    cursor: pointer;
+}
+
+.trigger::before {
+    content:"";
+    display: block;
+    width: 22px;
+    height: 22px;
+    border-radius: 50%;
+    border: solid 1px #D8E6EA;
+    position: relative;
+    top: 0;
+    left:0;
+    opacity: .1;
+    animation: pulse 3s ease-in-out infinite;
+}
+
+.trigger .close {
+    width: 24px;
+    height: 23px;
+    padding: 0;
+    margin: 0;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    border: none;
+    background: none;
+    cursor: pointer;
+    display: none;
+}
+
+.close img {
+    width: 16px;
+    height: 16px;
+    margin: 3px 0 0 0;
+}
+
+@keyframes pulse {
+    0%      { transform: scale(1.5); }
+    50%     { transform: scale(2); }
+    100%    { transform: scale(1.5); }
+}
+
+#inf-trigger {
+    bottom: 216px;
+    left: 66px;
+    z-index: 1;
+}
+
+#tin-trigger {
+    top: 42px;
+    right: 94px;
+    z-index: 1;
+}
+
+aside {
+    width: 670px;
+    background: #01182A;
+    border: solid 1px #D8E6EA;
+    padding: 1rem;
+}
+
+aside h5 {
+    font-weight: 500;
+    margin: 0;
+}
+
+aside p {
+    margin: 0;
+}
+
+.inf {
+    position: absolute;
+    bottom: 267px;
+    left: 30px;
+    transition: all .2s ease;
+}
+
+.tin {
+    position: absolute;
+    top: 89px;
+    right: 30px;
+    transition: all .2s ease;
+}
+
+.hidden {
+    opacity: 0;
+    transition: all .2s ease;
+}
+
+
+nav {
+    height: 60px;
+    background:#01182A;
+}
+
+nav h1 {
+    font-size: 1rem;
+    margin: 0;
+    line-height: 60px;
+    padding: 0 16px;
+    text-transform: uppercase;
+    color: #FF6661;
+
+}
+
+.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.hide {
+    opacity: 0;
+    transform: translateY(-60);
+}
+
+.wave1 {
+    height: 684px;
+    width: 100%;
+    background-image: url(wave1.png);
+    background-position: left;
+    position: absolute;
+    top: 215px;
+    left: 0;
+    pointer-events: none;
+    animation: slide 160s linear infinite;
+}
+
+.wave2 {
+    height: 684px;
+    width: 100%;
+    background-image: url(wave2.png);
+    background-position: center;
+    position: absolute;
+    top: 215px;
+    left: 0;
+    pointer-events: none;
+    animation: slide 80s linear reverse infinite;
+}
+
+.wave3 {
+    height: 684px;
+    width: 100%;
+    background-image: url(wave3.png);
+    background-position: center;
+    position: absolute;
+    top: 215px;
+    left: 0;
+    pointer-events: none;
+    animation: slide 40s linear infinite;
+}
+
+@keyframes slide {
+    from {background-position: 0 0;}
+    to {background-position: -7418px 0;}
+}
