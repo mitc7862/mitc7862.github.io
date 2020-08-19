@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1007" height="92">
+  <g fill="none" fill-rule="evenodd">
+    <path fill="#F57470" d="M0 0h700v92H0z"/>
+    <path fill="#01182A" d="M0 1h699v91H0z"/>
+    <path fill="#EEE381" d="M701 0h158v92H701z"/>
+    <path fill="#01182A" d="M701 1h157v91H701z"/>
+    <path fill="#429CBC" d="M860 0h16v92h-16z"/>
+    <path fill="#01182A" d="M860 1h15v91h-15z"/>
+    <text fill="#EEE381" font-family="UniversNextPro-Medium, Univers Next Pro" font-size="16" font-weight="400">
+      <tspan x="717" y="25">Equal night </tspan> <tspan x="717" y="47">and day</tspan> <tspan x="717" y="69">18% </tspan>
+    </text>
+    <text fill="#F57470" font-family="UniversNextPro-Medium, Univers Next Pro" font-size="16" font-weight="400">
+      <tspan x="16" y="25">During the night</tspan> <tspan x="16" y="47">79.9% </tspan>
+    </text>
+    <text fill="#429CBC" font-family="UniversNextPro-Medium, Univers Next Pro" font-size="16" font-weight="400">
+      <tspan x="893" y="25">During the day</tspan> <tspan x="893" y="47">2.1%</tspan>
+    </text>
+  </g>
+</svg>

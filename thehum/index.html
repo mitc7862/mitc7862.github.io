@@ -1,142 +1,326 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <title>The HUM</title>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link href="css/style.css" rel="stylesheet">
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    </head>
-    <style>
 
-        html {
-            scroll-behavior: smooth;
-        }
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script src='https://d3js.org/d3.v5.min.js'></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+  <link rel="stylesheet" href="https://js.arcgis.com/4.16/esri/themes/light/main.css" />
+  <script src="https://js.arcgis.com/4.16/"></script>
+  <link rel="stylesheet" href="style.css">
+</head>
 
-        body {
-            padding: 0px;
-            margin: 0px;
-            height: 5260px;
-            background-color: #011222;
-        } 
+<body>
+  <div class="wave1"></div>
+  <div class="wave2"></div>
+  <div class="wave3"></div>
+  
+  <nav class="header hide">
+    <h1 id="logo">The Hum</h1>
+  </nav>
 
-        .container {
-            background-image: url(./HumBody.png);
-            background-position: top center;
-            width: 100%;
-        }
+  <article>
+    <section id="intro">
+      <h2>Hey, can you hear that?</h2>
+      <span id="hero"><span>The </span><span>Hum</span></span>
+      <section id="editorial">
+        <div>
+          <p><span class="leader">Imagine.</span> It’s 1:00 AM and you can’t fall asleep. It's been weeks since you’ve
+            had a full-night’s rest. Whenever you go to lay down the hum is there. Your spouse can't hear it. No-one
+            seems to hear it but you. If you try, you can hear it during the day, but it’s especially loud at night
+            after the world quiets down.</p>
+          <p>You've looked everywhere for the source—investigated every appliance, every socket and circuit in your
+            house. You've even driven around the neighborhood late at night trying to pinpoint any possible origin.</p>
+          <p>Perhaps it's coming from inside you. You begin to supect some kind of hearing disorder. In the end all the
+            medical tests, second and third opinions from doctors have yielded no resolution. You ask yourself, could it
+            all be in my head? Will it ever stop?</p>
+        </div>
+        <div>
+          <p>The Hum is a name often given to widespread reports of a persistent and invasive humming, rumbling, or
+            droning noise that only 2–4% of people can hear.</p>
+          <p>Thousands of people from all over the world have reported hearing the hum; the phenomenon has been widely
+            reported by media in the United States and the UK. Sometimes it gets named according to the locality where
+            the problem has been particularly publicized, such as the <a
+              href="https://www.livescience.com/43519-taos-hum.html" target="_blank">Taos Hum</a> and the <a
+              href="https://www.nytimes.com/2018/02/19/world/canada/windsor-hum.html" target="_blank">Windsor Hum</a>.
+          </p>
+          <p>In 2018, independent researcher, Glen McPherson began the <em><a href="https://thehum.info/"
+                target="_blank">World Hum Database</em></a>, collecting information from those who hear the hum, hoping
+            to one day solve the mystery so we can all get back to sleep. What follows is a look at the data he’s
+            collected so far.</p>
+        </div>
+      </section>
+    </section>
+    <section id="map">
+      <h2>The hum heard arround the world</h2>
+      <span class="subhead">…but mostly in Europe and North America</span>
+      <div id="viewDiv"></div>
+      <script src="map.js"></script>
+    </section>
+    <section id="stats">
+      <h3>Where the hum is loudest</h3>
+      <svg width="1007" height="92">
+        <g fill="none" fill-rule="evenodd">
+          <path fill="#429CBC" d="M0 0h711v92H0z" />
+          <path fill="#01182A" d="M0 1h710v91H0z" />
+          <path fill="#F57470" d="M712 0h161v92H712z" />
+          <path fill="#01182A" d="M712 1h160v91H712z" />
+          <path fill="#EEE381" d="M874 0h2v92h-2z" />
+          <path fill="#01182A" d="M874 1h1v91h-1z" />
+          <text fill="#F57470" font-size="16" font-weight="400">
+            <tspan x="728" y="25">Indoors and</tspan>
+            <tspan x="728" y="47">outddors </tspan>
+            <tspan x="728" y="69">18.5% </tspan>
+          </text>
+          <text fill="#429CBC" font-size="16" font-weight="400">
+            <tspan x="16" y="25">Indoors</tspan>
+            <tspan x="16" y="47">81.3% </tspan>
+          </text>
+          <text fill="#EEE381" font-size="16" font-weight="400">
+            <tspan x="893" y="25">Outdoors</tspan>
+            <tspan x="893" y="47">0.2%</tspan>
+          </text>
+        </g>
+      </svg>
+      <p>The majority of people in the World Hum Database reported hearing the hum loudest indoors. It’s hypothesized
+        that certain low-frequency sounds could resonate with different types of construction and materials. </p>
+      <h3>When the hum is loudest</h3>
+      <svg width="1007" height="92">
+        <g fill="none" fill-rule="evenodd">
+          <path fill="#F57470" d="M0 0h700v92H0z" />
+          <path fill="#01182A" d="M0 1h699v91H0z" />
+          <path fill="#EEE381" d="M701 0h158v92H701z" />
+          <path fill="#01182A" d="M701 1h157v91H701z" />
+          <path fill="#429CBC" d="M860 0h16v92h-16z" />
+          <path fill="#01182A" d="M860 1h15v91h-15z" />
+          <text fill="#EEE381" font-size="16" font-weight="400">
+            <tspan x="717" y="25">Equal night </tspan>
+            <tspan x="717" y="47">and day</tspan>
+            <tspan x="717" y="69">18% </tspan>
+          </text>
+          <text fill="#F57470" font-size="16" font-weight="400">
+            <tspan x="16" y="25">During the night</tspan>
+            <tspan x="16" y="47">79.9% </tspan>
+          </text>
+          <text fill="#429CBC" font-size="16" font-weight="400">
+            <tspan x="893" y="25">During the day</tspan>
+            <tspan x="893" y="47">2.1%</tspan>
+          </text>
+        </g>
+      </svg>
+      <p>Similarly, most people report hearing the hum louder at night or when they’re trying to fall asleep when
+        there’s less ambient sound to mask lower frequencies.</p>
+    </section>
+    <section id="quote">
+      <h2>What does the hum sound like?</h2>
+      <blockquote>“<span id="pullQuote">A wum-wum sound, like a very slowly idling large engine. Fades in and out.</span>”</blockquote>
+      <script src="pullQuote.js"></script>
+      <div class="timer"></div>
+    </section>
+    <section id="bigrams">
+      <div class="introContainer">
+        <section>
+          <h3>How people describe the hum</h3>
+          <p>Visualizing how their 100 most common word-pairs reveals similarities in the way individuals describe the
+            hum. Many refer to the ‘low’ quality of the sound itself while others compare it to mechanical sounds from
+            their environment.</p>
+        </section>
+        <ol id="networkLegend">
+          <li>Frequency of two words co-occuring</li>
+          <li id="group-E">197–492</li>
+          <li id="group-D">87–196</li>
+          <li id="group-C">48–86</li>
+          <li id="group-B">27–47</li>
+          <li id="group-A">15–26</li>
+        </ol>
+      </div>
+      <svg id='viz'></svg>
+      <script src="forceViz.js"></script>
+    </section>
+    <section id="frequency">
+      <div class="introContainer">
+        <section>
+          <h3>Reported frequencies of the hum</h3>
+          <p>This chart shows the distribution of reported frequencies. Each vertical line represents 1 frequency
+            measured in hertz. Each line’s height represents the number of reports for that frequency.</p>
+        </section>
+        <ol id="freqLegend">
+          <li class="median"><img src="medianIcon.svg"><span class="label">Median reported frequency</span><span
+              class="value">80 Hz</span></li>
+          <li class="mode"><img src="modeIcon.svg"><span class="icon"></span><span class="label">Most common reported
+              frequency</span><span class="value">40 Hz</span></li>
+        </ol>
+      </div>
+      <div class="vizPosition">
+        <svg xmlns="http://www.w3.org/2000/svg" width="1400" height="786">
+          <g data-name="Frequency">
+            <path fill="#011222" d="M58.76 18h1320v717h-1320z" />
+            <path fill="#132d3d" d="M1236.26 17.5h71v718h-71z" />
+            <path fill="#01182a" d="M1306.76 18v717h-70V18h70m1-1h-72v719h72V17z" />
+            <path fill="#132d3d" d="M58.26 17.5h628v718h-628z" />
+            <path fill="#01182a" d="M685.76 18v717h-627V18h627m1-1h-629v719h629V17z" />
+            <path class="modeLine" opacity=".2" fill="none" stroke="#6bd78e" stroke-miterlimit="10"
+              d="M754.26 735V18" />
+            <path class="medianLine" opacity=".2" fill="none" stroke="#429cbc" stroke-miterlimit="10"
+              d="M824.26 735V18.5" />
+            <g fill="none">
+              <path stroke="#d8e6ea" stroke-linecap="square" stroke-linejoin="bevel"
+                d="M88.26 746.5v8M157.26 746.5v8M227.26 746.5v8M317.26 746.5v8M387.26 746.5v8M456.26 746.5v8M547.26 746.5v8M617.26 746.5v8M685.26 746.5v8M778.26 746.5v8M916.26 746.5v8M1008.26 746.5v8M1076.26 746.5v8M1145.26 746.5v8M1237.26 746.5v8M1306.26 746.5v8M1376.26 746.5v8" />
+              <path stroke="#3a4d5d" stroke-linecap="square" stroke-linejoin="bevel"
+                d="M65.26 746.5v8M106.26 746.5v8M121.26 746.5v8M134.26 746.5v8M147.26 746.5v8M266.26 746.5v8M295.26 746.5v8M336.26 746.5v8M351.26 746.5v8M364.26 746.5v8M375.26 746.5v8M496.26 746.5v8M525.26 746.5v8M565.26 746.5v8M581.26 746.5v8M594.26 746.5v8M606.26 746.5v8M727.26 746.5v8M754.26 746.5v8M796.26 746.5v8M811.26 746.5v8M824.26 746.5v8M836.26 746.5v8M956.26 746.5v8M985.26 746.5v8M1026.26 746.5v8M1042.26 746.5v8M1055.26 746.5v8M1066.26 746.5v8M1187.26 746.5v8M1215.26 746.5v8M1255.26 746.5v8M1271.26 746.5v8M1284.26 746.5v8M1296.26 746.5v8" />
+              <path stroke="#bdccd4" stroke-miterlimit="10" d="M58.76 377.5h1320" opacity=".3" />
+              <path stroke="#bdccd4" stroke-miterlimit="10"
+                d="M58.76 663.5h1320M58.76 591.5h1320M58.76 520.5h1320M58.76 448.5h1320M58.76 305.5h1320M58.76 234.5h1320M58.76 162.5h1320M58.76 89.5h1320"
+                opacity=".1" />
+            </g>
+            <path fill="none" stroke="#ff6661" stroke-miterlimit="10"
+              d="M1284.26 381v-7M1216.26 381v-7M1195.26 381v-7M1140.26 381v-7M1076.26 381v-7M1076.26 381v-7M1052.26 385v-14M1051.26 381v-7M1050.26 381v-7M1049.26 381v-7M1029.26 381v-7M1025.26 388v-21M1021.26 381v-7M1021.26 381v-7M1018.26 381v-7M1016.26 392v-28M1011.26 381v-7M1011.26 381v-7M1010.26 381v-7M1009.26 381v-7M1007.26 381v-7M1005.26 385v-14M1000.26 381v-7M999.26 381v-7M997.26 385v-14M996.26 392v-28M995.26 381v-7M995.26 385v-14M995.26 381v-7M995.26 388v-21M994.26 542V213M993.26 381v-7M993.26 388v-21M992.26 385v-14M992.26 381v-7M991.26 385v-14M990.26 381v-7M990.26 381v-7M989.26 392v-28M988.26 381v-7M987.26 385v-14M984.26 410v-64M983.26 381v-7M982.26 381v-7M981.26 385v-14M979.26 406v-57M978.26 385v-14M975.26 381v-7M975.26 381v-7M974.26 392v-28M971.26 410v-64M969.26 381v-7M968.26 381v-7M968.26 402v-49M967.26 381v-7M966.26 381v-7M966.26 385v-14M965.26 395v-35M963.26 385v-14M962.26 385v-14M961.26 385v-14M960.26 381v-7M959.26 381v-7M958.26 381v-7M957.26 381v-7M956.26 467V288M954.26 381v-7M952.26 388v-21M951.26 381v-7M950.26 388v-21M949.26 385v-14M948.26 392v-28M946.26 402v-49M945.26 392v-28M945.26 385v-14M944.26 381v-7M943.26 388v-21M942.26 381v-7M941.26 395v-35M941.26 385v-14M940.26 381v-7M939.26 385v-14M937.26 467V288M934.26 385v-14M933.26 402v-49M931.26 388v-21M930.26 381v-7M929.26 402v-49M928.26 381v-7M927.26 417v-78M927.26 381v-7M925.26 381v-7M925.26 435V321M924.26 381v-7M922.26 381v-7M921.26 385v-14M920.26 417v-78M919.26 381v-7M918.26 385v-14M915.26 582V174M914.26 381v-7M914.26 381v-7M913.26 381v-7M913.26 385v-14M910.26 431V324M909.26 392v-28M907.26 388v-21M907.26 388v-21M904.26 410v-64M904.26 381v-7M901.26 413v-71M900.26 381v-7M900.26 381v-7M898.26 420v-85M897.26 381v-7M897.26 385v-14M896.26 388v-21M894.26 381v-7M893.26 424v-93M890.26 381v-7M890.26 402v-49M887.26 381v-7M886.26 582V174M885.26 388v-21M883.26 381v-7M882.26 402v-49M882.26 388v-21M881.26 381v-7M880.26 485V271M877.26 385v-14M876.26 417v-78M874.26 381v-7M874.26 385v-14M872.26 442V313M871.26 385v-14M870.26 381v-7M869.26 392v-28M868.26 420v-85M867.26 388v-21M866.26 381v-7M865.26 385v-14M864.26 381v-7M864.26 524V231M864.26 381v-7M864.26 381v-7M863.26 392v-28M862.26 381v-7M860.26 399v-43M859.26 381v-7M858.26 385v-14M858.26 381v-7M857.26 392v-28M856.26 385v-14M855.26 506V249M854.26 381v-7M853.26 385v-14M852.26 385v-14M851.26 385v-14M850.26 431V324M849.26 385v-14M848.26 385v-14M848.26 388v-21M846.26 700V56M846.26 381v-7M844.26 381v-7M844.26 392v-28M843.26 381v-7M843.26 388v-21M842.26 388v-21M841.26 435V321M840.26 381v-7M840.26 385v-14M839.26 381v-7M838.26 381v-7M837.26 381v-7M837.26 385v-14M836.26 381v-7M835.26 564V192M834.26 392v-28M833.26 381v-7M832.26 381v-7M832.26 392v-28M831.26 392v-28M830.26 431V324M829.26 381v-7M827.26 395v-35M826.26 385v-14M825.26 381v-7M823.26 625V131M822.26 385v-14M821.26 381v-7M821.26 406v-57M820.26 385v-14M820.26 381v-7M819.26 395v-35M818.26 392v-28M817.26 485V271M815.26 395v-35M815.26 385v-14M814.26 385v-14M813.26 392v-28M812.26 395v-35M811.26 381v-7M810.26 578V177M810.26 385v-14M809.26 381v-7M809.26 385v-14M807.26 388v-21M806.26 385v-14M806.26 388v-21M804.26 413v-71M804.26 381v-7M802.26 496V260M801.26 385v-14M799.26 385v-14M799.26 381v-7M799.26 392v-28M798.26 395v-35M797.26 388v-21M795.26 635V120M793.26 392v-28M791.26 402v-49M790.26 399v-43M790.26 381v-7M790.26 424v-93M789.26 381v-7M788.26 385v-14M787.26 381v-7M786.26 471V285M784.26 399v-43M783.26 381v-7M783.26 399v-43M782.26 388v-21M781.26 381v-7M779.26 395v-35M778.26 381v-7M777.26 689V66M774.26 399v-43M772.26 402v-49M771.26 385v-14M770.26 388v-21M767.26 381v-7M766.26 496V260M766.26 381v-7M765.26 381v-7M764.26 399v-43M764.26 420v-85M762.26 392v-28M760.26 392v-28M759.26 431V324M758.26 385v-14M757.26 395v-35M755.26 381v-7M754.26 381v-7M754.26 725V31M753.26 381v-7M751.26 406v-57M750.26 385v-14M750.26 399v-43M748.26 399v-43M747.26 399v-43M744.26 402v-49M741.26 528V228M740.26 381v-7M738.26 392v-28M736.26 388v-21M735.26 399v-43M734.26 388v-21M732.26 402v-49M731.26 381v-7M729.26 395v-35M727.26 381v-7M726.26 381v-7M725.26 635V120M724.26 381v-7M723.26 381v-7M722.26 392v-28M718.26 420v-85M718.26 381v-7M717.26 388v-21M715.26 388v-21M711.26 392v-28M709.26 385v-14M707.26 531V224M703.26 385v-14M699.26 402v-49M697.26 392v-28M695.26 406v-57M690.26 395v-35M685.26 549V206M680.26 395v-35M674.26 410v-64M671.26 385v-14M669.26 392v-28M666.26 381v-7M665.26 381v-7M663.26 388v-21M656.26 449V306M650.26 388v-21M645.26 381v-7M642.26 410v-64M638.26 385v-14M634.26 399v-43M625.26 385v-14M616.26 413v-71M605.26 381v-7M572.26 381v-7M565.26 385v-14M547.26 388v-21M524.26 395v-35M495.26 381v-7M386.26 385v-14M363.26 381v-7M120.26 381v-7M1018.26 381v-7M997.26 385v-14M995.26 381v-7M922.26 381v-7M909.26 381v-7M891.26 381v-7M888.26 381v-7M883.26 381v-7M881.26 381v-7M853.26 385v-14M845.26 381v-7M799.26 381v-7M765.26 381v-7M294.26 381v-7"
+              data-name="point" />
+            <g opacity=".7">
+              <text fill="#bdccd4" font-size="14" transform="translate(73.86 775.37)">
+                0.05
+              </text>
+            </g>
+            <g opacity=".7">
+              <text fill="#bdccd4" font-size="14" transform="translate(147.36 775.37)">
+                0.1
+              </text>
+            </g>
+            <g opacity=".7">
+              <text fill="#bdccd4" font-size="14" transform="translate(216.79 775.37)">
+                0.2
+              </text>
+            </g>
+            <g opacity=".7">
+              <text fill="#bdccd4" font-size="14" transform="translate(307.23 775.37)">
+                0.5
+              </text>
+            </g>
+            <g opacity=".7">
+              <text fill="#bdccd4" font-size="14" transform="translate(382.75 775.37)">
+                1
+              </text>
+            </g>
+            <g opacity=".7">
+              <text fill="#bdccd4" font-size="14" transform="translate(452.19 775.37)">
+                2
+              </text>
+            </g>
+            <g opacity=".7">
+              <text fill="#bdccd4" font-size="14" transform="translate(543.62 775.37)">
+                5
+              </text>
+            </g>
+            <g opacity=".7">
+              <text fill="#bdccd4" font-size="14" transform="translate(609 775.37)">
+                10
+              </text>
+            </g>
+            <g opacity=".7">
+              <text fill="#bdccd4" font-size="14" transform="translate(677.43 775.37)">
+                20
+              </text>
+            </g>
+            <g opacity=".7">
+              <text fill="#bdccd4" font-size="14" transform="translate(770.3 775.37)">
+                50
+              </text>
+            </g>
+            <g opacity=".7">
+              <text fill="#bdccd4" font-size="14" transform="translate(835.68 775.37)">
+                100
+              </text>
+            </g>
+            <g opacity=".7">
+              <text fill="#bdccd4" font-size="14" transform="translate(904.11 775.37)">
+                200
+              </text>
+            </g>
+            <g opacity=".7">
+              <text fill="#bdccd4" font-size="14" transform="translate(996.55 775.37)">
+                500
+              </text>
+            </g>
+            <g opacity=".7">
+              <text fill="#bdccd4" font-size="14" transform="translate(1057.9 775.37)">
+                1,000
+              </text>
+            </g>
+            <g opacity=".7">
+              <text fill="#bdccd4" font-size="14" transform="translate(1127.33 775.37)">
+                2,000
+              </text>
+            </g>
+            <g opacity=".7">
+              <text fill="#bdccd4" font-size="14" transform="translate(1218.77 775.37)">
+                5,000
+              </text>
+            </g>
+            <g opacity=".7">
+              <text fill="#bdccd4" font-size="14" transform="translate(1283.64 775.37)">
+                10,000
+              </text>
+            </g>
+            <g opacity=".7">
+              <text fill="#bdccd4" font-size="14" transform="translate(1353.58 775.37)">
+                20,000
+              </text>
+            </g>
+            <path fill="none" stroke="#bdccd4" stroke-miterlimit="10" d="M47.77 734.5h-36.5v-716h36.5" opacity=".3" />
+            <path fill="none" stroke="#bdccd4" stroke-miterlimit="10"
+              d="M47.77 234.5h-8.5v8.5M47.77 162.5h-8.5v8.5M47.77 89.5h-8.5V98M47.77 520.5h-8.5V512M47.77 591.5h-8.5V583M47.77 663.5h-8.5V655M47.77 448.5h-8.5v-143h8.5"
+              opacity=".3" />
+            <path fill="#01182a" d="M-.24 368h48v17h-48z" />
+            <text fill="#bdccd4" font-size="11" opacity=".6" transform="translate(33.45 381.03)">
+              20
+            </text>
+            <text fill="#bdccd4" font-size="11" opacity=".6" transform="translate(1.07 381.03)">
+              100
+            </text>
+            <path fill="none" stroke="#d8e6ea" stroke-linecap="square" stroke-linejoin="bevel"
+              d="M778.26 746.5v8M848.26 746.5v8" />
 
-        .container div {
-            height: 5260px;
-            margin-top: 30px;
-        }
+            <g class="medianHandle">
+              <path fill="none" stroke="#6bd78e" stroke-miterlimit="10" d="M754.26 18V8" />
+              <circle cx="754.26" cy="8" r="3.76" fill="#6bd78e" />
+            </g>
+            <g class="modeHandle">
+              <path fill="none" stroke="#429cbc" stroke-miterlimit="10" d="M824.26 18.5V8" />
+              <circle cx="824.26" cy="8" r="3.76" fill="#429cbc" />
+            </g>
+            <g class="modeHandle">
+              <path fill="none" stroke="#6bd78e" stroke-miterlimit="10" d="M754.26 744.5V735" />
+              <circle cx="754.26" cy="744.5" r="3.76" fill="#6bd78e" />
+            </g>
+            <g class="medianHandle">
+              <path fill="none" stroke="#429cbc" stroke-miterlimit="10" d="M824.26 744.5V735" />
+              <circle cx="824.26" cy="744.5" r="3.76" fill="#429cbc" />
+            </g>
+          </g>
+        </svg>
+        <label class="y-axis">Count of reports</label>
+        <div class="x-axis">
+          <label>Reported frequency (Hz)</label>
+          <p>Frequency ranges and reports with multiple frequencies have been averaged</p>
+        </div>
+        <div id="inf-trigger" class="trigger"></div>
+        <div id="tin-trigger" class="trigger">
+          <button class="close"><img src="x-16.svg"></svg></button>
+        </div>
+        <aside class="inf hidden">
+          <h5>Infra-sound</h5>
+          <p>7% of those who reported hearing the hum claimed to hear frequencies below the human range of hearing (20 Hz). These frequencies are known as infra-sound, and in some cases are thought to interact with human physiology in a way that the brain detects as sound—even though the human ear can’t hear them.</p>
+        </aside>
+        <aside class="tin hidden">
+          <h5>Tinnitus</h5>
+          <p>Sometimes the hum is dismissed as a form of tinnitus, a ringing in the ears caused by various underlying conditions. However, most people who hear the hum report sounds far below the frequency range of tinnitus (5–10 kHz).</p>
+        </aside>
+      </div>
+    </section>
+  </article>
+  <script src="pullQuote.js"></script>
+</body>
 
-        header {
-            position: fixed;
-            top: 0;
-            left: 0;
-            height: 61px;
-            width: 100%;
-            background-image: url(./HumHeader.png);
-            background-position: top left;
-            z-index: 1;
-        }
-
-        nav {
-            width: 50%;
-            height: 100%;
-            background-image: url(./HumHeader.png);
-            background-position: top right;
-            float:right;
-        }
-
-        .header.hide {
-            opacity: 0;
-            transform: translateY(-61px);
-            transition: all .5s ease;
-        }
-
-        .header.show {
-            opacity: 1;
-            transform: translateX(0px);
-            transition: all .5s ease;
-        }
-
-        svg {
-            position: absolute;
-            top: 290px;
-            left: 0;
-            height: 540px;
-            width: 100%
-        }
-
-        .wave1 {
-            height: 684px;
-            width: 100%;
-            background-image: url(wave1.png);
-            background-position: left;
-            position: absolute;
-            top: 215px;
-            left: 0;
-            animation: slide 160s linear infinite;
-        }
-
-        .wave2 {
-            height: 684px;
-            width: 100%;
-            background-image: url(wave2.png);
-            background-position: center;
-            position: absolute;
-            top: 215px;
-            left: 0;
-            animation: slide 80s linear reverse infinite;
-        }
-
-        .wave3 {
-            height: 684px;
-            width: 100%;
-            background-image: url(wave3.png);
-            background-position: center;
-            position: absolute;
-            top: 215px;
-            left: 0;
-            animation: slide 40s linear infinite;
-        }
-
-        @keyframes slide {
-            from {background-position: 0 0;}
-            to {background-position: -7418px 0;}
-        }
-
-    
-    </style>
-    <body>
-        <header class="header hide">
-            <nav></nav>
-        </header>
-        <article class="scroll-space">
-            <div class="container"><div></div></div>
-        </article>
-
-       <div class="wave1"></div>
-       <div class="wave2"></div>
-       <div class="wave3"></div>
-        
-    
-    </body>
-    <script>
-        $(function() {
-            //caches a jQuery object containing the header element
-            var header = $(".header");
-            $(window).scroll(function() {
-                var scroll = $(window).scrollTop();
-
-                if (scroll >= 800) {
-                    header.removeClass('hide').addClass("show");
-                } else {
-                    header.removeClass("show").addClass('hide');
-                }
-            });
-        });
-    </script>
 </html>
