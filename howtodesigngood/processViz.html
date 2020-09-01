@@ -1,0 +1,554 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Process Viz</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link href="main.css" rel="stylesheet">
+</head>
+
+<body>
+    <svg width="1132px" height="795px" viewBox="0 0 1132 795" version="1.1" xmlns="http://www.w3.org/2000/svg"
+        xmlns:xlink="http://www.w3.org/1999/xlink">
+        <g class="Artboard-Copy-5" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+            <rect fill="#3F3F2B" x="0" y="0" width="1132" height="795"></rect>
+            <g class="Clarify-requirements" transform="translate(0.000000, 53.000000)">
+                <rect class="bg-area" fill-opacity="0.05" fill="#000000" x="0" y="0" width="1132" height="52"></rect>
+                <rect class="bg-line" fill="#27271B" x="0" y="52" width="1132" height="1"></rect>
+                <text font-family="EBGaramond-Regular, EB Garamond" font-size="24" font-weight="normal" fill="#EBE7DF">
+                    <tspan x="16" y="32">Clarify requirements</tspan>
+                </text>
+            </g>
+            <g class="The-brief">
+                <rect class="bg-area" fill-opacity="0.05" fill="#000000" x="0" y="0" width="1132" height="52"></rect>
+                <rect class="bg-line" fill="#27271B" x="0" y="52" width="1132" height="1"></rect>
+                <text font-family="EBGaramond-Regular, EB Garamond" font-size="24" font-weight="normal" fill="#EBE7DF">
+                    <tspan x="16" y="32">The brief</tspan>
+                </text>
+            </g>
+            <g class="Choose-a-topic" transform="translate(0.000000, 106.000000)">
+                <rect class="bg-area" fill-opacity="0.05" fill="#000000" x="0" y="-2.27373675e-13" width="1132" height="52"></rect>
+                <rect class="bg-line" fill="#27271B" x="0" y="52" width="1132" height="1"></rect>
+                <text font-family="EBGaramond-Regular, EB Garamond" font-size="24" font-weight="normal" fill="#EBE7DF">
+                    <tspan x="16" y="32">Choose a topic</tspan>
+                </text>
+            </g>
+            <g class="Find-a-dataset" transform="translate(0.000000, 212.000000)">
+                <rect class="bg-area" fill-opacity="0.05" fill="#000000" x="0" y="-5.68434189e-14" width="1132" height="52"></rect>
+                <rect class="bg-line" fill="#27271B" x="0" y="52" width="1132" height="1"></rect>
+                <text font-family="EBGaramond-Regular, EB Garamond" font-size="24" font-weight="normal" fill="#EBE7DF">
+                    <tspan x="16" y="32">Find a dataset</tspan>
+                </text>
+            </g>
+            <g class="Wrangle-data" transform="translate(0.000000, 265.000000)">
+                <rect class="bg-area" fill-opacity="0.05" fill="#000000" x="0" y="-2.98427949e-13" width="1132" height="52"></rect>
+                <rect class="bg-line" fill="#27271B" x="0" y="52" width="1132" height="1"></rect>
+                <text font-family="EBGaramond-Regular, EB Garamond" font-size="24" font-weight="normal" fill="#EBE7DF">
+                    <tspan x="16" y="32">Wrangle data</tspan>
+                </text>
+            </g>
+            <g class="Explore-data" transform="translate(0.000000, 318.000000)">
+                <rect class="bg-area" fill-opacity="0.05" fill="#000000" x="0" y="-2.27373675e-13" width="1132" height="52"></rect>
+                <rect class="bg-line" fill="#27271B" x="0" y="52" width="1132" height="1"></rect>
+                <text font-family="EBGaramond-Regular, EB Garamond" font-size="24" font-weight="normal" fill="#EBE7DF">
+                    <tspan x="16" y="32">Explore data</tspan>
+                </text>
+            </g>
+            <g class="Exploratory-design" transform="translate(0.000000, 424.000000)">
+                <rect class="bg-area" fill-opacity="0.05" fill="#000000" x="0" y="-5.68434189e-14" width="1132" height="52"></rect>
+                <rect class="bg-line" fill="#27271B" x="0" y="52" width="1132" height="1"></rect>
+                <text font-family="EBGaramond-Regular, EB Garamond" font-size="24" font-weight="normal" fill="#EBE7DF">
+                    <tspan x="16" y="32">Exploratory design</tspan>
+                </text>
+            </g>
+            <g class="Prototype" transform="translate(0.000000, 477.000000)">
+                <rect class="bg-area" fill-opacity="0.05" fill="#000000" x="0" y="-2.84217094e-13" width="1132" height="52"></rect>
+                <rect class="bg-line" fill="#27271B" x="0" y="52" width="1132" height="1"></rect>
+                <text font-family="EBGaramond-Regular, EB Garamond" font-size="24" font-weight="normal" fill="#EBE7DF">
+                    <tspan x="16" y="32">Prototype</tspan>
+                </text>
+            </g>
+            <g class="Visual-design" transform="translate(0.000000, 530.000000)">
+                <rect class="bg-area" fill-opacity="0.05" fill="#000000" x="0" y="-1.70530257e-13" width="1132" height="52"></rect>
+                <rect class="bg-line" fill="#27271B" x="0" y="52" width="1132" height="1"></rect>
+                <text font-family="EBGaramond-Regular, EB Garamond" font-size="24" font-weight="normal" fill="#EBE7DF">
+                    <tspan x="16" y="32">Visual design</tspan>
+                </text>
+            </g>
+            <g class="Validate" transform="translate(0.000000, 583.000000)">
+                <rect class="bg-area" fill-opacity="0.05" fill="#000000" x="0" y="-1.13686838e-13" width="1132" height="52"></rect>
+                <rect class="bg-line" fill="#27271B" x="0" y="52" width="1132" height="1"></rect>
+                <text class="Collect-feedback" font-family="EBGaramond-Regular, EB Garamond" font-size="24"
+                    font-weight="normal" fill="#EBE7DF">
+                    <tspan x="16" y="32">Collect feedback</tspan>
+                </text>
+            </g>
+            <g class="Implement" transform="translate(0.000000, 689.000000)">
+                <rect class="bg-area" fill-opacity="0.05" fill="#000000" x="0" y="-2.27373675e-13" width="1132" height="52"></rect>
+                <rect class="bg-line" fill="#27271B" x="0" y="52" width="1132" height="1"></rect>
+                <text font-family="EBGaramond-Regular, EB Garamond" font-size="24" font-weight="normal" fill="#EBE7DF">
+                    <tspan x="16" y="32">Implement</tspan>
+                </text>
+            </g>
+            <g class="Publish" transform="translate(0.000000, 742.000000)">
+                <rect class="bg-area" fill-opacity="0.05" fill="#000000" x="0" y="-1.13686838e-13" width="1132" height="52"></rect>
+                <rect class="bg-line" fill="#27271B" x="0" y="52" width="1132" height="1"></rect>
+                <text font-family="EBGaramond-Regular, EB Garamond" font-size="24" font-weight="normal" fill="#EBE7DF">
+                    <tspan x="16" y="32">Publish</tspan>
+                </text>
+            </g>
+            <g class="Collect-inspiration" transform="translate(0.000000, 159.000000)">
+                <rect class="bg-area" fill-opacity="0.05" fill="#000000" x="0" y="-1.84741111e-13" width="1132" height="52"></rect>
+                <rect class="bg-line" fill="#27271B" x="0" y="52" width="1132" height="1"></rect>
+                <text font-family="EBGaramond-Regular, EB Garamond" font-size="24" font-weight="normal" fill="#EBE7DF">
+                    <tspan x="16" y="32">Collect inspiration</tspan>
+                </text>
+            </g>
+            <g class="Procrastinate" transform="translate(0.000000, 371.000000)">
+                <rect class="bg-area" fill-opacity="0.05" fill="#000000" x="0" y="-1.13686838e-13" width="1132" height="52"></rect>
+                <rect class="bg-line" fill="#27271B" x="0" y="52" width="1132" height="1"></rect>
+                <text font-family="EBGaramond-Regular, EB Garamond" font-size="24" font-weight="normal" fill="#EBE7DF">
+                    <tspan x="16" y="32">Procrastinate</tspan>
+                </text>
+            </g>
+            <g class="Watch-tutorials" transform="translate(0.000000, 636.000000)">
+                <rect class="bg-area" fill-opacity="0.05" fill="#000000" x="0" y="0" width="1132" height="52"></rect>
+                <rect class="bg-line" fill="#27271B" x="0" y="52" width="1132" height="1"></rect>
+                <text font-family="EBGaramond-Regular, EB Garamond" font-size="24" font-weight="normal" fill="#EBE7DF">
+                    <tspan x="16" y="32">Watch tutorials</tspan>
+                </text>
+            </g>
+            <g class="Implement" transform="translate(258.000000, 79.000000)" stroke="#DD935A">
+                <path d="M297,636 C311.911688,636 324,624.135546 324,609.5 C324,594.864454 311.911688,583 297,583"
+                    class="Oval-Copy"
+                    transform="translate(310.500000, 609.500000) scale(-1, 1) translate(-310.500000, -609.500000) ">
+                </path>
+                <path d="M270,636 C299.823376,636 324,612.271092 324,583 C324,553.728908 299.823376,530 270,530"
+                    class="Oval-Copy"
+                    transform="translate(297.000000, 583.000000) scale(-1, 1) translate(-297.000000, -583.000000) ">
+                </path>
+                <path d="M243,636 C287.735065,636 324,600.406638 324,556.5 C324,512.593362 287.735065,477 243,477"
+                    class="Oval-Copy"
+                    transform="translate(283.500000, 556.500000) scale(-1, 1) translate(-283.500000, -556.500000) ">
+                </path>
+                <path d="M216,636 C275.646753,636 324,588.542183 324,530 C324,471.457817 275.646753,424 216,424"
+                    class="Oval-Copy"
+                    transform="translate(270.000000, 530.000000) scale(-1, 1) translate(-270.000000, -530.000000) ">
+                </path>
+                <path d="M162,636 C251.470129,636 324,564.813275 324,477 C324,389.186725 251.470129,318 162,318"
+                    class="Oval-Copy"
+                    transform="translate(243.000000, 477.000000) scale(-1, 1) translate(-243.000000, -477.000000) ">
+                </path>
+                <path d="M0,636 C178.940259,636 324,493.62655 324,318 C324,142.37345 178.940259,0 0,0" class="Oval-Copy"
+                    transform="translate(162.000000, 318.000000) scale(-1, 1) translate(-162.000000, -318.000000) ">
+                </path>
+            </g>
+            <g class="Watch-tutorials" transform="translate(285.000000, 79.000000)" stroke="#E09E63">
+                <path d="M270,583 C284.911688,583 297,571.135546 297,556.5 C297,541.864454 284.911688,530 270,530"
+                    class="Oval-Copy"
+                    transform="translate(283.500000, 556.500000) scale(-1, 1) translate(-283.500000, -556.500000) ">
+                </path>
+                <path d="M243,583 C272.823376,583 297,559.271092 297,530 C297,500.728908 272.823376,477 243,477"
+                    class="Oval-Copy"
+                    transform="translate(270.000000, 530.000000) scale(-1, 1) translate(-270.000000, -530.000000) ">
+                </path>
+                <path d="M216,583 C260.735065,583 297,547.406638 297,503.5 C297,459.593362 260.735065,424 216,424"
+                    class="Oval-Copy"
+                    transform="translate(256.500000, 503.500000) scale(-1, 1) translate(-256.500000, -503.500000) ">
+                </path>
+                <path d="M189,583 C248.646753,583 297,535.542183 297,477 C297,418.457817 248.646753,371 189,371"
+                    class="Oval-Copy"
+                    transform="translate(243.000000, 477.000000) scale(-1, 1) translate(-243.000000, -477.000000) ">
+                </path>
+                <path d="M162,583 C236.558441,583 297,523.677729 297,450.5 C297,377.322271 236.558441,318 162,318"
+                    class="Oval-Copy"
+                    transform="translate(229.500000, 450.500000) scale(-1, 1) translate(-229.500000, -450.500000) ">
+                </path>
+                <path d="M135,583 C224.470129,583 297,511.813275 297,424 C297,336.186725 224.470129,265 135,265"
+                    class="Oval-Copy"
+                    transform="translate(216.000000, 424.000000) scale(-1, 1) translate(-216.000000, -424.000000) ">
+                </path>
+                <path d="M108,583 C212.381818,583 297,499.948821 297,397.5 C297,295.051179 212.381818,212 108,212"
+                    class="Oval-Copy"
+                    transform="translate(202.500000, 397.500000) scale(-1, 1) translate(-202.500000, -397.500000) ">
+                </path>
+                <path d="M81,583 C200.293506,583 297,488.084367 297,371 C297,253.915633 200.293506,159 81,159"
+                    class="Oval-Copy"
+                    transform="translate(189.000000, 371.000000) scale(-1, 1) translate(-189.000000, -371.000000) ">
+                </path>
+                <path d="M54,583 C188.205194,583 297,476.219913 297,344.5 C297,212.780087 188.205194,106 54,106"
+                    class="Oval-Copy"
+                    transform="translate(175.500000, 344.500000) scale(-1, 1) translate(-175.500000, -344.500000) ">
+                </path>
+                <path d="M27,583 C176.116882,583 297,464.355459 297,318 C297,171.644541 176.116882,53 27,53"
+                    class="Oval-Copy"
+                    transform="translate(162.000000, 318.000000) scale(-1, 1) translate(-162.000000, -318.000000) ">
+                </path>
+                <path d="M0,583 C164.028571,583 297,452.491005 297,291.5 C297,130.508995 164.028571,0 0,0"
+                    class="Oval-Copy"
+                    transform="translate(148.500000, 291.500000) scale(-1, 1) translate(-148.500000, -291.500000) ">
+                </path>
+            </g>
+            <g class="Validate" transform="translate(312.000000, 79.000000)" stroke="#E3AB6C">
+                <path d="M243,530 C257.911688,530 270,518.135546 270,503.5 C270,488.864454 257.911688,477 243,477"
+                    class="Oval-Copy"
+                    transform="translate(256.500000, 503.500000) scale(-1, 1) translate(-256.500000, -503.500000) ">
+                </path>
+                <path d="M216,530 C245.823376,530 270,506.271092 270,477 C270,447.728908 245.823376,424 216,424"
+                    class="Oval-Copy"
+                    transform="translate(243.000000, 477.000000) scale(-1, 1) translate(-243.000000, -477.000000) ">
+                </path>
+                <path d="M189,530 C233.735065,530 270,494.406638 270,450.5 C270,406.593362 233.735065,371 189,371"
+                    class="Oval-Copy"
+                    transform="translate(229.500000, 450.500000) scale(-1, 1) translate(-229.500000, -450.500000) ">
+                </path>
+                <path d="M162,530 C221.646753,530 270,482.542183 270,424 C270,365.457817 221.646753,318 162,318"
+                    class="Oval-Copy"
+                    transform="translate(216.000000, 424.000000) scale(-1, 1) translate(-216.000000, -424.000000) ">
+                </path>
+                <path d="M0,530 C149.116882,530 270,411.355459 270,265 C270,118.644541 149.116882,0 0,0" class="Oval-Copy"
+                    transform="translate(135.000000, 265.000000) scale(-1, 1) translate(-135.000000, -265.000000) ">
+                </path>
+            </g>
+            <g class="Visual-design" transform="translate(339.000000, 79.000000)" stroke="#E6B775">
+                <path d="M216,477 C230.911688,477 243,465.135546 243,450.5 C243,435.864454 230.911688,424 216,424"
+                    class="Oval-Copy"
+                    transform="translate(229.500000, 450.500000) scale(-1, 1) translate(-229.500000, -450.500000) ">
+                </path>
+                <path d="M0,477 C134.205194,477 243,370.219913 243,238.5 C243,106.780087 134.205194,0 0,0"
+                    class="Oval-Copy"
+                    transform="translate(121.500000, 238.500000) scale(-1, 1) translate(-121.500000, -238.500000) ">
+                </path>
+                <path d="M189,477 C218.823376,477 243,453.271092 243,424 C243,394.728908 218.823376,371 189,371"
+                    class="Oval-Copy"
+                    transform="translate(216.000000, 424.000000) scale(-1, 1) translate(-216.000000, -424.000000) ">
+                </path>
+                <path d="M162,477 C206.735065,477 243,441.406638 243,397.5 C243,353.593362 206.735065,318 162,318"
+                    class="Oval-Copy"
+                    transform="translate(202.500000, 397.500000) scale(-1, 1) translate(-202.500000, -397.500000) ">
+                </path>
+                <path d="M54,477 C158.381818,477 243,393.948821 243,291.5 C243,189.051179 158.381818,106 54,106"
+                    class="Oval-Copy"
+                    transform="translate(148.500000, 291.500000) scale(-1, 1) translate(-148.500000, -291.500000) ">
+                </path>
+            </g>
+            <g class="Prototype" transform="translate(366.000000, 79.000000)" stroke="#E9C37F">
+                <path d="M189,424 C203.911688,424 216,412.135546 216,397.5 C216,382.864454 203.911688,371 189,371"
+                    class="Oval-Copy"
+                    transform="translate(202.500000, 397.500000) scale(-1, 1) translate(-202.500000, -397.500000) ">
+                </path>
+                <path d="M162,424 C191.823376,424 216,400.271092 216,371 C216,341.728908 191.823376,318 162,318"
+                    class="Oval-Copy"
+                    transform="translate(189.000000, 371.000000) scale(-1, 1) translate(-189.000000, -371.000000) ">
+                </path>
+                <path d="M135,424 C179.735065,424 216,388.406638 216,344.5 C216,300.593362 179.735065,265 135,265"
+                    class="Oval-Copy"
+                    transform="translate(175.500000, 344.500000) scale(-1, 1) translate(-175.500000, -344.500000) ">
+                </path>
+                <path d="M108,424 C167.646753,424 216,376.542183 216,318 C216,259.457817 167.646753,212 108,212"
+                    class="Oval-Copy"
+                    transform="translate(162.000000, 318.000000) scale(-1, 1) translate(-162.000000, -318.000000) ">
+                </path>
+                <path d="M54,424 C143.470129,424 216,352.813275 216,265 C216,177.186725 143.470129,106 54,106"
+                    class="Oval-Copy"
+                    transform="translate(135.000000, 265.000000) scale(-1, 1) translate(-135.000000, -265.000000) ">
+                </path>
+                <path d="M0,424 C119.293506,424 216,329.084367 216,212 C216,94.915633 119.293506,0 0,0" class="Oval-Copy"
+                    transform="translate(108.000000, 212.000000) scale(-1, 1) translate(-108.000000, -212.000000) ">
+                </path>
+            </g>
+            <g class="Exploratory-design" transform="translate(393.000000, 79.000000)" stroke="#ECD088">
+                <path d="M162,371 C176.911688,371 189,359.135546 189,344.5 C189,329.864454 176.911688,318 162,318"
+                    class="Oval-Copy"
+                    transform="translate(175.500000, 344.500000) scale(-1, 1) translate(-175.500000, -344.500000) ">
+                </path>
+                <path d="M0,371 C104.381818,371 189,287.948821 189,185.5 C189,83.0511789 104.381818,0 0,0"
+                    class="Oval-Copy"
+                    transform="translate(94.500000, 185.500000) scale(-1, 1) translate(-94.500000, -185.500000) ">
+                </path>
+                <path d="M135,371 C164.823376,371 189,347.271092 189,318 C189,288.728908 164.823376,265 135,265"
+                    class="Oval-Copy"
+                    transform="translate(162.000000, 318.000000) scale(-1, 1) translate(-162.000000, -318.000000) ">
+                </path>
+                <path d="M108,371 C152.735065,371 189,335.406638 189,291.5 C189,247.593362 152.735065,212 108,212"
+                    class="Oval-Copy"
+                    transform="translate(148.500000, 291.500000) scale(-1, 1) translate(-148.500000, -291.500000) ">
+                </path>
+                <path d="M54,371 C128.558441,371 189,311.677729 189,238.5 C189,165.322271 128.558441,106 54,106"
+                    class="Oval-Copy"
+                    transform="translate(121.500000, 238.500000) scale(-1, 1) translate(-121.500000, -238.500000) ">
+                </path>
+            </g>
+            <g class="Procrastinate" transform="translate(420.000000, 79.000000)" stroke="#EFDC93">
+                <path d="M135,318 C149.911688,318 162,306.135546 162,291.5 C162,276.864454 149.911688,265 135,265"
+                    class="Oval-Copy"
+                    transform="translate(148.500000, 291.500000) scale(-1, 1) translate(-148.500000, -291.500000) ">
+                </path>
+                <path d="M108,318 C137.823376,318 162,294.271092 162,265 C162,235.728908 137.823376,212 108,212"
+                    class="Oval-Copy"
+                    transform="translate(135.000000, 265.000000) scale(-1, 1) translate(-135.000000, -265.000000) ">
+                </path>
+                <path d="M81,318 C125.735065,318 162,282.406638 162,238.5 C162,194.593362 125.735065,159 81,159"
+                    class="Oval-Copy"
+                    transform="translate(121.500000, 238.500000) scale(-1, 1) translate(-121.500000, -238.500000) ">
+                </path>
+                <path d="M54,318 C113.646753,318 162,270.542183 162,212 C162,153.457817 113.646753,106 54,106"
+                    class="Oval-Copy"
+                    transform="translate(108.000000, 212.000000) scale(-1, 1) translate(-108.000000, -212.000000) ">
+                </path>
+                <path d="M27,318 C101.558441,318 162,258.677729 162,185.5 C162,112.322271 101.558441,53 27,53"
+                    class="Oval-Copy"
+                    transform="translate(94.500000, 185.500000) scale(-1, 1) translate(-94.500000, -185.500000) ">
+                </path>
+                <path d="M0,318 C89.4701295,318 162,246.813275 162,159 C162,71.1867248 89.4701295,0 0,0" class="Oval-Copy"
+                    transform="translate(81.000000, 159.000000) scale(-1, 1) translate(-81.000000, -159.000000) ">
+                </path>
+            </g>
+            <g class="Explore-data" transform="translate(447.000000, 79.000000)" stroke="#E7DA9C">
+                <path d="M108,265 C122.911688,265 135,253.135546 135,238.5 C135,223.864454 122.911688,212 108,212"
+                    class="Oval-Copy"
+                    transform="translate(121.500000, 238.500000) scale(-1, 1) translate(-121.500000, -238.500000) ">
+                </path>
+                <path d="M54,265 C98.7350647,265 135,229.406638 135,185.5 C135,141.593362 98.7350647,106 54,106"
+                    class="Oval-Copy"
+                    transform="translate(94.500000, 185.500000) scale(-1, 1) translate(-94.500000, -185.500000) ">
+                </path>
+                <path d="M0,265 C74.5584412,265 135,205.677729 135,132.5 C135,59.3222707 74.5584412,0 0,0"
+                    class="Oval-Copy"
+                    transform="translate(67.500000, 132.500000) scale(-1, 1) translate(-67.500000, -132.500000) ">
+                </path>
+            </g>
+            <g class="Find-a-dataset" transform="translate(501.000000, 79.000000)" stroke="#D5D6AF">
+                <path d="M54,159 C68.9116882,159 81,147.135546 81,132.5 C81,117.864454 68.9116882,106 54,106"
+                    class="Oval-Copy"
+                    transform="translate(67.500000, 132.500000) scale(-1, 1) translate(-67.500000, -132.500000) ">
+                </path>
+                <path d="M27,159 C56.8233765,159 81,135.271092 81,106 C81,76.7289083 56.8233765,53 27,53" class="Oval-Copy"
+                    transform="translate(54.000000, 106.000000) scale(-1, 1) translate(-54.000000, -106.000000) ">
+                </path>
+                <path d="M0,159 C44.7350647,159 81,123.406638 81,79.5 C81,35.5933624 44.7350647,0 0,0" class="Oval-Copy"
+                    transform="translate(40.500000, 79.500000) scale(-1, 1) translate(-40.500000, -79.500000) "></path>
+            </g>
+            <g class="Wrangle-data" transform="translate(474.000000, 79.000000)" stroke="#DED8A5">
+                <path d="M54,212 C83.8233765,212 108,188.271092 108,159 C108,129.728908 83.8233765,106 54,106"
+                    class="Oval-Copy"
+                    transform="translate(81.000000, 159.000000) scale(-1, 1) translate(-81.000000, -159.000000) ">
+                </path>
+                <path d="M0,212 C59.646753,212 108,164.542183 108,106 C108,47.4578165 59.646753,0 0,0" class="Oval-Copy"
+                    transform="translate(54.000000, 106.000000) scale(-1, 1) translate(-54.000000, -106.000000) ">
+                </path>
+            </g>
+            <g class="Clarify-requirements" transform="translate(555.000000, 26.000000)" stroke="#C3D2C0">
+                <path d="M0,53 C14.9116882,53 27,41.1355459 27,26.5 C27,11.8644541 14.9116882,0 0,0" class="Oval-Copy"
+                    transform="translate(13.500000, 26.500000) scale(-1, 1) translate(-13.500000, -26.500000) "></path>
+            </g>
+            <g class="The-brief" transform="translate(582.000000, 26.000000)" stroke="#B9D0C9">
+                <path d="M0,53 C14.6355459,53 26.5,41.1355459 26.5,26.5 C26.5,11.8644541 14.6355459,0 0,0" class="Oval">
+                </path>
+            </g>
+            <g class="Clarify-requirements" transform="translate(582.000000, 79.000000)" stroke="#B9D0C9">
+                <path d="M0,53 C14.6355459,53 26.5,41.1355459 26.5,26.5 C26.5,11.8644541 14.6355459,0 0,0" class="Oval">
+                </path>
+                <path d="M0,106 C29.2710917,106 53,82.2710917 53,53 C53,23.7289083 29.2710917,0 0,0" class="Oval"></path>
+                <path d="M0,159 C44.18278,159 80,123.406638 80,79.5 C80,35.5933624 44.18278,0 0,0" class="Oval"></path>
+                <path d="M0,318 C88.36556,318 160,246.813275 160,159 C160,71.1867248 88.36556,0 0,0" class="Oval"></path>
+                <path d="M0,583 C161.819432,583 293,452.491005 293,291.5 C293,130.508995 161.819432,0 0,0" class="Oval">
+                </path>
+            </g>
+            <g class="Choose-a-topic" transform="translate(582.000000, 132.000000)" stroke="#C3D2C0">
+                <path d="M0,53 C14.6355459,53 26.5,41.1355459 26.5,26.5 C26.5,11.8644541 14.6355459,0 0,0"
+                    class="Oval-Copy"></path>
+                <path d="M0,106 C29.2710917,106 53,82.2710917 53,53 C53,23.7289083 29.2710917,0 0,0" class="Oval-Copy">
+                </path>
+                <path d="M0,265 C73.4538717,265 133,205.677729 133,132.5 C133,59.3222707 73.4538717,0 0,0"
+                    class="Oval-Copy"></path>
+                <path d="M0,530 C146.355459,530 265,411.355459 265,265 C265,118.644541 146.355459,0 0,0" class="Oval-Copy">
+                </path>
+            </g>
+            <g class="Collect-inspiration" transform="translate(582.000000, 185.000000)" stroke="#CCD4B8">
+                <path d="M0,53 C14.6355459,53 26.5,41.1355459 26.5,26.5 C26.5,11.8644541 14.6355459,0 0,0"
+                    class="Oval-Copy"></path>
+                <path d="M0,106 C29.2710917,106 53,82.2710917 53,53 C53,23.7289083 29.2710917,0 0,0" class="Oval-Copy">
+                </path>
+                <path d="M0,159 C44.18278,159 80,123.406638 80,79.5 C80,35.5933624 44.18278,0 0,0" class="Oval-Copy">
+                </path>
+                <path d="M0,212 C59.0944682,212 107,164.542183 107,106 C107,47.4578165 59.0944682,0 0,0" class="Oval-Copy">
+                </path>
+                <path d="M0,265 C74.0061565,265 134,205.677729 134,132.5 C134,59.3222707 74.0061565,0 0,0"
+                    class="Oval-Copy"></path>
+                <path d="M0,318 C88.9178447,318 161,246.813275 161,159 C161,71.1867248 88.9178447,0 0,0" class="Oval-Copy">
+                </path>
+                <path d="M0,371 C103.829533,371 188,287.948821 188,185.5 C188,83.0511789 103.829533,0 0,0"
+                    class="Oval-Copy"></path>
+                <path d="M0,424 C118.741221,424 215,329.084367 215,212 C215,94.915633 118.741221,0 0,0" class="Oval-Copy">
+                </path>
+                <path d="M0,477 C133.652909,477 242,370.219913 242,238.5 C242,106.780087 133.652909,0 0,0"
+                    class="Oval-Copy"></path>
+            </g>
+            <g class="Find-a-dataset" transform="translate(582.000000, 238.000000)" stroke="#D5D6AF">
+                <path d="M0,53 C14.6355459,53 26.5,41.1355459 26.5,26.5 C26.5,11.8644541 14.6355459,0 0,0"
+                    class="Oval-Copy"></path>
+                <path d="M0,106 C29.2710917,106 53,82.2710917 53,53 C53,23.7289083 29.2710917,0 0,0" class="Oval-Copy">
+                </path>
+                <path d="M0,159 C44.18278,159 80,123.406638 80,79.5 C80,35.5933624 44.18278,0 0,0" class="Oval-Copy">
+                </path>
+                <path d="M0,212 C59.0944682,212 107,164.542183 107,106 C107,47.4578165 59.0944682,0 0,0" class="Oval-Copy">
+                </path>
+            </g>
+            <g class="Wrangle-data" transform="translate(582.000000, 291.000000)" stroke="#DED8A5">
+                <path d="M0,53 C14.6355459,53 26.5,41.1355459 26.5,26.5 C26.5,11.8644541 14.6355459,0 0,0"
+                    class="Oval-Copy"></path>
+                <path d="M0,106 C29.2710917,106 53,82.2710917 53,53 C53,23.7289083 29.2710917,0 0,0" class="Oval-Copy">
+                </path>
+                <path d="M0,159 C44.18278,159 80,123.406638 80,79.5 C80,35.5933624 44.18278,0 0,0" class="Oval-Copy">
+                </path>
+                <path d="M0,371 C103.277248,371 187,287.948821 187,185.5 C187,83.0511789 103.277248,0 0,0"
+                    class="Oval-Copy"></path>
+            </g>
+            <g class="Explore-data" transform="translate(582.000000, 344.000000)" stroke="#E7DA9C">
+                <path d="M0,53 C14.6355459,53 26.5,41.1355459 26.5,26.5 C26.5,11.8644541 14.6355459,0 0,0"
+                    class="Oval-Copy"></path>
+                <path d="M0,106 C29.2710917,106 53,82.2710917 53,53 C53,23.7289083 29.2710917,0 0,0" class="Oval-Copy">
+                </path>
+                <path d="M0,159 C44.18278,159 80,123.406638 80,79.5 C80,35.5933624 44.18278,0 0,0" class="Oval-Copy">
+                </path>
+                <path d="M0,318 C88.36556,318 160,246.813275 160,159 C160,71.1867248 88.36556,0 0,0" class="Oval-Copy">
+                </path>
+            </g>
+            <g class="Procrastinate" transform="translate(582.000000, 397.000000)" stroke="#EFDC93">
+                <path d="M0,53 C14.6355459,53 26.5,41.1355459 26.5,26.5 C26.5,11.8644541 14.6355459,0 0,0"
+                    class="Oval-Copy"></path>
+                <path d="M0,106 C29.2710917,106 53,82.2710917 53,53 C53,23.7289083 29.2710917,0 0,0" class="Oval-Copy">
+                </path>
+                <path d="M0,159 C44.18278,159 80,123.406638 80,79.5 C80,35.5933624 44.18278,0 0,0" class="Oval-Copy">
+                </path>
+                <path d="M0,212 C59.0944682,212 107,164.542183 107,106 C107,47.4578165 59.0944682,0 0,0" class="Oval-Copy">
+                </path>
+                <path d="M0,265 C74.0061565,265 134,205.677729 134,132.5 C134,59.3222707 74.0061565,0 0,0"
+                    class="Oval-Copy"></path>
+                <path d="M0,318 C88.9178447,318 161,246.813275 161,159 C161,71.1867248 88.9178447,0 0,0" class="Oval-Copy">
+                </path>
+            </g>
+            <g class="Exploratory-design" transform="translate(582.000000, 450.000000)" stroke="#ECD088">
+                <path d="M0,53 C14.6355459,53 26.5,41.1355459 26.5,26.5 C26.5,11.8644541 14.6355459,0 0,0"
+                    class="Oval-Copy"></path>
+                <path d="M0,106 C29.2710917,106 53,82.2710917 53,53 C53,23.7289083 29.2710917,0 0,0" class="Oval-Copy">
+                </path>
+                <path d="M0,159 C44.18278,159 80,123.406638 80,79.5 C80,35.5933624 44.18278,0 0,0" class="Oval-Copy">
+                </path>
+                <path d="M0,212 C59.0944682,212 107,164.542183 107,106 C107,47.4578165 59.0944682,0 0,0" class="Oval-Copy">
+                </path>
+            </g>
+            <g class="Prototype" transform="translate(582.000000, 503.000000)" stroke="#E9C37F">
+                <path d="M0,53 C14.6355459,53 26.5,41.1355459 26.5,26.5 C26.5,11.8644541 14.6355459,0 0,0"
+                    class="Oval-Copy"></path>
+                <path d="M0,106 C29.2710917,106 53,82.2710917 53,53 C53,23.7289083 29.2710917,0 0,0" class="Oval-Copy">
+                </path>
+                <path d="M0,159 C44.18278,159 80,123.406638 80,79.5 C80,35.5933624 44.18278,0 0,0" class="Oval-Copy">
+                </path>
+                <path d="M0,212 C59.0944682,212 107,164.542183 107,106 C107,47.4578165 59.0944682,0 0,0" class="Oval-Copy">
+                </path>
+            </g>
+            <g class="Visual-design" transform="translate(582.000000, 556.000000)" stroke="#E6B775">
+                <path d="M0,53 C14.6355459,53 26.5,41.1355459 26.5,26.5 C26.5,11.8644541 14.6355459,0 0,0"
+                    class="Oval-Copy"></path>
+                <path d="M0,106 C29.2710917,106 53,82.2710917 53,53 C53,23.7289083 29.2710917,0 0,0" class="Oval-Copy">
+                </path>
+                <path d="M0,159 C44.18278,159 80,123.406638 80,79.5 C80,35.5933624 44.18278,0 0,0" class="Oval-Copy">
+                </path>
+            </g>
+            <g class="Validate" transform="translate(582.000000, 609.000000)" stroke="#E3AB6C">
+                <path d="M0,106 C29.2710917,106 53,82.2710917 53,53 C53,23.7289083 29.2710917,0 0,0" class="Oval-Copy">
+                </path>
+            </g>
+            <g class="Implement" transform="translate(582.000000, 715.000000)" stroke="#DD935A">
+                <path d="M0,53 C14.9116882,53 27,41.1355459 27,26.5 C27,11.8644541 14.9116882,0 0,0" class="Oval-Copy-2">
+                </path>
+            </g>
+            <g class="Watch-tutorials" transform="translate(582.000000, 662.000000)" stroke="#E09E63">
+                <path d="M0,53 C14.9116882,53 27,41.1355459 27,26.5 C27,11.8644541 14.9116882,0 0,0" class="Oval-Copy">
+                </path>
+            </g>
+            <g class="Days" transform="translate(1064.000000, 12.000000)" font-family="EBGaramond-Regular, EB Garamond"
+                font-size="20" font-weight="normal">
+                <text class="3" fill="#CCD4B8">
+                    <tspan x="42.4" y="179">3</tspan>
+                </text>
+                <text class="4" fill="#D5D6AF">
+                    <tspan x="42.4" y="232">4</tspan>
+                </text>
+                <text class="5" fill="#DED8A5">
+                    <tspan x="42.4" y="285">5</tspan>
+                </text>
+                <text class="7" fill="#EFDC93">
+                    <tspan x="42.4" y="391">7</tspan>
+                </text>
+                <text class="8" fill="#ECD088">
+                    <tspan x="42.4" y="444">8</tspan>
+                </text>
+                <text class="9" fill="#E9C37F">
+                    <tspan x="42.4" y="497">9</tspan>
+                </text>
+                <text class="10" fill="#E6B775">
+                    <tspan x="32.8" y="550">10</tspan>
+                </text>
+                <text class="12" fill="#E09E63">
+                    <tspan x="32.8" y="656">12</tspan>
+                </text>
+                <text class="13" fill="#DD935A">
+                    <tspan x="32.8" y="709">13</tspan>
+                </text>
+                <text class="14" fill="#DA8752">
+                    <tspan x="32.8" y="762">14</tspan>
+                </text>
+                <text class="1" fill="#B9D0C9">
+                    <tspan x="42.4" y="73">1</tspan>
+                </text>
+                <text class="0" fill="#AFCED1">
+                    <tspan x="42.4" y="20">0</tspan>
+                </text>
+                <text class="Day" fill="#AFCED1">
+                    <tspan x="0.18" y="20">Day</tspan>
+                </text>
+                <text class="2" fill="#C3D2C0">
+                    <tspan x="42" y="126">2</tspan>
+                </text>
+                <text class="6" fill="#E7DA9C">
+                    <tspan x="42.4" y="338">6</tspan>
+                </text>
+                <text class="11" fill="#E3AB6C">
+                    <tspan x="32.8" y="603">11</tspan>
+                </text>
+            </g>
+            <circle class="The-brief" stroke="#3F3F2B" stroke-width="3" fill="#EBE7DF" cx="581" cy="26" r="5.5"></circle>
+            <circle class="Clarify-requirements" stroke="#3F3F2B" stroke-width="3" fill="#EBE7DF" cx="581" cy="79" r="5.5">
+            </circle>
+            <circle class="Choose-a-topic" stroke="#3F3F2B" stroke-width="3" fill="#EBE7DF" cx="581" cy="132" r="5.5">
+            </circle>
+            <circle class="Collect-inspiration" stroke="#3F3F2B" stroke-width="3" fill="#EBE7DF" cx="581" cy="185" r="5.5">
+            </circle>
+            <circle class="FInd-a-dataset" stroke="#3F3F2B" stroke-width="3" fill="#EBE7DF" cx="581" cy="238" r="5.5">
+            </circle>
+            <circle class="Wrangle-data" stroke="#3F3F2B" stroke-width="3" fill="#EBE7DF" cx="581" cy="291" r="5.5">
+            </circle>
+            <circle class="Explore-data" stroke="#3F3F2B" stroke-width="3" fill="#EBE7DF" cx="581" cy="344" r="5.5">
+            </circle>
+            <circle class="Procrastinate" stroke="#3F3F2B" stroke-width="3" fill="#EBE7DF" cx="581" cy="397" r="5.5">
+            </circle>
+            <circle class="Exploratory-design" stroke="#3F3F2B" stroke-width="3" fill="#EBE7DF" cx="581" cy="450" r="5.5">
+            </circle>
+            <circle class="Prototype" stroke="#3F3F2B" stroke-width="3" fill="#EBE7DF" cx="581" cy="503" r="5.5"></circle>
+            <circle class="Visual-design" stroke="#3F3F2B" stroke-width="3" fill="#EBE7DF" cx="581" cy="556" r="5.5">
+            </circle>
+            <circle class="Validate" stroke="#3F3F2B" stroke-width="3" fill="#EBE7DF" cx="581" cy="609" r="5.5"></circle>
+            <circle class="Watch-tutorials" stroke="#3F3F2B" stroke-width="3" fill="#EBE7DF" cx="581" cy="662" r="5.5">
+            </circle>
+            <circle class="Implement" stroke="#3F3F2B" stroke-width="3" fill="#EBE7DF" cx="581" cy="715" r="5.5"></circle>
+            <circle class="Publish" stroke="#3F3F2B" stroke-width="3" fill="#EBE7DF" cx="581" cy="768" r="5.5"></circle>
+        </g>
+    </svg>
+    <script src="main.js"></script>
+</body>
+</html>

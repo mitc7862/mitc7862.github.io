@@ -1,0 +1,31 @@
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,500;1,600;1,700;1,800&family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+
+body {
+    background: #3F3F2B;
+    padding-block: 0;
+    margin: 0;
+}
+
+path, circle {
+    pointer-events: none;
+}
+
+g.selected path  {
+    opacity: 1;
+}
+
+.bg-area  {
+    fill-opacity: 0;
+}
+
+g.selected .bg-area  {
+    fill-opacity: .05;
+}
+
+g.deselected path {
+    opacity: 0;
+}
+
+svg text {
+    font-family: 'EB Garamond', serif;
+}
