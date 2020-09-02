@@ -900,8 +900,8 @@ $(".Publish").mouseout(function () {
 &lt;counter&gt;{(set: $days to $days + 1)(set: $daysLate to $days - 14)(if: $days &lt;= 14)[Day $days of 14]}{(if: $days is 15)[The assignment is $daysLate day late.]}{(if: $days &gt; 15)[The assignment is $daysLate days late.]}&lt;/counter&gt;\
 \&lt;h2&gt;Clarify requirements&lt;/h2&gt;\
 \(set: $pgClarifyRequirements to &quot;visited&quot;)\
-\&lt;p&gt;You start every project by putting all your ducks in a row. This means answering some fundamental questions like &lt;em&gt;Who is this for?, What format does it need to be in?&lt;/em&gt; and &lt;em&gt;What&#39;s the purpose and context?&lt;/em&gt; It&#39;s usually helpful to revisit these requirements throughout the process, as some things tend to shift once you&#39;ve nailed down your topic and data.&lt;/p&gt;\
-\&lt;p&gt;You review the brief again, just to make sure there aren&#39;t any “gotchas”, and make sure to ask questions if there&#39;s anything you&#39;re unsure about.&lt;/p&gt;\
+\&lt;p&gt;You start every project by putting all your ducks in a row. This means answering some fundamental questions like &lt;em&gt;Who is this for?, What format does it need to be in?&lt;/em&gt; and &lt;em&gt;What&#39;s the purpose and context?&lt;/em&gt; It&#39;s helpful to revisit these requirements throughout the process, as some things tend to shift once you&#39;ve nailed down your topic and data.&lt;/p&gt;\
+\&lt;p&gt;You review the brief again, just to make sure there aren&#39;t any “gotchas”, and ask questions if you&#39;re unsure about anything.&lt;/p&gt;\
 \&lt;prompt&gt;What&#39;s next?&lt;/prompt&gt;\
 \(display: &quot;Links&quot;)</tw-passagedata><tw-passagedata pid="2" name="Choose a topic" tags="" position="1200,900" size="100,100">(set: $style to &quot;middle&quot;)\
 &lt;counter&gt;{(set: $days to $days + 1)(set: $daysLate to $days - 14)(if: $days &lt;= 14)[Day $days of 14]}{(if: $days is 15)[The assignment is $daysLate day late.]}{(if: $days &gt; 15)[The assignment is $daysLate days late.]}&lt;/counter&gt;\
@@ -912,67 +912,67 @@ $(".Publish").mouseout(function () {
 \(display: &quot;Links&quot;)</tw-passagedata><tw-passagedata pid="3" name="Find a dataset" tags="" position="1500,900" size="100,100">(set: $style to &quot;middle&quot;)\
 &lt;counter&gt;{(set: $days to $days + 1)(set: $daysLate to $days - 14)(if: $days &lt;= 14)[Day $days of 14]}{(if: $days is 15)[The assignment is $daysLate day late.]}{(if: $days &gt; 15)[The assignment is $daysLate days late.]}&lt;/counter&gt;\
 \&lt;h2&gt;Find a dataset&lt;/h2&gt; \
-\&lt;p&gt;Finding good data is harder than it should be. There&#39;s just so much out there; it&#39;s difficult to sift through it to find what you need, in the format you need it in. Luckly there&#39;s a few services on the web you&#39;ve found useful, including &lt;em&gt;kaggle.com, data.world&lt;/em&gt; and &lt;em&gt;data.gov.&lt;/em&gt;&lt;/p&gt;\
-\&lt;p&gt;If you find that the dataset you need isn&#39;t accessible to the public, never be afraid to send a polite email to whoever administers it. Good things come to those who ask.&lt;/p&gt;\
+\&lt;p&gt;Finding good data is harder than it should be. There&#39;s just so much out there; it&#39;s difficult to sift through it all to find what you need, in the format you need it in. Luckly there&#39;s a few services on the web you&#39;ve found useful, including &lt;em&gt;kaggle.com, data.world&lt;/em&gt; and &lt;em&gt;data.gov.&lt;/em&gt;&lt;/p&gt;\
+\&lt;p&gt;If you find that the dataset you need isn&#39;t accessible to the public, don&#39;t be afraid to send a polite email to whoever administers it. Good things come to those who ask.&lt;/p&gt;\
 \(set: $pgFindData to &quot;visited&quot;)\
 \&lt;prompt&gt;What&#39;s next?&lt;/prompt&gt;
 \(display: &quot;Links&quot;)</tw-passagedata><tw-passagedata pid="4" name="Explore data" tags="" position="1800,900" size="100,100">(set: $style to &quot;middle&quot;)\
 &lt;counter&gt;{(set: $days to $days + 1)(set: $daysLate to $days - 14)(if: $days &lt;= 14)[Day $days of 14]}{(if: $days is 15)[The assignment is $daysLate day late.]}{(if: $days &gt; 15)[The assignment is $daysLate days late.]}&lt;/counter&gt;\
 \&lt;h2&gt;Explore data&lt;/h2&gt;\
-\&lt;p&gt;Now the fun begins. Exploratory analysis is like playing detective. You get to go around following leads and interrogating the dataset. A good place to start is the basics: distribution, descriptive statistics and aggregation. Ask yourself questions. &lt;em&gt;How is the data distributed? How is it related? How has it changed over time?&lt;/em&gt;&lt;/p&gt;\
-\&lt;p&gt;Another good approach is to make lots and lots of throw-away charts and graphs. Your goal is to try and coax the the patterns out of the data. What seems interesting about it?&lt;/p&gt;\
+\&lt;p&gt;Now the fun begins. Exploratory analysis is like playing detective. You get to go around following leads and ‘interrogating’ the dataset. A good place to start is the basics: distribution, descriptive statistics and aggregation. Ask yourself some questions. &lt;em&gt;How is the data distributed? How is it related? How has it changed over time?&lt;/em&gt;&lt;/p&gt;\
+\&lt;p&gt;Another good approach is to make lots and lots of throw-away charts. You&#39;re trying and coax the patterns out of your data. What seems interesting about it?&lt;/p&gt;\
 \&lt;p&gt;If you&#39;re being honest with yourself, there&#39;s still a lot you don&#39;t know about data analysis. Don&#39;t be afraid to ask questions, try out new tools and get lots of feedback as you go.&lt;/p&gt;\
 \(set: $pgExploratoryViz to &quot;visited&quot;)\
 \&lt;prompt&gt;What&#39;s next?&lt;/prompt&gt;\
-\(display: &quot;Links&quot;)</tw-passagedata><tw-passagedata pid="5" name="Procrastinate" tags="" position="1950,900" size="100,100">(set: $style to &quot;middle&quot;)\
+\(display: &quot;Links&quot;)</tw-passagedata><tw-passagedata pid="5" name="Procrastinate" tags="" position="1950,901" size="100,100">(set: $style to &quot;middle&quot;)\
 &lt;counter&gt;{(set: $days to $days + 1)(set: $daysLate to $days - 14)(if: $days &lt;= 14)[Day $days of 14]}{(if: $days is 15)[The assignment is $daysLate day late.]}{(if: $days &gt; 15)[The assignment is $daysLate days late.]}&lt;/counter&gt;\
 \&lt;h2&gt;Procrastinate&lt;/h2&gt;\
-\&lt;p&gt;Maintaining a healthy work-life balance is the most important thing. Giving yourself time to relax, exercise and explore other interests will ultimately make you a better designer.&lt;/p&gt;&lt;p&gt;Yet, the key word is &lt;em&gt;balance&lt;/em&gt;. Lately you&#39;re finding it difficult to focus. You have multiple projects and commitments running at the same time and they&#39;re all competing for your time and energy. You&#39;re overwhelmed. When you&#39;re overwhelmed you look for distractions, which in turn exacerbate the problem.&lt;/p&gt;\
+\&lt;p&gt;Maintaining a healthy work-life balance is the most important thing. Giving yourself time to relax, exercise and explore other interests will ultimately make you a better designer.&lt;/p&gt;&lt;p&gt;Yet, the key word is &lt;em&gt;balance&lt;/em&gt;. Lately, you&#39;re finding it difficult to focus. You have multiple projects and commitments that are all competing for your time and energy. You&#39;re overwhelmed, and when you&#39;re overwhelmed you look for distractions, which exacerbates the problem.&lt;/p&gt;\
 \&lt;prompt&gt;Pick your poison&lt;/prompt&gt;
 \(set: $pgProcrastinate to &quot;visited&quot;)\
 \(display: &quot;Activities&quot;)</tw-passagedata><tw-passagedata pid="6" name="Visual design" tags="" position="2400,900" size="100,100">(set: $style to &quot;middle&quot;)\
 &lt;counter&gt;{(set: $days to $days + 1)(set: $daysLate to $days - 14)(if: $days &lt;= 14)[Day $days of 14]}{(if: $days is 15)[The assignment is $daysLate day late.]}{(if: $days &gt; 15)[The assignment is $daysLate days late.]}&lt;/counter&gt;\
 \&lt;h2&gt;Visual design&lt;/h2&gt;\
 \(set: $pgVisualDesign to &quot;visited&quot;)\
-\&lt;p&gt;By now you&#39;re pretty much done doing all the prep and exploration for your viz. That doesn&#39;t mean you still won&#39;t tweak things, but at this point you&#39;re definitely not going to start over.&lt;/p&gt;&lt;p&gt;You&#39;ve done a bunch of exploratory design and prototyping, and maybe even shown your ideas to colleagues for feedback. Now it&#39;s time to get into the weeds with all the visual design details, applying everything you&#39;ve learned along the way. Your design tools of choice for this step are usually Adobe Illustrator, Photoshop and Sketch. &lt;em&gt;Remember to use spell check!&lt;/em&gt;&lt;/p&gt;
+\&lt;p&gt;By now you&#39;re pretty much done with all the prep and exploration for your vizualization. That doesn&#39;t mean you still won&#39;t tweak some things, but at this point starting over isn&#39;t an option.&lt;/p&gt;&lt;p&gt;You&#39;ve done a bunch of exploratory design and prototyping, and maybe even shown some ideas to colleagues for feedback. Now it&#39;s time to get into the weeds with all the visual design details, applying everything you&#39;ve learned along the way and making it useful and—hopefully—beautiful. To do this, you usually work in visual design tools like &lt;em&gt;Adobe Illustrator, Photoshop&lt;/em&gt; and &lt;em&gt;Sketch.&lt;/em&gt; &lt;em&gt;Remember to use spell check!&lt;/em&gt;&lt;/p&gt;
 \&lt;prompt&gt;What&#39;s next?&lt;/prompt&gt;\
 \(display: &quot;Links&quot;)</tw-passagedata><tw-passagedata pid="7" name="Prototype" tags="" position="2250,900" size="100,100">(set: $style to &quot;middle&quot;)\
 &lt;counter&gt;{(set: $days to $days + 1)(set: $daysLate to $days - 14)(if: $days &lt;= 14)[Day $days of 14]}{(if: $days is 15)[The assignment is $daysLate day late.]}{(if: $days &gt; 15)[The assignment is $daysLate days late.]}&lt;/counter&gt;\
 \&lt;h2&gt;Prototype&lt;/h2&gt;\
 \(set: $pgPrototype to &quot;visited&quot;)\
-\&lt;p&gt;Prototyping is the interactive version of exploratory design. Your goal is to quickly test out key interactions and workflows to see how well they work. You can prototype at any stage of the process, depending on your project&#39;s needs. You find that most of the time you prototype in code, but you also use prototyping tools like &lt;em&gt;InVision&lt;/em&gt; and &lt;em&gt;Figma&lt;/em&gt; to evaluate more complex interactions.&lt;/p&gt;&lt;p&gt;You don&#39;t even have to use software if you don&#39;t want to. Designers have made very effective prototypes using nothing but markers and sticky notes.&lt;/p&gt;
+\&lt;p&gt;Prototyping is the interactive version of exploratory design. Your goal is to quickly test out key interactions and workflows to see how well they work. You can prototype at any stage of the process, depending on your project&#39;s needs. Most of the time you prototype in code, but you also use prototyping tools like &lt;em&gt;InVision&lt;/em&gt; and &lt;em&gt;Figma&lt;/em&gt; to evaluate more complex interactions.&lt;/p&gt;&lt;p&gt;You don&#39;t even have to use software if you don&#39;t want to, many designers have made effective prototypes using nothing but markers and sticky notes.&lt;/p&gt;
 \&lt;prompt&gt;What&#39;s next?&lt;/prompt&gt;\
 \(display: &quot;Links&quot;)</tw-passagedata><tw-passagedata pid="8" name="Validate" tags="" position="2550,900" size="100,100">(set: $style to &quot;middle&quot;)\
 &lt;counter&gt;{(set: $days to $days + 1)(set: $daysLate to $days - 14)(if: $days &lt;= 14)[Day $days of 14]}{(if: $days is 15)[The assignment is $daysLate day late.]}{(if: $days &gt; 15)[The assignment is $daysLate days late.]}&lt;/counter&gt;\
 &lt;h2&gt;Collect feedback&lt;/h2&gt;\
 \(set: $pgValidation to &quot;visited&quot;)\
-\&lt;p&gt;&lt;em&gt;You can&#39;t be a designer if you don&#39;t seek feedback.&lt;/em&gt; It&#39;s how you improve your problem-solving skills and grow empathy for your audience. Talking to people about your work makes you a bit nervous, but you make a point to solicit and incorporate feedback throughout your process, as early and often as possible.&lt;/p&gt;&lt;p&gt;While feedback provided by real &lt;em&gt;‘users’&lt;/em&gt; (perhaps in the form of a usability study or contextual inquiry) is always ideal, it&#39;s not always necessary. Sometimes showing a mockup or prototype to your colleague or spouse is good enough to get a gut-check on an idea. You should never rely 100% on your own perspective. You&#39;re not designing for yourself after all.&lt;/p&gt;\
+\&lt;p&gt;&lt;em&gt;You can&#39;t be a designer if you don&#39;t seek feedback.&lt;/em&gt; It&#39;s how you improve your problem-solving skills and grow empathy for your audience. You find it nerve-racking to talk to people about your work, but the feedback you get is always valuble. You make a point to solicit and incorporate feedback throughout your process, as early and often as possible.&lt;/p&gt;&lt;p&gt;While feedback provided by real &lt;em&gt;‘users’&lt;/em&gt; (perhaps in the form of formal user research) is always ideal, it&#39;s not always necessary. Sometimes, showing a mockup or a prototype to your colleague or spouse is good enough to get a gut-check on an idea. You should never rely solely on your own perspective. You&#39;re not designing for yourself after all.&lt;/p&gt;\
 \&lt;prompt&gt;What&#39;s next?&lt;/prompt&gt;\
 \(display: &quot;Links&quot;)</tw-passagedata><tw-passagedata pid="9" name="Collect inspiration" tags="" position="1350,900" size="100,100">(set: $style to &quot;middle&quot;)\
 &lt;counter&gt;{(set: $days to $days + 1)(set: $daysLate to $days - 14)(if: $days &lt;= 14)[Day $days of 14]}{(if: $days is 15)[The assignment is $daysLate day late.]}{(if: $days &gt; 15)[The assignment is $daysLate days late.]}&lt;/counter&gt;\
 \&lt;h2&gt;Collect inspiration&lt;/h2&gt;\
-\&lt;p&gt;To some, this might look like procrastinating, but you consider it the cornerstone of your process. Studying art and design helps you make better design decisions. It also gives you and your work a wider cultural context. It&#39;s good to cultivate an archive of inspirational material, including images, books, even objects. The name of the game is ABC, &lt;em&gt;always be collecting.&lt;/em&gt;&lt;/p&gt;
+\&lt;p&gt;To some, this might look like procrastinating, but you consider it the cornerstone of your process. Studying art and design helps you make better design decisions. It also gives you and your work a wider cultural context. It&#39;s good to cultivate an archive of inspirational material, including images, books, or whatever else inspires you. The name of the game is ABC, &lt;em&gt;always be collecting.&lt;/em&gt;&lt;/p&gt;
 \(set: $pgCollectInspiration to &quot;visited&quot;)\
 \&lt;prompt&gt;What&#39;s next?&lt;/prompt&gt;\
 \(display: &quot;Links&quot;)</tw-passagedata><tw-passagedata pid="10" name="Wrangle data" tags="" position="1650,900" size="100,100">(set: $style to &quot;middle&quot;)\
 &lt;counter&gt;{(set: $days to $days + 1)(set: $daysLate to $days - 14)(if: $days &lt;= 14)[Day $days of 14]}{(if: $days is 15)[The assignment is $daysLate day late.]}{(if: $days &gt; 15)[The assignment is $daysLate days late.]}&lt;/counter&gt;\
 \&lt;h2&gt;Wrangle data&lt;/h2&gt;\
-&lt;p&gt;You spend an inordinate amount of time getting your dataset ready for analysis. Before you get to the fun part, you&#39;ll need to make sure that your dataset is in the “long” format, where every row in the table represents one record. A good software tool for this conversion is &lt;em&gt;OpenRefine.&lt;/em&gt; While you&#39;re at it, decide what to do about all those null values.&lt;/p&gt;&lt;p&gt;If the records are in many languages, you can use the translate functions in &lt;em&gt;Google Sheets.&lt;/em&gt; Though, keep in mind that these tools are never totally accurate, and may not be appropriate for the data you&#39;re using. Use your discretion.&lt;/p&gt;
+&lt;p&gt;You spend an inordinate amount of time getting your dataset ready for analysis. Before you get to the fun part, you&#39;ll need to make sure that your dataset is in the “long” format, where every row in the table represents one record. A good software tool for this conversion is &lt;em&gt;OpenRefine.&lt;/em&gt; While you&#39;re at it, decide what to do about all those null values too.&lt;/p&gt;&lt;p&gt;If the records are in many languages, you can use the translate functions in &lt;em&gt;Google Sheets&lt;/em&gt;. However, keep in mind that these translations are never 100% accurate, and may not be appropriate for your data. Use your discretion.&lt;/p&gt;
 \(set: $pgCleanData to &quot;visited&quot;)\
 \&lt;prompt&gt;What&#39;s next?&lt;/prompt&gt;\
 \(display: &quot;Links&quot;)</tw-passagedata><tw-passagedata pid="11" name="Watch tutorials" tags="" position="2700,900" size="100,100">(set: $style to &quot;middle&quot;)\
 &lt;counter&gt;{(set: $days to $days + 1)(set: $daysLate to $days - 14)(if: $days &lt;= 14)[Day $days of 14]}{(if: $days is 15)[The assignment is $daysLate day late.]}{(if: $days &gt; 15)[The assignment is $daysLate days late.]}&lt;/counter&gt;\
 \&lt;h2&gt;Watch tutorials&lt;/h2&gt;\
 \(set: $pgWatchTutorials to &quot;visited&quot;)\
-\&lt;p&gt;As you run into technical snags along the way, you may find it necessary to seek new knowledge and skills in order to accomplish your goals. Luckily there&#39;s a magical place on the internet called Youtube where you can learn practically &lt;em&gt;anything.&lt;/em&gt; But be warned, autoplay is a dangerous feature. If you&#39;re not careful, you can get sucked into a dreaded &lt;em&gt;Youtube Wormhole&lt;/em&gt;.&lt;/p&gt;
+\&lt;p&gt;As you run into technical snags along the way, you may find it necessary to seek new knowledge and skills in order to accomplish your goals. Luckily there&#39;s a magical place on the internet called &lt;em&gt;Youtube&lt;/em&gt;, where you can learn practically &lt;em&gt;anything.&lt;/em&gt; But be warned, autoplay is a dangerous feature. If you&#39;re not careful, you can get sucked into a dreaded &lt;em&gt;Youtube wormhole&lt;/em&gt;.&lt;/p&gt;
 \&lt;prompt&gt;What&#39;s next?&lt;/prompt&gt;\
 \(display: &quot;Links&quot;)
 
 </tw-passagedata><tw-passagedata pid="12" name="Exploratory design" tags="" position="2100,900" size="100,100">(set: $style to &quot;middle&quot;)\
 &lt;counter&gt;{(set: $days to $days + 1)(set: $daysLate to $days - 14)(if: $days &lt;= 14)[Day $days of 14]}{(if: $days is 15)[The assignment is $daysLate day late.]}{(if: $days &gt; 15)[The assignment is $daysLate days late.]}&lt;/counter&gt;\
 \&lt;h2&gt;Exploratory design&lt;/h2&gt;\
-\&lt;p&gt;Sketching ideas by hand, as a form of exploratory design, is a crucial step in many designers&#39; process. Unfortunately, you&#39;ve hated sketching ever since your second year of design school, when your instructor assigned far too many movie poster thumbnails to be completed in a week.&lt;/p&gt;\
-\&lt;p&gt;Instead, you prefer to rapidly iterate on low-fidelity designs, workflow diagrams, colors and typography. Anything can be a sketch as long as you don&#39;t invest too much time in it and are willing to pivot to something better if the opportunity presents itself.&lt;/p&gt;\
+\&lt;p&gt;Sketching out concepts with paper ane pencil is a crucial tool in many designers&#39; exploratory design toolbox. However, you can&#39;t stand sketching— ever since time in undergrad when your instructor assigned far too many sketches to be completed in a week.&lt;/p&gt;\
+\&lt;p&gt;Instead, you prefer to rapidly iterate on low-fidelity designs and  workflow diagrams, while exploring color and typography in a low-stakes way. Anything can be a sketch as long as you don&#39;t invest too much time in it, and you&#39;re willing to pivot to something better if the opportunity presents itself.&lt;/p&gt;\
 \(set: $pgExploratoryDesign to &quot;visited&quot;)\
 \&lt;prompt&gt;What&#39;s next?&lt;/prompt&gt;\
 \(display: &quot;Links&quot;)
@@ -981,7 +981,7 @@ $(".Publish").mouseout(function () {
 &lt;counter&gt;{(set: $days to $days + 1)(set: $daysLate to $days - 14)(if: $days &lt;= 14)[Day $days of 14]}{(if: $days is 15)[The assignment is $daysLate day late.]}{(if: $days &gt; 15)[The assignment is $daysLate days late.]}&lt;/counter&gt;\
 \&lt;h2&gt;Implementation&lt;/h2&gt;\
 \(set: $pgImplementation to &quot;visited&quot;)\
-\&lt;p&gt;The light at the end of the tunnel. This is where designing ends and production begins. If your viz will live on the web, this is when the production-quality code starts to take shape. If you&#39;re working on a visualization for print, it&#39;s time to get those files to the printer!&lt;/p&gt;\
+\&lt;p&gt;The light at the end of the tunnel, this is where designing ends and production begins. If your project will live on the web, this is when the production-quality code starts to take shape. If you&#39;re working on a visualization for print, it&#39;s time to get those files to the printer. Chop chop, you don&#39;t want to pay those rush fees again!&lt;/p&gt;\
 \&lt;prompt&gt;What&#39;s next?&lt;/prompt&gt;\
 \(display: &quot;Links&quot;)
 </tw-passagedata><tw-passagedata pid="14" name="Publish" tags="" position="3000,900" size="100,100">(set: $style to &quot;end&quot;)\
@@ -995,9 +995,9 @@ $(".Publish").mouseout(function () {
 \&lt;nav&gt;[[Play again-&gt;Start]]&lt;nav&gt;</tw-passagedata><tw-passagedata pid="15" name="The brief" tags="" position="900,900" size="100,100">(set: $style to &quot;middle&quot;)\
 \&lt;counter&gt;(set: $days to 0)Day $days of 14&lt;/counter&gt;\
 \&lt;h2&gt;The brief&lt;/h2&gt;\
-\&lt;p lang=&quot;en&quot;&gt;You have &lt;strong&gt;14 days&lt;/strong&gt; to complete the assignment—plenty of time, you think. You&#39;re energized by the sense of possibility, and you still get that nervous-excited feeling in the pit of your stomach whenever you start a new viz. Even before you&#39;re done reading the brief your mind races to the finish line. &lt;em&gt;What will it look like? Should I make a map? Will it be interactive? What fonts should I use?&lt;/em&gt;&lt;/p&gt;\
+\&lt;p lang=&quot;en&quot;&gt;You have &lt;strong&gt;14 days&lt;/strong&gt; to complete the assignment—plenty of time, you think. You&#39;re energized by the sense of possibility, and you still get that nervous-excited feeling in the pit of your stomach whenever you start a new project. Even before you&#39;re done reading the brief your mind races to the finish line. &lt;em&gt;What will it look like? Should I make a map? Will it be interactive? What fonts should I use?&lt;/em&gt;&lt;/p&gt;\
 \&lt;p lang=&quot;en&quot;&gt;You force yourself to refocus. You haven&#39;t even chosen a topic yet. Finish reading the brief, let&#39;s not get ahead of ourselves.&lt;/p&gt;\
-\&lt;prompt&gt;First things firts&lt;/prompt&gt;\
+\&lt;prompt&gt;First things first&lt;/prompt&gt;\
 \&lt;nav&gt;[[Clarify requirements]]&lt;/nav&gt;</tw-passagedata><tw-passagedata pid="16" name="Links" tags="" position="200,700" size="100,100">(display: &quot;linkLogic&quot;)\
 \&lt;nav&gt;(if: $clarifyRequirements is true)[[Clarify requirements]]\
 \(if: $chooseATopic is true)[[Choose a topic]]\
@@ -1047,7 +1047,7 @@ $(".Publish").mouseout(function () {
 \&lt;prompt&gt;Now, where were we?&lt;/prompt&gt;\
 \(display: &quot;Links&quot;)</tw-passagedata><tw-passagedata pid="21" name="Youtube wormhole" tags="" position="1850,1300" size="100,100">&lt;counter&gt;{(if: $days &lt;= 14)[Day $days of 14]}{(if: $days is 15)[The assignment is $daysLate day late.]}{(if: $days &gt; 15)[The assignment is $daysLate days late.]}&lt;/counter&gt;
 \&lt;h2&gt;Youtube wormhole&lt;/h2&gt;\
-\&lt;p&gt;You&#39;ve been watching videos about bicycling for last (random: 2, 4) hours. &lt;em&gt;Hey, it&#39;s still light out,&lt;/em&gt; why not go for a spin?&lt;/p&gt;\
+\&lt;p&gt;You&#39;ve been watching videos about bicycling for last (random: 2, 4) hours. &lt;em&gt;Hey, it&#39;s still light out.&lt;/em&gt; Why not go for a spin?&lt;/p&gt;\
 \&lt;nav&gt;[[Go ride your bike-&gt;Ride your bike]]
 \No, it&#39;s time to get back to work\
 \(click-replace: &quot;No, it&#39;s time to get back to work&quot;)[\
@@ -1059,7 +1059,7 @@ $(".Publish").mouseout(function () {
 \&lt;nav&gt;[[Go to the store]]\
 \No, you have to get back to work\
 \(click-replace: &quot;No, you have to get back to work&quot;)[\
-\&lt;prompt&gt;Where were we?&lt;/prompt&gt;\
+\&lt;prompt&gt;Now, where were we?&lt;/prompt&gt;\
 \(display: &quot;Links&quot;)\
 \]\
 \&lt;/nav&gt;</tw-passagedata><tw-passagedata pid="23" name="Other project" tags="" position="2250,1300" size="100,100">&lt;counter&gt;{(if: $days &lt;= 14)[Day $days of 14]}{(if: $days is 15)[The assignment is $daysLate day late.]}{(if: $days &gt; 15)[The assignment is $daysLate days late.]}&lt;/counter&gt;\
@@ -1072,16 +1072,16 @@ $(".Publish").mouseout(function () {
 \&lt;prompt&gt;Now, where were we?&lt;/prompt&gt;\
 \(display: &quot;Links&quot;)</tw-passagedata><tw-passagedata pid="25" name="Go to sleep" tags="" position="2175,1450" size="100,100">&lt;counter&gt;{(set: $days to $days + 1)(set: $daysLate to $days - 14)(if: $days &lt;= 14)[Day $days of 14]}{(if: $days is 15)[The assignment is $daysLate day late.]}{(if: $days &gt; 15)[The assignment is $daysLate days late.]}&lt;/counter&gt;\
 \&lt;h2&gt;Good morning&lt;/h2&gt;\
-\&lt;p&gt;You slept for (random: 6, 10) hours. You feel very well-rested now, ready to get back to work?&lt;/p&gt;\
+\&lt;p&gt;You slept for (random: 6, 10) hours. You feel very well-rested now, are you ready to get back to work?&lt;/p&gt;\
 \&lt;nav&gt;[[Coffee first-&gt;Make a coffee]]\
 \Get straight to work\
 \(click-replace: &quot;Get straight to work&quot;)[\
-\&lt;prompt&gt;Where were we?&lt;/prompt&gt;\
+\&lt;prompt&gt;Now, where were we?&lt;/prompt&gt;\
 \(display: &quot;Links&quot;)\
 \]\
 \&lt;/nav&gt;</tw-passagedata><tw-passagedata pid="26" name="Make a coffee" tags="" position="2325,1450" size="100,100">&lt;counter&gt;{(if: $days &lt;= 14)[Day $days of 14]}{(if: $days is 15)[The assignment is $daysLate day late.]}{(if: $days &gt; 15)[The assignment is $daysLate days late.]}&lt;/counter&gt;\
 \&lt;h2&gt;Mmm caffeiiiiine&lt;/h2&gt;\
-\&lt;p&gt;You take your first sip of coffee and you can &lt;em&gt;feel&lt;/em&gt; the caffeine flowing through your bloodstream. You feel like a brand new person.&lt;/p&gt;\
+\&lt;p&gt;You take your first sip of coffee and you can &lt;em&gt;feel&lt;/em&gt; the caffeine pulsing through your bloodstream. You feel like a brand new person.&lt;/p&gt;\
 \&lt;prompt&gt;Now, where were we?&lt;/prompt&gt;\
 \(display: &quot;Links&quot;)</tw-passagedata><tw-passagedata pid="27" name="Background" tags="footer" position="450,300" size="100,100">(if: $days is 0)[&lt;script&gt;$(&#39;tw-story&#39;).addClass(&#39;day-0&#39;);&lt;/script&gt;]\
 (else-if: $days is 1)[&lt;script&gt;$(&#39;tw-story&#39;).addClass(&#39;day-1&#39;);&lt;/script&gt;]\
@@ -1114,10 +1114,10 @@ $(".Publish").mouseout(function () {
 &lt;script&gt;$(&#39;tw-story&#39;).removeClass(&#39;day-12&#39;);&lt;/script&gt;\
 &lt;script&gt;$(&#39;tw-story&#39;).removeClass(&#39;day-13&#39;);&lt;/script&gt;\
 &lt;script&gt;$(&#39;tw-story&#39;).removeClass(&#39;day-14&#39;);&lt;/script&gt;](else:)[&lt;script&gt;$(&#39;tw-story&#39;).removeClass(&#39;end&#39;);&lt;/script&gt;]
-</tw-passagedata><tw-passagedata pid="28" name="TopicText A" tags="" position="1025,1125" size="100,100">&lt;p&gt;You played it safe by choosing your data first, smart move. Now all you have to figure out is what &lt;em&gt;angle&lt;/em&gt; you&#39;re going to take in telling the story. Don&#39;t stress about it too much though, it&#39;ll surely come to you once you&#39;ve taken a closer look at the data.&lt;/p&gt;</tw-passagedata><tw-passagedata pid="29" name="TopicText B" tags="" position="1150,1125" size="100,100">&lt;p&gt;Settling on a topic is the hardest part. You could easily burn a full day or two deciding between two options. Your rule of thumb is to pick a topic that you can&#39;t possibly get bored of, like UFO sightings or anything about bicycling really. Mine the depths of your interests—&lt;em&gt;but be careful&lt;/em&gt;—choosing a topic is pointless if you can&#39;t find data to back it up.&lt;/p&gt;</tw-passagedata><tw-passagedata pid="30" name="Start" tags="" position="750,900" size="100,100">(set: $style to &quot;end&quot;)\
+</tw-passagedata><tw-passagedata pid="28" name="TopicText A" tags="" position="1025,1125" size="100,100">&lt;p&gt;You played it safe by choosing your data first, smart move. Now all you have to figure out is what &lt;em&gt;angle&lt;/em&gt; you&#39;re going to take in telling the story. Don&#39;t stress about it too much though, it&#39;ll surely come to you once you&#39;ve taken a closer look at the data.&lt;/p&gt;</tw-passagedata><tw-passagedata pid="29" name="TopicText B" tags="" position="1150,1125" size="100,100">&lt;p&gt;Settling on a topic is the hardest part. You could easily burn a full day or two deciding between two options. Your rule of thumb is to pick a topic that you can&#39;t possibly get bored of, like UFO sightings or anything about bicycles, really. Mine the depths of your interests—&lt;em&gt;but be careful&lt;/em&gt;—choosing a topic is pointless if you can&#39;t find data to back it up.&lt;/p&gt;</tw-passagedata><tw-passagedata pid="30" name="Start" tags="" position="750,900" size="100,100">(set: $style to &quot;end&quot;)\
 \&lt;h1&gt;&lt;span&gt;H&lt;/span&gt;&lt;span&gt;o&lt;/span&gt;&lt;span&gt;w&lt;/span&gt; &lt;span&gt;t&lt;/span&gt;&lt;span&gt;o&lt;/span&gt; &lt;span&gt;d&lt;/span&gt;&lt;span&gt;e&lt;/span&gt;&lt;span&gt;s&lt;/span&gt;&lt;span&gt;i&lt;/span&gt;&lt;span&gt;g&lt;/span&gt;&lt;span&gt;n&lt;/span&gt; &lt;span&gt;g&lt;/span&gt;&lt;span&gt;o&lt;/span&gt;&lt;span&gt;o&lt;/span&gt;&lt;span&gt;d&lt;/span&gt;&lt;/h1&gt;\
 
-&lt;prompt&gt;A choose-your-own process adventure for dataviz designers&lt;/prompt&gt;
+&lt;prompt&gt;A choose-your-own-process adventure for dataviz designers&lt;/prompt&gt;
 &lt;nav&gt;[[PLAY NOW-&gt;The brief]]&lt;/nav&gt;\
 \(display: &quot;startup&quot;)\
 \(set: $pgClarifyRequirements to &quot;notVisited&quot;)\
