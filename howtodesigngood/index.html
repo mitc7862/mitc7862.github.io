@@ -11,7 +11,7 @@
 
 <tw-story></tw-story>
 
-<tw-storydata name="How to design good 2" startnode="30" creator="Twine" creator-version="2.3.9" ifid="27D5FB87-F023-4023-9F75-67AA2AEB5AFC" zoom="1" format="Harlowe" format-version="3.1.0" options="" hidden><style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css">@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,500;0,600;0,700;0,800;1,400;1,500;1,600;1,700;1,800&family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+<tw-storydata name="How to design good 2" startnode="27" creator="Twine" creator-version="2.3.9" ifid="27D5FB87-F023-4023-9F75-67AA2AEB5AFC" zoom="1" format="Harlowe" format-version="3.1.0" options="" hidden><style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css">@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,500;0,600;0,700;0,800;1,400;1,500;1,600;1,700;1,800&family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
 
 tw-sidebar {
   display: none;
@@ -266,13 +266,13 @@ iframe.vizFrame {
   position: relative;
 }
 
-h2.early {
+.early h2 {
   color: #AFCED1;
 }
-h2.onTime {
+.onTime h2 {
   color: #EFDC93;
 }
-h2.late {
+.late h2 {
   color: #DA8752;
 }
 
@@ -355,8 +355,136 @@ h1 span:nth-of-type(15) {
   color: #DA8752;
 }
 
+div.theBrief {
+  position: absolute;
+  left: 871px;
+  top: -961px;
+  display: block;
+  transform: scaleX(-1);
+}
+div.clarifyRequirements {
+  position: absolute;
+  left: 871px;
+  top: -908px;
+  display: block;
+  transform: scaleX(-1);
+}
+div.chooseATopic {
+  position: absolute;
+  left: 871px;
+  top: -855px;
+  display: block;
+  transform: scaleX(-1);
+}
+div.collectInspiration {
+  position: absolute;
+  left: 871px;
+  top: -802px;
+  display: block;
+  transform: scaleX(-1);
+}
+div.findADataset {
+  position: absolute;
+  left: 871px;
+  top: -748px;
+  display: block;
+  transform: scaleX(-1);
+}
+div.wrangleData {
+  position: absolute;
+  left: 871px;
+  top: -695px;
+  display: block;
+  transform: scaleX(-1);
+}
+div.exploreData {
+  position: absolute;
+  left: 871px;
+  top: -642px;
+  display: block;
+  transform: scaleX(-1);
+}
+div.procrastinate {
+  position: absolute;
+  left: 871px;
+  top: -589px;
+  display: block;
+  transform: scaleX(-1);
+}
+div.exploratoryDesign {
+  position: absolute;
+  left: 871px;
+  top: -537px;
+  display: block;
+  transform: scaleX(-1);
+}
+div.prototype {
+  position: absolute;
+  left: 871px;
+  top: -483px;
+  display: block;
+  transform: scaleX(-1);
+}
+div.visualDesign {
+  position: absolute;
+  left: 871px;
+  top: -430px;
+  display: block;
+  transform: scaleX(-1);
+}
+div.collectFeedback {
+  position: absolute;
+  left: 871px;
+  top: -378px;
+  display: block;
+  transform: scaleX(-1);
+}
+div.watchTutorials {
+  position: absolute;
+  left: 871px;
+  top: -324px;
+  display: block;
+  transform: scaleX(-1);
+}
+div.implement {
+  position: absolute;
+  left: 871px;
+  top: -271px;
+  display: block;
+  transform: scaleX(-1);
+}
+div.publishAndSubmit {
+  position: absolute;
+  left: 871px;
+  top: -219px;
+  display: block;
+  transform: scaleX(-1); 
+}
+.early .indicators {
+  color: #AFCED1;
+}
+.onTime .indicators {
+  color: #EFDC93;
+}
+.late .indicators {
+  color: #DA8752;
+}
 
+key {
+  font-style: italic;
+  display: block;
+  text-align: center;
+}
 
+key .indicators {
+  font-style: normal;
+  display: inline-block;
+  transform: scaleX(-1);
+}
+
+.indicators {
+  pointer-events: none;
+}
 
 </style><script role="script" id="twine-user-script" type="text/twine-javascript">$(".The-brief").mouseover(function () {
     $(".The-brief").addClass("selected");
@@ -896,194 +1024,162 @@ $(".Publish").mouseout(function () {
     $(".Implement").removeClass("deselected");
     $(".Publish").removeClass("selected");
 });
-</script><tw-passagedata pid="1" name="Clarify requirements" tags="" position="1050,900" size="100,100">(set: $style to &quot;middle&quot;)\
+</script><tw-passagedata pid="1" name="Clarify requirements" tags="" position="1050,901" size="100,100">(set: $clarifyRequirements to true)\
+\(set: $style to &quot;middle&quot;)\
 &lt;counter&gt;{(set: $days to $days + 1)(set: $daysLate to $days - 14)(if: $days &lt;= 14)[Day $days of 14]}{(if: $days is 15)[The assignment is $daysLate day late.]}{(if: $days &gt; 15)[The assignment is $daysLate days late.]}&lt;/counter&gt;\
 \&lt;h2&gt;Clarify requirements&lt;/h2&gt;\
-\(set: $pgClarifyRequirements to &quot;visited&quot;)\
 \&lt;p&gt;You start every project by putting all your ducks in a row. This means answering some fundamental questions like &lt;em&gt;Who is this for?, What format does it need to be in?&lt;/em&gt; and &lt;em&gt;What&#39;s the purpose and context?&lt;/em&gt; It&#39;s helpful to revisit these requirements throughout the process, as some things tend to shift once you&#39;ve nailed down your topic and data.&lt;/p&gt;\
 \&lt;p&gt;You review the brief again, just to make sure there aren&#39;t any “gotchas”, and ask questions if you&#39;re unsure about anything.&lt;/p&gt;\
 \&lt;prompt&gt;What&#39;s next?&lt;/prompt&gt;\
-\(display: &quot;Links&quot;)</tw-passagedata><tw-passagedata pid="2" name="Choose a topic" tags="" position="1200,900" size="100,100">(set: $style to &quot;middle&quot;)\
+\(display: &quot;Links: Clarify requirements&quot;)</tw-passagedata><tw-passagedata pid="2" name="Choose a topic" tags="" position="1200,901" size="100,100">(set: $chooseATopic to true)\
+\(set: $style to &quot;middle&quot;)\
 &lt;counter&gt;{(set: $days to $days + 1)(set: $daysLate to $days - 14)(if: $days &lt;= 14)[Day $days of 14]}{(if: $days is 15)[The assignment is $daysLate day late.]}{(if: $days &gt; 15)[The assignment is $daysLate days late.]}&lt;/counter&gt;\
 \&lt;h2&gt;Choose a topic&lt;/h2&gt;\
-\(if: $pgFindData is &quot;visited&quot;)[(display: &quot;TopicText A&quot;)](else:)[(display: &quot;TopicText B&quot;)]\
-\(set: $pgChooseATopic to &quot;visited&quot;)(set: $chooseATopic to false)\
+\(if: $findData is true)[(display: &quot;TopicText A&quot;)](else:)[(display: &quot;TopicText B&quot;)]\
 \&lt;prompt&gt;What&#39;s next?&lt;/prompt&gt;\
-\(display: &quot;Links&quot;)</tw-passagedata><tw-passagedata pid="3" name="Find a dataset" tags="" position="1500,900" size="100,100">(set: $style to &quot;middle&quot;)\
+\(display: &quot;Links: Choose a topic&quot;)</tw-passagedata><tw-passagedata pid="3" name="Find a dataset" tags="" position="1500,900" size="100,100">(set: $findADataset to true)\
+\(set: $style to &quot;middle&quot;)\
 &lt;counter&gt;{(set: $days to $days + 1)(set: $daysLate to $days - 14)(if: $days &lt;= 14)[Day $days of 14]}{(if: $days is 15)[The assignment is $daysLate day late.]}{(if: $days &gt; 15)[The assignment is $daysLate days late.]}&lt;/counter&gt;\
 \&lt;h2&gt;Find a dataset&lt;/h2&gt; \
 \&lt;p&gt;Finding good data is harder than it should be. There&#39;s just so much out there; it&#39;s difficult to sift through it all to find what you need, in the format you need it in. Luckly there&#39;s a few services on the web you&#39;ve found useful, including &lt;em&gt;kaggle.com, data.world&lt;/em&gt; and &lt;em&gt;data.gov.&lt;/em&gt;&lt;/p&gt;\
 \&lt;p&gt;If you find that the dataset you need isn&#39;t accessible to the public, don&#39;t be afraid to send a polite email to whoever administers it. Good things come to those who ask.&lt;/p&gt;\
-\(set: $pgFindData to &quot;visited&quot;)\
-\&lt;prompt&gt;What&#39;s next?&lt;/prompt&gt;
-\(display: &quot;Links&quot;)</tw-passagedata><tw-passagedata pid="4" name="Explore data" tags="" position="1800,900" size="100,100">(set: $style to &quot;middle&quot;)\
-&lt;counter&gt;{(set: $days to $days + 1)(set: $daysLate to $days - 14)(if: $days &lt;= 14)[Day $days of 14]}{(if: $days is 15)[The assignment is $daysLate day late.]}{(if: $days &gt; 15)[The assignment is $daysLate days late.]}&lt;/counter&gt;\
+\&lt;prompt&gt;What&#39;s next?&lt;/prompt&gt;\
+\(display: &quot;Links: Find a dataset&quot;)</tw-passagedata><tw-passagedata pid="4" name="Explore data" tags="" position="1801,901" size="100,100">(set: $exploreData to true)\
+\(set: $style to &quot;middle&quot;)\
+\&lt;counter&gt;{(set: $days to $days + 1)(set: $daysLate to $days - 14)(if: $days &lt;= 14)[Day $days of 14]}{(if: $days is 15)[The assignment is $daysLate day late.]}{(if: $days &gt; 15)[The assignment is $daysLate days late.]}&lt;/counter&gt;\
 \&lt;h2&gt;Explore data&lt;/h2&gt;\
 \&lt;p&gt;Now the fun begins. Exploratory analysis is like playing detective. You get to go around following leads and ‘interrogating’ the dataset. A good place to start is the basics: distribution, descriptive statistics and aggregation. Ask yourself some questions. &lt;em&gt;How is the data distributed? How is it related? How has it changed over time?&lt;/em&gt;&lt;/p&gt;\
 \&lt;p&gt;Another good approach is to make lots and lots of throw-away charts. You&#39;re trying and coax the patterns out of your data. What seems interesting about it?&lt;/p&gt;\
 \&lt;p&gt;If you&#39;re being honest with yourself, there&#39;s still a lot you don&#39;t know about data analysis. Don&#39;t be afraid to ask questions, try out new tools and get lots of feedback as you go.&lt;/p&gt;\
-\(set: $pgExploratoryViz to &quot;visited&quot;)\
 \&lt;prompt&gt;What&#39;s next?&lt;/prompt&gt;\
-\(display: &quot;Links&quot;)</tw-passagedata><tw-passagedata pid="5" name="Procrastinate" tags="" position="1950,901" size="100,100">(set: $style to &quot;middle&quot;)\
-&lt;counter&gt;{(set: $days to $days + 1)(set: $daysLate to $days - 14)(if: $days &lt;= 14)[Day $days of 14]}{(if: $days is 15)[The assignment is $daysLate day late.]}{(if: $days &gt; 15)[The assignment is $daysLate days late.]}&lt;/counter&gt;\
+\(display: &quot;Links: Explore data&quot;)</tw-passagedata><tw-passagedata pid="5" name="Procrastinate" tags="" position="1950,902" size="100,100">(set: $procrastinate to true)\
+\(set: $style to &quot;middle&quot;)\
+\&lt;counter&gt;{(set: $days to $days + 1)(set: $daysLate to $days - 14)(if: $days &lt;= 14)[Day $days of 14]}{(if: $days is 15)[The assignment is $daysLate day late.]}{(if: $days &gt; 15)[The assignment is $daysLate days late.]}&lt;/counter&gt;\
 \&lt;h2&gt;Procrastinate&lt;/h2&gt;\
 \&lt;p&gt;Maintaining a healthy work-life balance is the most important thing. Giving yourself time to relax, exercise and explore other interests will ultimately make you a better designer.&lt;/p&gt;&lt;p&gt;Yet, the key word is &lt;em&gt;balance&lt;/em&gt;. Lately, you&#39;re finding it difficult to focus. You have multiple projects and commitments that are all competing for your time and energy. You&#39;re overwhelmed, and when you&#39;re overwhelmed you look for distractions, which exacerbates the problem.&lt;/p&gt;\
-\&lt;prompt&gt;Pick your poison&lt;/prompt&gt;
-\(set: $pgProcrastinate to &quot;visited&quot;)\
-\(display: &quot;Activities&quot;)</tw-passagedata><tw-passagedata pid="6" name="Visual design" tags="" position="2400,900" size="100,100">(set: $style to &quot;middle&quot;)\
-&lt;counter&gt;{(set: $days to $days + 1)(set: $daysLate to $days - 14)(if: $days &lt;= 14)[Day $days of 14]}{(if: $days is 15)[The assignment is $daysLate day late.]}{(if: $days &gt; 15)[The assignment is $daysLate days late.]}&lt;/counter&gt;\
+\&lt;prompt&gt;Pick your poison&lt;/prompt&gt;\
+\(display: &quot;Activities&quot;)</tw-passagedata><tw-passagedata pid="6" name="Visual design" tags="" position="2400,900" size="100,100">(set: $visualDesign to true)\
+\(set: $style to &quot;middle&quot;)\
+\&lt;counter&gt;{(set: $days to $days + 1)(set: $daysLate to $days - 14)(if: $days &lt;= 14)[Day $days of 14]}{(if: $days is 15)[The assignment is $daysLate day late.]}{(if: $days &gt; 15)[The assignment is $daysLate days late.]}&lt;/counter&gt;\
 \&lt;h2&gt;Visual design&lt;/h2&gt;\
-\(set: $pgVisualDesign to &quot;visited&quot;)\
 \&lt;p&gt;By now you&#39;re pretty much done with all the prep and exploration for your vizualization. That doesn&#39;t mean you still won&#39;t tweak some things, but at this point starting over isn&#39;t an option.&lt;/p&gt;&lt;p&gt;You&#39;ve done a bunch of exploratory design and prototyping, and maybe even shown some ideas to colleagues for feedback. Now it&#39;s time to get into the weeds with all the visual design details, applying everything you&#39;ve learned along the way and making it useful and—hopefully—beautiful. To do this, you usually work in visual design tools like &lt;em&gt;Adobe Illustrator, Photoshop&lt;/em&gt; and &lt;em&gt;Sketch.&lt;/em&gt; &lt;em&gt;Remember to use spell check!&lt;/em&gt;&lt;/p&gt;
-\&lt;prompt&gt;What&#39;s next?&lt;/prompt&gt;\
-\(display: &quot;Links&quot;)</tw-passagedata><tw-passagedata pid="7" name="Prototype" tags="" position="2250,900" size="100,100">(set: $style to &quot;middle&quot;)\
-&lt;counter&gt;{(set: $days to $days + 1)(set: $daysLate to $days - 14)(if: $days &lt;= 14)[Day $days of 14]}{(if: $days is 15)[The assignment is $daysLate day late.]}{(if: $days &gt; 15)[The assignment is $daysLate days late.]}&lt;/counter&gt;\
+\&lt;prompt&gt;What&#39;s next?&lt;/prompt&gt;
+\(display: &quot;Links: Visual design&quot;)</tw-passagedata><tw-passagedata pid="7" name="Prototype" tags="" position="2250,900" size="100,100">(set: $prototype to true)\
+\(set: $style to &quot;middle&quot;)\
+\&lt;counter&gt;{(set: $days to $days + 1)(set: $daysLate to $days - 14)(if: $days &lt;= 14)[Day $days of 14]}{(if: $days is 15)[The assignment is $daysLate day late.]}{(if: $days &gt; 15)[The assignment is $daysLate days late.]}&lt;/counter&gt;\
 \&lt;h2&gt;Prototype&lt;/h2&gt;\
-\(set: $pgPrototype to &quot;visited&quot;)\
 \&lt;p&gt;Prototyping is the interactive version of exploratory design. Your goal is to quickly test out key interactions and workflows to see how well they work. You can prototype at any stage of the process, depending on your project&#39;s needs. Most of the time you prototype in code, but you also use prototyping tools like &lt;em&gt;InVision&lt;/em&gt; and &lt;em&gt;Figma&lt;/em&gt; to evaluate more complex interactions.&lt;/p&gt;&lt;p&gt;You don&#39;t even have to use software if you don&#39;t want to, many designers have made effective prototypes using nothing but markers and sticky notes.&lt;/p&gt;
 \&lt;prompt&gt;What&#39;s next?&lt;/prompt&gt;\
-\(display: &quot;Links&quot;)</tw-passagedata><tw-passagedata pid="8" name="Validate" tags="" position="2550,900" size="100,100">(set: $style to &quot;middle&quot;)\
-&lt;counter&gt;{(set: $days to $days + 1)(set: $daysLate to $days - 14)(if: $days &lt;= 14)[Day $days of 14]}{(if: $days is 15)[The assignment is $daysLate day late.]}{(if: $days &gt; 15)[The assignment is $daysLate days late.]}&lt;/counter&gt;\
-&lt;h2&gt;Collect feedback&lt;/h2&gt;\
-\(set: $pgValidation to &quot;visited&quot;)\
+\(display: &quot;Links: Prototype&quot;)</tw-passagedata><tw-passagedata pid="8" name="Collect feedback" tags="" position="2550,900" size="100,100">(set: $style to &quot;middle&quot;)\
+\(set: $collectFeedback to true)\
+\&lt;counter&gt;{(set: $days to $days + 1)(set: $daysLate to $days - 14)(if: $days &lt;= 14)[Day $days of 14]}{(if: $days is 15)[The assignment is $daysLate day late.]}{(if: $days &gt; 15)[The assignment is $daysLate days late.]}&lt;/counter&gt;\
+\&lt;h2&gt;Collect feedback&lt;/h2&gt;\
 \&lt;p&gt;&lt;em&gt;You can&#39;t be a designer if you don&#39;t seek feedback.&lt;/em&gt; It&#39;s how you improve your problem-solving skills and grow empathy for your audience. You find it nerve-racking to talk to people about your work, but the feedback you get is always valuble. You make a point to solicit and incorporate feedback throughout your process, as early and often as possible.&lt;/p&gt;&lt;p&gt;While feedback provided by real &lt;em&gt;‘users’&lt;/em&gt; (perhaps in the form of formal user research) is always ideal, it&#39;s not always necessary. Sometimes, showing a mockup or a prototype to your colleague or spouse is good enough to get a gut-check on an idea. You should never rely solely on your own perspective. You&#39;re not designing for yourself after all.&lt;/p&gt;\
 \&lt;prompt&gt;What&#39;s next?&lt;/prompt&gt;\
-\(display: &quot;Links&quot;)</tw-passagedata><tw-passagedata pid="9" name="Collect inspiration" tags="" position="1350,900" size="100,100">(set: $style to &quot;middle&quot;)\
-&lt;counter&gt;{(set: $days to $days + 1)(set: $daysLate to $days - 14)(if: $days &lt;= 14)[Day $days of 14]}{(if: $days is 15)[The assignment is $daysLate day late.]}{(if: $days &gt; 15)[The assignment is $daysLate days late.]}&lt;/counter&gt;\
+\(display: &quot;Links: Collect feedback&quot;)</tw-passagedata><tw-passagedata pid="9" name="Collect inspiration" tags="" position="1350,899" size="100,100">(set: $collectInspiration to true)\
+\(set: $style to &quot;middle&quot;)\
+\&lt;counter&gt;{(set: $days to $days + 1)(set: $daysLate to $days - 14)(if: $days &lt;= 14)[Day $days of 14]}{(if: $days is 15)[The assignment is $daysLate day late.]}{(if: $days &gt; 15)[The assignment is $daysLate days late.]}&lt;/counter&gt;\
 \&lt;h2&gt;Collect inspiration&lt;/h2&gt;\
-\&lt;p&gt;To some, this might look like procrastinating, but you consider it the cornerstone of your process. Studying art and design helps you make better design decisions. It also gives you and your work a wider cultural context. It&#39;s good to cultivate an archive of inspirational material, including images, books, or whatever else inspires you. The name of the game is ABC, &lt;em&gt;always be collecting.&lt;/em&gt;&lt;/p&gt;
-\(set: $pgCollectInspiration to &quot;visited&quot;)\
+\&lt;p&gt;To some, this might look like procrastinating, but you consider it the cornerstone of your process. Studying art and design helps you make better design decisions. It also gives you and your work a wider cultural context. It&#39;s good to cultivate an archive of inspirational material, including images, books, or whatever else inspires you. The name of the game is ABC, &lt;em&gt;always be collecting.&lt;/em&gt;&lt;/p&gt;\
 \&lt;prompt&gt;What&#39;s next?&lt;/prompt&gt;\
-\(display: &quot;Links&quot;)</tw-passagedata><tw-passagedata pid="10" name="Wrangle data" tags="" position="1650,900" size="100,100">(set: $style to &quot;middle&quot;)\
-&lt;counter&gt;{(set: $days to $days + 1)(set: $daysLate to $days - 14)(if: $days &lt;= 14)[Day $days of 14]}{(if: $days is 15)[The assignment is $daysLate day late.]}{(if: $days &gt; 15)[The assignment is $daysLate days late.]}&lt;/counter&gt;\
+\(display: &quot;Links: Collect inspiration&quot;)</tw-passagedata><tw-passagedata pid="10" name="Wrangle data" tags="" position="1650,900" size="100,100">(set: $wrangleData to true)\
+\(set: $style to &quot;middle&quot;)\
+\&lt;counter&gt;{(set: $days to $days + 1)(set: $daysLate to $days - 14)(if: $days &lt;= 14)[Day $days of 14]}{(if: $days is 15)[The assignment is $daysLate day late.]}{(if: $days &gt; 15)[The assignment is $daysLate days late.]}&lt;/counter&gt;\
 \&lt;h2&gt;Wrangle data&lt;/h2&gt;\
-&lt;p&gt;You spend an inordinate amount of time getting your dataset ready for analysis. Before you get to the fun part, you&#39;ll need to make sure that your dataset is in the “long” format, where every row in the table represents one record. A good software tool for this conversion is &lt;em&gt;OpenRefine.&lt;/em&gt; While you&#39;re at it, decide what to do about all those null values too.&lt;/p&gt;&lt;p&gt;If the records are in many languages, you can use the translate functions in &lt;em&gt;Google Sheets&lt;/em&gt;. However, keep in mind that these translations are never 100% accurate, and may not be appropriate for your data. Use your discretion.&lt;/p&gt;
-\(set: $pgCleanData to &quot;visited&quot;)\
+&lt;p&gt;You spend an inordinate amount of time getting your dataset ready for analysis. Before you get to the fun part, you&#39;ll need to make sure that your dataset is in the “long” format, where every row in the table represents one record. A good software tool for this conversion is &lt;em&gt;OpenRefine.&lt;/em&gt; While you&#39;re at it, decide what to do about all those null values too.&lt;/p&gt;&lt;p&gt;If the records are in many languages, you can use the translate functions in &lt;em&gt;Google Sheets&lt;/em&gt;. However, keep in mind that these translations are never 100% accurate, and may not be appropriate for your data. Use your discretion.&lt;/p&gt;\
 \&lt;prompt&gt;What&#39;s next?&lt;/prompt&gt;\
-\(display: &quot;Links&quot;)</tw-passagedata><tw-passagedata pid="11" name="Watch tutorials" tags="" position="2700,900" size="100,100">(set: $style to &quot;middle&quot;)\
-&lt;counter&gt;{(set: $days to $days + 1)(set: $daysLate to $days - 14)(if: $days &lt;= 14)[Day $days of 14]}{(if: $days is 15)[The assignment is $daysLate day late.]}{(if: $days &gt; 15)[The assignment is $daysLate days late.]}&lt;/counter&gt;\
+\(display: &quot;Links: Wrangle data&quot;)</tw-passagedata><tw-passagedata pid="11" name="Watch tutorials" tags="" position="2700,900" size="100,100">(set: $watchTutorials to true)\
+\(set: $style to &quot;middle&quot;)\
+\&lt;counter&gt;{(set: $days to $days + 1)(set: $daysLate to $days - 14)(if: $days &lt;= 14)[Day $days of 14]}{(if: $days is 15)[The assignment is $daysLate day late.]}{(if: $days &gt; 15)[The assignment is $daysLate days late.]}&lt;/counter&gt;\
 \&lt;h2&gt;Watch tutorials&lt;/h2&gt;\
-\(set: $pgWatchTutorials to &quot;visited&quot;)\
 \&lt;p&gt;As you run into technical snags along the way, you may find it necessary to seek new knowledge and skills in order to accomplish your goals. Luckily there&#39;s a magical place on the internet called &lt;em&gt;Youtube&lt;/em&gt;, where you can learn practically &lt;em&gt;anything.&lt;/em&gt; But be warned, autoplay is a dangerous feature. If you&#39;re not careful, you can get sucked into a dreaded &lt;em&gt;Youtube wormhole&lt;/em&gt;.&lt;/p&gt;
 \&lt;prompt&gt;What&#39;s next?&lt;/prompt&gt;\
-\(display: &quot;Links&quot;)
-
-</tw-passagedata><tw-passagedata pid="12" name="Exploratory design" tags="" position="2100,900" size="100,100">(set: $style to &quot;middle&quot;)\
-&lt;counter&gt;{(set: $days to $days + 1)(set: $daysLate to $days - 14)(if: $days &lt;= 14)[Day $days of 14]}{(if: $days is 15)[The assignment is $daysLate day late.]}{(if: $days &gt; 15)[The assignment is $daysLate days late.]}&lt;/counter&gt;\
+\(display: &quot;Links: Watch tutorials&quot;)
+</tw-passagedata><tw-passagedata pid="12" name="Exploratory design" tags="" position="2099,900" size="100,100">(set: $exploratoryDesign to true)\
+\(set: $style to &quot;middle&quot;)\
+\&lt;counter&gt;{(set: $days to $days + 1)(set: $daysLate to $days - 14)(if: $days &lt;= 14)[Day $days of 14]}{(if: $days is 15)[The assignment is $daysLate day late.]}{(if: $days &gt; 15)[The assignment is $daysLate days late.]}&lt;/counter&gt;\
 \&lt;h2&gt;Exploratory design&lt;/h2&gt;\
 \&lt;p&gt;Sketching out concepts with paper ane pencil is a crucial tool in many designers&#39; exploratory design toolbox. However, you can&#39;t stand sketching— ever since time in undergrad when your instructor assigned far too many sketches to be completed in a week.&lt;/p&gt;\
 \&lt;p&gt;Instead, you prefer to rapidly iterate on low-fidelity designs and  workflow diagrams, while exploring color and typography in a low-stakes way. Anything can be a sketch as long as you don&#39;t invest too much time in it, and you&#39;re willing to pivot to something better if the opportunity presents itself.&lt;/p&gt;\
-\(set: $pgExploratoryDesign to &quot;visited&quot;)\
 \&lt;prompt&gt;What&#39;s next?&lt;/prompt&gt;\
-\(display: &quot;Links&quot;)
-
-</tw-passagedata><tw-passagedata pid="13" name="Implement" tags="" position="2850,900" size="100,100">(set: $style to &quot;middle&quot;)\
-&lt;counter&gt;{(set: $days to $days + 1)(set: $daysLate to $days - 14)(if: $days &lt;= 14)[Day $days of 14]}{(if: $days is 15)[The assignment is $daysLate day late.]}{(if: $days &gt; 15)[The assignment is $daysLate days late.]}&lt;/counter&gt;\
+\(display: &quot;Links: Exploratory design&quot;)</tw-passagedata><tw-passagedata pid="13" name="Implement" tags="" position="2849,901" size="100,100">(set: $implement to true)\
+\(set: $style to &quot;middle&quot;)\
+\&lt;counter&gt;{(set: $days to $days + 1)(set: $daysLate to $days - 14)(if: $days &lt;= 14)[Day $days of 14]}{(if: $days is 15)[The assignment is $daysLate day late.]}{(if: $days &gt; 15)[The assignment is $daysLate days late.]}&lt;/counter&gt;\
 \&lt;h2&gt;Implementation&lt;/h2&gt;\
-\(set: $pgImplementation to &quot;visited&quot;)\
 \&lt;p&gt;The light at the end of the tunnel, this is where designing ends and production begins. If your project will live on the web, this is when the production-quality code starts to take shape. If you&#39;re working on a visualization for print, it&#39;s time to get those files to the printer. Chop chop, you don&#39;t want to pay those rush fees again!&lt;/p&gt;\
 \&lt;prompt&gt;What&#39;s next?&lt;/prompt&gt;\
-\(display: &quot;Links&quot;)
-</tw-passagedata><tw-passagedata pid="14" name="Publish" tags="" position="3000,900" size="100,100">(set: $style to &quot;end&quot;)\
+\(display: &quot;Links: Implement&quot;)</tw-passagedata><tw-passagedata pid="14" name="Publish and submit" tags="" position="3001,898" size="100,100">(set: $publishAndSubmit to true)\
+\(set: $style to &quot;end&quot;)\
 \(set: $daysToSpare to 14 - $days)\
 \(if: $days &lt; 14)[&lt;h2 class=&quot;early&quot;&gt;You finished early&lt;/h2&gt;]\
 \(else-if: $days is 14)[&lt;h2 class=&quot;onTime&quot;&gt;&lt;em&gt;Phew,&lt;/em&gt; you finished just in time&lt;/h2&gt;]\
 \(else-if: $days &gt; 14)[&lt;h2 class=&quot;late&quot;&gt;The assignment is &lt;em&gt;late&lt;/em&gt;&lt;/h2&gt;]\
-\(set: $pgDeployment to &quot;visited&quot;)\
-\&lt;p&gt;You completed the assignment in $days days. Hover over the visual below to explore how you might improve your process. Remember, your goal isn’t necisarily to finish fast, but to be as thourough and thoughtful as possible within the time constraint.&lt;/p&gt;\
-\&lt;iframe class=&quot;vizFrame&quot; src=&quot;processViz.html&quot; title=&quot;Process visualization&quot; scrolling=&quot;no&quot;&gt;&lt;/iframe&gt;\
-\&lt;nav&gt;[[Play again-&gt;Start]]&lt;nav&gt;</tw-passagedata><tw-passagedata pid="15" name="The brief" tags="" position="900,900" size="100,100">(set: $style to &quot;middle&quot;)\
+\&lt;p&gt;You completed the assignment in $days days. Hover over the visual below to explore how you might improve your process. Remember, your goal isn’t necessarily to finish fast, but to be as thourough and thoughtful as possible within the time constraint.&lt;/p&gt;
+&lt;key&gt;&lt;span class=&quot;indicators&quot;&gt;➸&lt;/span&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;=&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;Steps completed&lt;/key&gt;
+\&lt;iframe class=&quot;vizFrame&quot; src=&quot;processViz.html&quot; scrolling=&quot;no&quot;&gt;&lt;/iframe&gt;\
+\&lt;nav&gt;[[Play again-&gt;Start]]&lt;nav&gt;\
+\&lt;div class=&quot;indicators&quot;&gt;(display: &quot;Visited&quot;)&lt;/div&gt;</tw-passagedata><tw-passagedata pid="15" name="The brief" tags="" position="900,899" size="100,100">(set: $theBrief to true)\
+\(set: $style to &quot;middle&quot;)\
 \&lt;counter&gt;(set: $days to 0)Day $days of 14&lt;/counter&gt;\
 \&lt;h2&gt;The brief&lt;/h2&gt;\
 \&lt;p lang=&quot;en&quot;&gt;You have &lt;strong&gt;14 days&lt;/strong&gt; to complete the assignment—plenty of time, you think. You&#39;re energized by the sense of possibility, and you still get that nervous-excited feeling in the pit of your stomach whenever you start a new project. Even before you&#39;re done reading the brief your mind races to the finish line. &lt;em&gt;What will it look like? Should I make a map? Will it be interactive? What fonts should I use?&lt;/em&gt;&lt;/p&gt;\
 \&lt;p lang=&quot;en&quot;&gt;You force yourself to refocus. You haven&#39;t even chosen a topic yet. Finish reading the brief, let&#39;s not get ahead of ourselves.&lt;/p&gt;\
 \&lt;prompt&gt;First things first&lt;/prompt&gt;\
-\&lt;nav&gt;[[Clarify requirements]]&lt;/nav&gt;</tw-passagedata><tw-passagedata pid="16" name="Links" tags="" position="200,700" size="100,100">(display: &quot;linkLogic&quot;)\
-\&lt;nav&gt;(if: $clarifyRequirements is true)[[Clarify requirements]]\
-\(if: $chooseATopic is true)[[Choose a topic]]\
-\(if: $collectInspiration is true)[[Collect inspiration]]\
-\(if: $findData is true)[[Find a dataset]]\
-\(if: $cleanData is true)[[Wrangle data]]\
-\(if: $exploratoryViz is true)[[Explore data]]\
-\(if: $procrastinate is true)[[Procrastinate]]\
-\(if: $exploratoryDesign is true)[[Exploratory design]]\
-\(if: $prototype is true)[[Prototype]]\
-\(if: $visualDesign is true)[[Visual design]]\
-\(if: $validation is true)[[Collect feedback-&gt;Validate]]\
-\(if: $watchTutorials is true)[[Watch tutorials]]\
-\(if: $implementation is true)[[Implement]]\
-\(if: $deployment is true)[[Publish and submit-&gt;Publish]]&lt;/nav&gt;</tw-passagedata><tw-passagedata pid="17" name="startup" tags="startup" position="200,300" size="100,100">(set: $clarifyRequirements to false)\
-\(set: $chooseATopic to false)\
-\(set: $findData to false)\
-\(set: $exploratoryViz to false)\
-\(set: $procrastinate to true)\
-\(set: $visualDesign to false)\
-\(set: $prototype to false)\
-\(set: $validation to false)\
-\(set: $collectInspiration to true)\
-\(set: $cleanData to false)\
-\(set: $watchTutorials to true)\
-\(set: $exploratoryDesign to false)\
-\(set: $implementation to false)\
-\(set: $deployment to false)\
-\(display: &quot;linkLogic&quot;)</tw-passagedata><tw-passagedata pid="18" name="linkLogic" tags="" position="325,300" size="100,100">{(if: $pgClarifyRequirements is &quot;visited&quot;)[(set: $chooseATopic to true)(set: $findData to true)(set: $watchTutorials to true)]}\
-{(if: $pgChooseATopic is &quot;visited&quot;)[(set: $clarifyRequirements to true)(set: $chooseATopic to false)(set: $exploratoryDesign to true)]}\
-{(if: $pgFindData is &quot;visited&quot;)[(set: $chooseATopic to true)(set: $findData to false)(set: $cleanData to true)(set: $exploratoryViz to true)(set: $prototype to true)]}\
-{(if: $pgCleanData is &quot;visited&quot;)[(set: $cleanData to false)(set: $exploratoryDesign to true)(set: $chooseATopic to false)]}\
-{(if: $pgExploratoryViz is &quot;visited&quot;)[(set: $cleanData to true)(set: $exploratoryViz to false)(set: $validation to true)]}\
-{(if: $pgExploratoryDesign is &quot;visited&quot;)[(set: $exploratoryViz to true)(set: $exploratoryDesign to false)(set: $visualDesign to true)]}\
-{(if: $pgPrototype is &quot;visited&quot;)[(set: $exploratoryDesign to true)(set: $prototype to false)(set: $implementation to true)]}\
-{(if: $pgVisualDesign is &quot;visited&quot;)[(set: $cleanData to false)(set: $prototype to true)(set: $visualDesign to true)]}\
-{(if: $pgValidation is &quot;visited&quot;)[(set: $visualDesign to true)(set: $validation to false)]}\
-{(if: $pgImplementation is &quot;visited&quot;)[(set: $exploratoryViz to false)(set: $exploratoryDesign to false)(set: $validation to true)(set: $implementation to false)(set: $deployment to true)]}\
-{(if: $pgDeployment is &quot;visited&quot;)[(set: $clarifyRequirements to false)(set: $prototype to false)(set: $visualDesign to false)(set: $validation to false)(set: $collectInspiration to false)(set: $procrastinate to false)(set: $clarifyRequirements to false)(set: $watchTutorials to false)]}</tw-passagedata><tw-passagedata pid="19" name="Activities" tags="" position="1950,1100" size="100,100">&lt;nav class=&quot;activities&quot;&gt;\
+\(display: &quot;Links: The brief&quot;)</tw-passagedata><tw-passagedata pid="16" name="Activities" tags="" position="1950,1300" size="100,100">(set: $style to &quot;middle&quot;)\
+\&lt;nav class=&quot;activities&quot;&gt;\
 \[[It&#39;s a beautiful day outside, go ride your bicycle-&gt;Ride your bike]]\
 \[[Get sucked down a Youtube wormhole-&gt;Youtube wormhole]]\
 \[[Make a sandwhich even though you&#39;re not hungry-&gt;Make a sandwhich]]\
 \[[Work on that other project you&#39;ve been putting off-&gt;Other project]]\
-\&lt;/nav&gt;</tw-passagedata><tw-passagedata pid="20" name="Ride your bike" tags="" position="1650,1300" size="100,100">&lt;counter&gt;{(if: $days &lt;= 14)[Day $days of 14]}{(if: $days is 15)[The assignment is $daysLate day late.]}{(if: $days &gt; 15)[The assignment is $daysLate days late.]}&lt;/counter&gt;\
+\&lt;/nav&gt;</tw-passagedata><tw-passagedata pid="17" name="Ride your bike" tags="" position="1656,1496" size="100,100">(set: $style to &quot;middle&quot;)\
+\&lt;counter&gt;{(if: $days &lt;= 14)[Day $days of 14]}{(if: $days is 15)[The assignment is $daysLate day late.]}{(if: $days &gt; 15)[The assignment is $daysLate days late.]}&lt;/counter&gt;\
 \&lt;h2&gt;Bike ride&lt;/h2&gt;
 \&lt;p&gt;You pedaled (random: 10,25) beautiful miles. There&#39;s no better way to spend an afternoon, but now you &lt;em&gt;really&lt;/em&gt; have to get back to work.&lt;/p&gt;\
 \&lt;prompt&gt;Now, where were we?&lt;/prompt&gt;\
-\(display: &quot;Links&quot;)</tw-passagedata><tw-passagedata pid="21" name="Youtube wormhole" tags="" position="1850,1300" size="100,100">&lt;counter&gt;{(if: $days &lt;= 14)[Day $days of 14]}{(if: $days is 15)[The assignment is $daysLate day late.]}{(if: $days &gt; 15)[The assignment is $daysLate days late.]}&lt;/counter&gt;
+\(display: &quot;Links: Procrastinate&quot;)</tw-passagedata><tw-passagedata pid="18" name="Youtube wormhole" tags="" position="1856,1496" size="100,100">(set: $style to &quot;middle&quot;)\
+\&lt;counter&gt;{(if: $days &lt;= 14)[Day $days of 14]}{(if: $days is 15)[The assignment is $daysLate day late.]}{(if: $days &gt; 15)[The assignment is $daysLate days late.]}&lt;/counter&gt;
 \&lt;h2&gt;Youtube wormhole&lt;/h2&gt;\
 \&lt;p&gt;You&#39;ve been watching videos about bicycling for last (random: 2, 4) hours. &lt;em&gt;Hey, it&#39;s still light out.&lt;/em&gt; Why not go for a spin?&lt;/p&gt;\
 \&lt;nav&gt;[[Go ride your bike-&gt;Ride your bike]]
 \No, it&#39;s time to get back to work\
 \(click-replace: &quot;No, it&#39;s time to get back to work&quot;)[\
 \&lt;prompt&gt;Now, where were we?&lt;/prompt&gt;\
-\(display: &quot;Links&quot;)\
-]&lt;/nav&gt;</tw-passagedata><tw-passagedata pid="22" name="Make a sandwhich" tags="" position="2050,1300" size="100,100">&lt;counter&gt;{(if: $days &lt;= 14)[Day $days of 14]}{(if: $days is 15)[The assignment is $daysLate day late.]}{(if: $days &gt; 15)[The assignment is $daysLate days late.]}&lt;/counter&gt;\
+\(display: &quot;Links: Procrastinate&quot;)\
+]&lt;/nav&gt;</tw-passagedata><tw-passagedata pid="19" name="Make a sandwhich" tags="" position="2056,1496" size="100,100">(set: $style to &quot;middle&quot;)\
+\&lt;counter&gt;{(if: $days &lt;= 14)[Day $days of 14]}{(if: $days is 15)[The assignment is $daysLate day late.]}{(if: $days &gt; 15)[The assignment is $daysLate days late.]}&lt;/counter&gt;\
 \&lt;h2&gt;Make a sandwhich&lt;/h2&gt;\
 \&lt;p&gt;You go to open the fridge and realize you&#39;re out of bread. You seem you be low on just about everything. I guess now is as good a time as any to make a grocery run.&lt;/p&gt;\
 \&lt;nav&gt;[[Go to the store]]\
 \No, you have to get back to work\
 \(click-replace: &quot;No, you have to get back to work&quot;)[\
 \&lt;prompt&gt;Now, where were we?&lt;/prompt&gt;\
-\(display: &quot;Links&quot;)\
+\(display: &quot;Links: Procrastinate&quot;)\
 \]\
-\&lt;/nav&gt;</tw-passagedata><tw-passagedata pid="23" name="Other project" tags="" position="2250,1300" size="100,100">&lt;counter&gt;{(if: $days &lt;= 14)[Day $days of 14]}{(if: $days is 15)[The assignment is $daysLate day late.]}{(if: $days &gt; 15)[The assignment is $daysLate days late.]}&lt;/counter&gt;\
+\&lt;/nav&gt;</tw-passagedata><tw-passagedata pid="20" name="Other project" tags="" position="2256,1496" size="100,100">(set: $style to &quot;middle&quot;)\
+\&lt;counter&gt;{(if: $days &lt;= 14)[Day $days of 14]}{(if: $days is 15)[The assignment is $daysLate day late.]}{(if: $days &gt; 15)[The assignment is $daysLate days late.]}&lt;/counter&gt;\
 \&lt;h2&gt;Another project&lt;/h2&gt;\
 \&lt;p&gt;You spent (random: 2, 6) hours finishing that other project. You&#39;re pretty satisfied with how it turned out, too. At this point you&#39;re so tired you can hardly keep your eyes open. You wonder whether you should call it a day or stay up late and keep working.&lt;/p&gt;\
 \&lt;nav&gt;[[Go to sleep]]\
-\[[Make a coffee]]&lt;/nav&gt;</tw-passagedata><tw-passagedata pid="24" name="Go to the store" tags="" position="2050,1450" size="100,100">&lt;counter&gt;{(if: $days &lt;= 14)[Day $days of 14]}{(if: $days is 15)[The assignment is $daysLate day late.]}{(if: $days &gt; 15)[The assignment is $daysLate days late.]}&lt;/counter&gt;\
+\[[Make a coffee]]&lt;/nav&gt;</tw-passagedata><tw-passagedata pid="21" name="Go to the store" tags="" position="2056,1646" size="100,100">&lt;counter&gt;{(if: $days &lt;= 14)[Day $days of 14]}{(if: $days is 15)[The assignment is $daysLate day late.]}{(if: $days &gt; 15)[The assignment is $daysLate days late.]}&lt;/counter&gt;\
 \&lt;h2&gt;Grocery run&lt;/h2&gt;\
 \&lt;p&gt;You spend (random: 2, 3) hours out getting groceries, bringing them home and putting them away. Now you &lt;em&gt;really&lt;/em&gt; have to get back to work.\
 \&lt;prompt&gt;Now, where were we?&lt;/prompt&gt;\
-\(display: &quot;Links&quot;)</tw-passagedata><tw-passagedata pid="25" name="Go to sleep" tags="" position="2175,1450" size="100,100">&lt;counter&gt;{(set: $days to $days + 1)(set: $daysLate to $days - 14)(if: $days &lt;= 14)[Day $days of 14]}{(if: $days is 15)[The assignment is $daysLate day late.]}{(if: $days &gt; 15)[The assignment is $daysLate days late.]}&lt;/counter&gt;\
+\(display: &quot;Links: Procrastinate&quot;)</tw-passagedata><tw-passagedata pid="22" name="Go to sleep" tags="" position="2181,1645" size="100,100">(set: $style to &quot;middle&quot;)\
+\&lt;counter&gt;{(set: $days to $days + 1)(set: $daysLate to $days - 14)(if: $days &lt;= 14)[Day $days of 14]}{(if: $days is 15)[The assignment is $daysLate day late.]}{(if: $days &gt; 15)[The assignment is $daysLate days late.]}&lt;/counter&gt;\
 \&lt;h2&gt;Good morning&lt;/h2&gt;\
 \&lt;p&gt;You slept for (random: 6, 10) hours. You feel very well-rested now, are you ready to get back to work?&lt;/p&gt;\
 \&lt;nav&gt;[[Coffee first-&gt;Make a coffee]]\
 \Get straight to work\
 \(click-replace: &quot;Get straight to work&quot;)[\
 \&lt;prompt&gt;Now, where were we?&lt;/prompt&gt;\
-\(display: &quot;Links&quot;)\
+\(display: &quot;Links: Procrastinate&quot;)\
 \]\
-\&lt;/nav&gt;</tw-passagedata><tw-passagedata pid="26" name="Make a coffee" tags="" position="2325,1450" size="100,100">&lt;counter&gt;{(if: $days &lt;= 14)[Day $days of 14]}{(if: $days is 15)[The assignment is $daysLate day late.]}{(if: $days &gt; 15)[The assignment is $daysLate days late.]}&lt;/counter&gt;\
+\&lt;/nav&gt;</tw-passagedata><tw-passagedata pid="23" name="Make a coffee" tags="" position="2331,1646" size="100,100">(set: $style to &quot;middle&quot;)\
+\&lt;counter&gt;{(if: $days &lt;= 14)[Day $days of 14]}{(if: $days is 15)[The assignment is $daysLate day late.]}{(if: $days &gt; 15)[The assignment is $daysLate days late.]}&lt;/counter&gt;\
 \&lt;h2&gt;Mmm caffeiiiiine&lt;/h2&gt;\
 \&lt;p&gt;You take your first sip of coffee and you can &lt;em&gt;feel&lt;/em&gt; the caffeine pulsing through your bloodstream. You feel like a brand new person.&lt;/p&gt;\
 \&lt;prompt&gt;Now, where were we?&lt;/prompt&gt;\
-\(display: &quot;Links&quot;)</tw-passagedata><tw-passagedata pid="27" name="Background" tags="footer" position="450,300" size="100,100">(if: $days is 0)[&lt;script&gt;$(&#39;tw-story&#39;).addClass(&#39;day-0&#39;);&lt;/script&gt;]\
+\(display: &quot;Links: Procrastinate&quot;)</tw-passagedata><tw-passagedata pid="24" name="Background" tags="footer" position="708,697" size="100,100">(if: $days is 0)[&lt;script&gt;$(&#39;tw-story&#39;).addClass(&#39;day-0&#39;);&lt;/script&gt;]\
 (else-if: $days is 1)[&lt;script&gt;$(&#39;tw-story&#39;).addClass(&#39;day-1&#39;);&lt;/script&gt;]\
 (else-if: $days is 2)[&lt;script&gt;$(&#39;tw-story&#39;).addClass(&#39;day-2&#39;);&lt;/script&gt;]\
 (else-if: $days is 3)[&lt;script&gt;$(&#39;tw-story&#39;).addClass(&#39;day-3&#39;);&lt;/script&gt;]\
@@ -1113,28 +1209,172 @@ $(".Publish").mouseout(function () {
 &lt;script&gt;$(&#39;tw-story&#39;).removeClass(&#39;day-11&#39;);&lt;/script&gt;\
 &lt;script&gt;$(&#39;tw-story&#39;).removeClass(&#39;day-12&#39;);&lt;/script&gt;\
 &lt;script&gt;$(&#39;tw-story&#39;).removeClass(&#39;day-13&#39;);&lt;/script&gt;\
-&lt;script&gt;$(&#39;tw-story&#39;).removeClass(&#39;day-14&#39;);&lt;/script&gt;](else:)[&lt;script&gt;$(&#39;tw-story&#39;).removeClass(&#39;end&#39;);&lt;/script&gt;]
-</tw-passagedata><tw-passagedata pid="28" name="TopicText A" tags="" position="1025,1125" size="100,100">&lt;p&gt;You played it safe by choosing your data first, smart move. Now all you have to figure out is what &lt;em&gt;angle&lt;/em&gt; you&#39;re going to take in telling the story. Don&#39;t stress about it too much though, it&#39;ll surely come to you once you&#39;ve taken a closer look at the data.&lt;/p&gt;</tw-passagedata><tw-passagedata pid="29" name="TopicText B" tags="" position="1150,1125" size="100,100">&lt;p&gt;Settling on a topic is the hardest part. You could easily burn a full day or two deciding between two options. Your rule of thumb is to pick a topic that you can&#39;t possibly get bored of, like UFO sightings or anything about bicycles, really. Mine the depths of your interests—&lt;em&gt;but be careful&lt;/em&gt;—choosing a topic is pointless if you can&#39;t find data to back it up.&lt;/p&gt;</tw-passagedata><tw-passagedata pid="30" name="Start" tags="" position="750,900" size="100,100">(set: $style to &quot;end&quot;)\
+&lt;script&gt;$(&#39;tw-story&#39;).removeClass(&#39;day-14&#39;);&lt;/script&gt;](else:)[&lt;script&gt;$(&#39;tw-story&#39;).removeClass(&#39;end&#39;);&lt;/script&gt;]\
+(if: $days &lt; 14)[&lt;script&gt;$(&#39;tw-story&#39;).addClass(&#39;early&#39;);&lt;/script&gt;](else-if: $days is 14)[&lt;script&gt;$(&#39;tw-story&#39;).addClass(&#39;onTime&#39;);&lt;/script&gt;](else:)[&lt;script&gt;$(&#39;tw-story&#39;).addClass(&#39;late&#39;);&lt;/script&gt;]
+(if: $style is &quot;middle&quot;)[\
+\&lt;script&gt;$(&#39;tw-story&#39;).removeClass(&#39;early&#39;);&lt;/script&gt;\
+\&lt;script&gt;$(&#39;tw-story&#39;).removeClass(&#39;onTime&#39;);&lt;/script&gt;\
+\&lt;script&gt;$(&#39;tw-story&#39;).removeClass(&#39;late&#39;);&lt;/script&gt;]</tw-passagedata><tw-passagedata pid="25" name="TopicText A" tags="" position="1202,475" size="100,100">&lt;p&gt;You played it safe by choosing your data first, smart move. Now all you have to figure out is what &lt;em&gt;angle&lt;/em&gt; you&#39;re going to take in telling the story. Don&#39;t stress about it too much though, it&#39;ll surely come to you once you&#39;ve taken a closer look at the data.&lt;/p&gt;</tw-passagedata><tw-passagedata pid="26" name="TopicText B" tags="" position="1202,600" size="100,100">&lt;p&gt;Settling on a topic is the hardest part. You could easily burn a full day or two deciding between two options. Your rule of thumb is to pick a topic that you can&#39;t possibly get bored of, like UFO sightings or anything about bicycles, really. Mine the depths of your interests—&lt;em&gt;but be careful&lt;/em&gt;—choosing a topic is pointless if you can&#39;t find data to back it up.&lt;/p&gt;</tw-passagedata><tw-passagedata pid="27" name="Start" tags="" position="750,899" size="100,100">(set: $style to &quot;end&quot;)\
+\(set: $theBrief to false)\
+\(set: $clarifyRequirements to false)\
+\(set: $chooseATopic to false)\
+\(set: $collectInspiration to false)\
+\(set: $findADataset to false)\
+\(set: $wrangleData to false)\
+\(set: $exploreData to false)\
+\(set: $procrastinate to false)\
+\(set: $exploratoryDesign to false)\
+\(set: $prototype to false)\
+\(set: $visualDesign to false)\
+\(set: $collectFeedbackToTrue to false)\
+\(set: $watchTutorials to false)\
+\(set: $implement to false)\
+\(set: $publishandSubmit to false)\
 \&lt;h1&gt;&lt;span&gt;H&lt;/span&gt;&lt;span&gt;o&lt;/span&gt;&lt;span&gt;w&lt;/span&gt; &lt;span&gt;t&lt;/span&gt;&lt;span&gt;o&lt;/span&gt; &lt;span&gt;d&lt;/span&gt;&lt;span&gt;e&lt;/span&gt;&lt;span&gt;s&lt;/span&gt;&lt;span&gt;i&lt;/span&gt;&lt;span&gt;g&lt;/span&gt;&lt;span&gt;n&lt;/span&gt; &lt;span&gt;g&lt;/span&gt;&lt;span&gt;o&lt;/span&gt;&lt;span&gt;o&lt;/span&gt;&lt;span&gt;d&lt;/span&gt;&lt;/h1&gt;\
 
 &lt;prompt&gt;A choose-your-own-process adventure for dataviz designers&lt;/prompt&gt;
-&lt;nav&gt;[[PLAY NOW-&gt;The brief]]&lt;/nav&gt;\
-\(display: &quot;startup&quot;)\
-\(set: $pgClarifyRequirements to &quot;notVisited&quot;)\
-\(set: $pgChooseATopic to &quot;notVisited&quot;)\
-\(set: $pgFIndData to &quot;notVisited&quot;)\
-\(set: $pgCleanData to &quot;notVisited&quot;)\
-\(set: $pgExploratoryViz to &quot;notVisited&quot;)\
-\(set: $pgExploratoryDesign to &quot;notVisited&quot;)\
-\(set: $pgPrototype to &quot;notVisited&quot;)\
-\(set: $pgVisualDesign to &quot;notVisited&quot;)\
-\(set: $pgValidation to &quot;notVisited&quot;)\
-\(set: $pgImplementation to &quot;notVisited&quot;)\
-\(set: $pgDeployment to &quot;notVisited&quot;)\
-\(set: $pgCollectInspiration to &quot;notVisited&quot;)\
-\(set: $pgProcrastinate to &quot;notVisited&quot;)\
-\(set: $pgWatchTutorials to &quot;notVisited&quot;)\
-\(set: $days to 0)</tw-passagedata></tw-storydata>
+&lt;nav&gt;[[PLAY NOW-&gt;The brief]]&lt;/nav&gt;</tw-passagedata><tw-passagedata pid="28" name="Links: The brief" tags="" position="901,1099" size="100,100">&lt;nav&gt;[[Clarify requirements]]&lt;/nav&gt;</tw-passagedata><tw-passagedata pid="29" name="Links: Clarify requirements" tags="" position="1047,1098" size="100,100">&lt;nav&gt;[[The brief]]\
+\(if: $chooseATopic is false)[[Choose a topic]]\
+\[[Collect inspiration]]\
+\(if: $findADataset is false)[[Find a dataset]]\
+\(if: $findADataset is true)[[Wrangle data]]\
+\(if: $findADataset is true)[[Explore data]]\
+\[[Procrastinate]]\
+\(if: $chooseATopic is true)[[Exploratory design]]\
+\(if: $exploreData is true)[[Prototype]]\
+\(if: $exploratoryDesign is true)[[Visual design]]\
+\(if: $exploratoryDesign is true)[[Collect feedback]]\
+\[[Watch tutorials]]\
+\(if: $visualDesign is true)[[Implement]]\
+\(if: $implement is true)[[Publish and submit]]&lt;/nav&gt;</tw-passagedata><tw-passagedata pid="30" name="Links: Choose a topic" tags="" position="1199,1100" size="100,100">&lt;nav&gt;[[Collect inspiration]]\
+\(if: $findADataset is false)[[Find a dataset]]\
+\[[Procrastinate]]\
+\[[Watch tutorials]]&lt;/nav&gt;</tw-passagedata><tw-passagedata pid="31" name="Links: Collect inspiration" tags="" position="1350,1099" size="100,100">&lt;nav&gt;\
+\(if: $findADataset is false)[[Find a dataset]]\
+\(if: $findADataset is true)[[Wrangle data]]\
+\(if: $findADataset is true)[[Explore data]]\
+\[[Procrastinate]]\
+\(if: $chooseATopic is true)[[Exploratory design]]\
+\(if: $exploreData is true)[[Prototype]]\
+\(if: $exploratoryDesign is true)[[Visual design]]\
+\(if: $exploratoryDesign is true)[[Collect feedback]]\
+\[[Watch tutorials]]\
+\(if: $visualDesign is true)[[Implement]]\
+&lt;/nav&gt;</tw-passagedata><tw-passagedata pid="32" name="Links: Find a dataset" tags="" position="1501,1099" size="100,100">&lt;nav&gt;[[Clarify requirements]]\
+\(if: $chooseATopic is false)[[Choose a topic]]\
+\[[Collect inspiration]]\
+\(if: $findADataset is true)[[Wrangle data]]\
+\(if: $findADataset is true)[[Explore data]]\
+\[[Procrastinate]]\
+\(if: $chooseATopic is true)[[Exploratory design]]&lt;/nav&gt;</tw-passagedata><tw-passagedata pid="33" name="Links: Wrangle data" tags="" position="1651,1101" size="100,100">&lt;nav&gt;[[Clarify requirements]]\
+\[[Collect inspiration]]\
+\(if: $findADataset is true)[[Exploratory design]]\
+\(if: $findADataset is true)[[Explore data]]\
+\[[Procrastinate]]\
+\(if: $chooseATopic is true)[[Exploratory design]]\
+\[[Watch tutorials]]&lt;/nav&gt;</tw-passagedata><tw-passagedata pid="34" name="Links: Explore data" tags="" position="1800,1100" size="100,100">&lt;nav&gt;[[Clarify requirements]]\
+\(if: $chooseATopic is false)[[Choose a topic]]\
+\[[Collect inspiration]]\
+\(if: $findADataset is false)[[Find a dataset]]\
+\(if: $findADataset is true)[[Wrangle data]]\
+\[[Procrastinate]]\
+\(if: $exploreData is true)[[Prototype]]\
+\(if: $chooseATopic is true)[[Exploratory design]]\
+\[[Watch tutorials]]&lt;/nav&gt;</tw-passagedata><tw-passagedata pid="35" name="Links: Procrastinate" tags="" position="1953,1100" size="100,100">&lt;nav&gt;[[Clarify requirements]]\
+\(if: $chooseATopic is false)[[Choose a topic]]\
+\[[Collect inspiration]]\
+\(if: $findADataset is false)[[Find a dataset]]\
+\(if: $findADataset is true)[[Wrangle data]]\
+\(if: $findADataset is true)[[Explore data]]\
+\[[Procrastinate]]\
+\(if: $chooseATopic is true)[[Exploratory design]]\
+\(if: $exploreData is true)[[Prototype]]\
+\(if: $exploratoryDesign is true)[[Visual design]]\
+\(if: $exploratoryDesign is true)[[Collect feedback]]\
+\[[Watch tutorials]]\
+\(if: $visualDesign is true)[[Implement]]\
+\(if: $implement is true)[[Publish and submit]]&lt;/nav&gt;</tw-passagedata><tw-passagedata pid="36" name="Links: Exploratory design" tags="" position="2100,1098" size="100,100">&lt;nav&gt;[[Clarify requirements]]\
+\[[Collect inspiration]]\
+\(if: $visualDesign is false)[[Wrangle data]]\
+\(if: $visualDesign is false)[[Explore data]]\
+\[[Procrastinate]]\
+\(if: $exploreData is true)[[Prototype]]\
+\(if: $exploratoryDesign is true)[[Visual design]]\
+\(if: $exploratoryDesign is true)[[Collect feedback]]\
+\[[Watch tutorials]]&lt;/nav&gt;</tw-passagedata><tw-passagedata pid="37" name="Links: Prototype" tags="" position="2251,1100" size="100,100">&lt;nav&gt;[[Clarify requirements]]\
+\[[Collect inspiration]]\
+\(if: $visualDesign is false)[[Wrangle data]]\
+\(if: $visualDesign is false)[[Explore data]]\
+\[[Procrastinate]]\
+\(if: $choosATopic is true)[[Exploratory design]]\
+\(if: $exploratoryDesign is true)[[Visual design]]\
+\(if: $exploratoryDesign is true)[[Collect feedback]]\
+\[[Watch tutorials]]\
+\(if: $visualDesign is true)[[Implement]]&lt;/nav&gt;</tw-passagedata><tw-passagedata pid="38" name="Links: Visual design" tags="" position="2399,1101" size="100,100">&lt;nav&gt;[[Clarify requirements]]\
+\[[Collect inspiration]]\
+\[[Procrastinate]]\
+\(if: $chooseATopic is true)[[Exploratory design]]\
+\(if: $exploreData is true)[[Prototype]]\
+\(if: $exploratoryDesign is true)[[Collect feedback]]\
+\[[Watch tutorials]]\
+\(if: $exploratoryDesign is true)[[Implement]]
+&lt;/nav&gt;</tw-passagedata><tw-passagedata pid="39" name="Links: Collect feedback" tags="" position="2550,1100" size="100,100">&lt;nav&gt;[[Clarify requirements]]\
+\[[Procrastinate]]\
+\(if: $chooseATopic is true)[[Exploratory design]]\
+\(if: $exploreData is true)[[Prototype]]\
+\(if: $exploratoryDesign is true)[[Visual design]]\
+\(if: $exploratoryDesign is true)[[Collect feedback]]\
+\[[Watch tutorials]]\
+\(if: $visualDesign is true)[[Implement]]\
+\(if: $impliment is true)[[Publish and submit]]&lt;/nav&gt;</tw-passagedata><tw-passagedata pid="40" name="Links: Watch tutorials" tags="" position="2700,1101" size="100,100">&lt;nav&gt;[[Clarify requirements]]\
+\(if: $chooseATopic is false)[[Choose a topic]]\
+\[[Collect inspiration]]\
+\(if: $findADataset is false)[[Find a dataset]]\
+\(if: $findADataset is true)[[Wrangle data]]\
+\(if: $findADataset is true)[[Explore data]]\
+\[[Procrastinate]]\
+\(if: $chooseATopic is true)[[Exploratory design]]\
+\(if: $exploreData is true)[[Prototype]]\
+\(if: $exploratoryDesign is true)[[Visual design]]\
+\(if: $exploratoryDesign is true)[[Collect feedback]]\
+\(if: $chooseATopic is true)[[Exploratory design]]\
+\(if: $exploreData is true)[[Prototype]]\
+\(if: $exploratoryDesign is true)[[Visual design]]\
+\(if: $visualDesign is true)[[Implement]]</tw-passagedata><tw-passagedata pid="41" name="Links: Implement" tags="" position="2849,1101" size="100,100">&lt;nav&gt;[[Clarify requirements]]\
+\[[Procrastinate]]\
+\(if: $exploreData is true)[[Prototype]]\
+\(if: $exploratoryDesign is true)[[Visual design]]\
+\(if: $exploratoryDesign is true)[[Collect feedback]]\
+\[[Watch tutorials]]\
+\(if: $implement is true)[[Publish and submit]]&lt;/nav&gt;</tw-passagedata><tw-passagedata pid="42" name="Untitled Passage" tags="" position="2863,1379" size="100,100">(set: $theBrief to true)\
+\(set: $clarifyRequirements to true)\
+\(set: $chooseATopic to true)\
+\(set: $collectInspiration to true)\
+\(set: $findADataset to true)\
+\(set: $wrangleData to true)\
+\(set: $exploreData to true)\
+\(set: $procrastinate to true)\
+\(set: $exploratoryDesign to true)\
+\(set: $prototype to true)\
+\(set: $visualDesign to true)\
+\(set: $collectFeedbackToTrue to true)\
+\(set: $watchTutorials to true)\
+\(set: $implement to true)\
+\(set: $publishandSubmit to true)\</tw-passagedata><tw-passagedata pid="43" name="Visited" tags="" position="2675,1372" size="100,100">(if: $theBrief is true)[&lt;div class=&quot;theBrief&quot;&gt;➸&lt;/div&gt;]\
+\(if: $clarifyRequirements is true)[&lt;div class=&quot;clarifyRequirements&quot;&gt;➸&lt;/div&gt;]\
+\(if: $chooseATopic is true)[&lt;div class=&quot;chooseATopic&quot;&gt;➸&lt;/div&gt;]\
+\(if: $collectInspiration is true)[&lt;div class=&quot;collectInspiration&quot;&gt;➸&lt;/div&gt;]\
+\(if: $findADataset is true)[&lt;div class=&quot;findADataset&quot;&gt;➸&lt;/div&gt;]\
+\(if: $wrangleData is true)[&lt;div class=&quot;wrangleData&quot;&gt;➸&lt;/div&gt;]\
+\(if: $exploreData is true)[&lt;div class=&quot;exploreData&quot;&gt;➸&lt;/div&gt;]\
+\(if: $procrastinate is true)[&lt;div class=&quot;procrastinate&quot;&gt;➸&lt;/div&gt;]\
+\(if: $exploratoryDesign is true)[&lt;div class=&quot;exploratoryDesign&quot;&gt;➸&lt;/div&gt;]\
+\(if: $prototype is true)[&lt;div class=&quot;prototype&quot;&gt;➸&lt;/div&gt;]\
+\(if: $visualDesign is true)[&lt;div class=&quot;visualDesign&quot;&gt;➸&lt;/div&gt;]\
+\(if: $collectFeedback is true)[&lt;div class=&quot;collectFeedback&quot;&gt;➸&lt;/div&gt;]\
+\(if: $watchTutorials is true)[&lt;div class=&quot;watchTutorials&quot;&gt;➸&lt;/div&gt;]\
+\(if: $implement is true)[&lt;div class=&quot;implement&quot;&gt;➸&lt;/div&gt;]\
+\(if: $publishAndSubmit is true)[&lt;div class=&quot;publishAndSubmit&quot;&gt;➸&lt;/div&gt;]</tw-passagedata></tw-storydata>
 
 <script title="Twine engine code" data-main="harlowe">"use strict";function _defineProperty(e,t,n){return t in e?Object.defineProperty(e,t,{value:n,enumerable:!0,configurable:!0,writable:!0}):e[t]=n,e}function _toConsumableArray(e){if(Array.isArray(e)){for(var t=0,n=Array(e.length);t<e.length;t++)n[t]=e[t];return n}return Array.from(e)}var _slicedToArray=function(){function e(e,t){var n=[],r=!0,i=!1,o=void 0;try{for(var a,s=e[Symbol.iterator]();!(r=(a=s.next()).done)&&(n.push(a.value),!t||n.length!==t);r=!0);}catch(e){i=!0,o=e}finally{try{!r&&s.return&&s.return()}finally{if(i)throw o}}return n}return function(t,n){if(Array.isArray(t))return t;if(Symbol.iterator in Object(t))return e(t,n);throw new TypeError("Invalid attempt to destructure non-iterable instance")}}(),_typeof="function"==typeof Symbol&&"symbol"==typeof Symbol.iterator?function(e){return typeof e}:function(e){return e&&"function"==typeof Symbol&&e.constructor===Symbol&&e!==Symbol.prototype?"symbol":typeof e};!function(){/**
  * @license almond 0.3.3 Copyright jQuery Foundation and other contributors.
