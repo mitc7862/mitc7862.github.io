@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta
+          name="viewport"
+          content="initial-scale=1,maximum-scale=1,user-scalable=no"
+        />
+        <title>
+Data Walk</title>
+        <style>
+          html,
+          body,
+          #viewDiv {
+            padding: 0;
+            margin: 0;
+            height: 100%;
+            width: 100%;
+          }
+
+          .esri-view .esri-view-surface--inset-outline:focus::after {
+    outline: solid 0px red !important;
+}
+
+.esri-widget--button {
+    background: greenyellow;
+}
+
+.esri-attribution {
+    background-color: black;
+    color: white;
+}
+
+.esri-component.esri-legend.esri-widget.esri-widget--panel {
+    width: 200px;
+}
+
+.esri-widget {
+    background: #01182A;
+    color: #829199;
+}
+
+.esri-widget__heading {
+    color: #D8E6EA;
+}
+
+.esri-legend__layer {
+    margin-left: 0;
+}
+
+.esri-popup__footer, .esri-popup__header {
+    display: none;
+}
+
+.esri-popup__pointer-direction {
+    background: #FF6661;
+}
+
+#viz {
+    font-size: 14px;
+    text-shadow: -1px -1px #011222, -1px 1px #011222, 1px 1px #011222, 1px -1px #011222, -1px 0 #011222, 0 1px #011222, 1px 0 #011222, 0 -1px #011222;
+}
+
+.esri-popup__main-container .esri-widget {
+    background: transparent;
+}
+
+.esri-popup__main-container {
+    text-align: center;
+    padding: .5rem;
+}
+
+.esri-view-width-xlarge .esri-popup__main-container {
+    width: 230px;
+}
+
+.esri-popup__feature-menu {
+    display: none;
+}
+
+.esri-popup__content {
+    margin: 0;
+}
+
+.esri-feature-content p {
+    margin: 0;
+}
+
+.esri-popup--shadow {
+    box-shadow: none;;
+}
+
+.esri-popup__main-container .esri-widget {
+    font-family: 'Space Mono', monospace;
+    font-size: 14px;
+    font-weight: 400; 
+
+}
+
+.esri-widget--button:hover {
+    background: #D8E6EA;
+}
+
+.esri-icon-plus::before  {
+    color: #D8E6EA;
+}
+
+.esri-icon-minus::before  {
+    color: #D8E6EA;
+}
+
+.esri-widget--button:hover .esri-icon-plus::before  {
+    color: #011222;
+}
+
+.esri-widget--button:hover .esri-icon-minus::before  {
+    color: #011222;
+}
+
+.esri-popup__header { display: none !important; }
+.esri-popup__footer {display: none !important;}
+
+.esri-feature-content p {
+    margin: 0 !important;
+}
+.esri-popup__content {
+    margin: 12px !important;  
+}
+.esri-widget {
+    color: #3A5C83 !important;
+}
+        </style>
+    
+        <link
+          rel="stylesheet"
+          href="https://js.arcgis.com/4.21/esri/themes/light/main.css"
+        />
+        <script src="https://js.arcgis.com/4.21/"></script>
+    
+        <script>
+          require([
+    "esri/views/MapView",
+    "esri/widgets/Legend",
+    "esri/WebMap"
+], function (MapView, Legend, WebMap) {
+    var webmap = new WebMap({
+        portalItem: {
+            id: "ae452f207b3148b2a821b077669ef2d6"
+        }
+    });
+
+    var view = new MapView({
+        container: "viewDiv",
+        map: webmap,
+        navigation: { mouseWheelZoomEnabled: false }
+    });
+
+    // view.scale = 50000000;
+
+    view.when(function () {
+        var featureLayer = webmap.layers.getItemAt(3);
+
+        var legend = new Legend({
+            view: view,
+            layerInfos: [
+                {
+                    layer: featureLayer,
+                    title: ""
+                }
+            ]
+        });
+    });
+
+});
+        </script>
+      </head>
+    <body>
+        <div id="viewDiv"></div>
+    </body>
+</html>
